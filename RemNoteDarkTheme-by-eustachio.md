@@ -1,9 +1,15 @@
-- # RemNote Dark Theme by @eustachio ##Todo
+# RemNote Dark Theme by eustachio
+- Created by eustachio
+- This is something I do for fun as I like simple and modern UI's. I wanted to make RemNote look awesome!!!
+- Version 1.0
+- Released date: 04-June 2021.
+```markdown
+- # RemNote Dark Theme by eustachio ##Todo
 	- Created by eustachio
 	- This is something I do for fun as I like simple and modern UI's. I wanted to make RemNote look awesome!!!
 	- Version 1.0
 	- Released date: 04-June 2021.
-	- For bugs and suggestions, please drop me an email[eustachio.dipaola@gmail.com](eustachio.dipaola@gmail.com) with some screenshots if possible.
+	- For bugs and suggestions, please drop me an email to: `eustachio.dipaola@gmail.com` with some screenshots if possible.
 	- Please enable "Alternating Line Indent Colors" to see the treelines in two different colors.
 	- By defaul "Optionals" blocks are deactivated, you can play with each block by unchecking them and see what they do. 
 	- For future updates, I recommend that you create a CSS code block at the bottom after this theme for your custom lines of code, things that you would like your way. So when an update, you can delete this theme and paste the new updated version without losing your customizations.
@@ -304,7 +310,6 @@
 			padding-left: 42px;
 			margin-top: -10px;
 			padding-right: 25px;
-			max-width: var(--document-width);
 		}
 		#document {
 			width: calc(100% - 65px);
@@ -4762,7 +4767,13 @@
 				--document-width: 900px; /*RemNote by default is 800px*/
 				--sidebar-width: 260px; /*RemNote by default is 240px*/
 			}
-
+			
+			/* wider/narrower document*/
+			#multiple-windows .multiple-windows__document .document--narrow {
+			    max-width: var(--document-width);
+			}
+			
+			/* wider/narrower sidebar*/
 			#homepage #content .document-sidebar--floating, #main #content .document-sidebar--floating {
 				max-width: var(--sidebar-width)!important;
 				min-width: var(--sidebar-width)!important;
@@ -4799,10 +4810,10 @@
 		- [x] **Op09 Coding like editing**
 			```css
 			:root {
-				--focused-background-color: transparent; /*rgb(45, 45, 45);*//*rgb(46, 46, 46)*/
-				--portal-focused-background-color: transparent;/*rgb(53, 53, 53);*/
-				--focused-background-editing-color: rgb(132, 104, 221, 0.065);/*rgb(46, 46, 46)*/
-				--portal-focused-background-editing-color: rgb(132, 104, 221, 0.075);/*rgb(46, 46, 46)*/	
+				--focused-background-color: transparent;
+				--portal-focused-background-color: transparent;
+				--focused-background-editing-color: rgb(21, 21, 21, 0.3);
+				--portal-focused-background-editing-color: rgb(26, 26, 26, 0.3);	
 			}
 
 			#hierarchy-editor .rem-container--focused .rem-text span {
@@ -4858,3 +4869,4 @@
 				background-color: var(--focused-background-editing-color);
 			}
 			```
+```
