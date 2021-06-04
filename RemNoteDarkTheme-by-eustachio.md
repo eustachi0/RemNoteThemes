@@ -95,7 +95,7 @@
 
 			/* queue */
 
-				--queue-fill-in-the-blank-color: #3C6296;
+				--queue-fill-in-the-blank-color: blue;
 
 			/* scrollbar color*/
 				--scrollbar-color: rgb(41, 44, 44);
@@ -3018,6 +3018,12 @@
 			border: var(--popup-border-width) solid var(--popup-border-color);
 			border-radius: var(--popup-border-radius);
 		}
+		
+		#QueueTypeAnswerBoxContainer #QueueTypeAnswerBox:focus-within {
+			background-color: var(--search-box-background-color);
+			border: var(--popup-border-width) solid var(--accent-color);
+			border-radius: var(--popup-border-radius);
+		}		
 
 		#QueueTypeAnswerBoxContainer .ui.compact.button {
 			color: var(--accent-color);
@@ -3070,8 +3076,8 @@
 			margin: 10px;
 		}
 
-		.spacedRepetitionAnswer .rem-container--default:hover {
-			background-color: var(--popup-hover-background-color) !important;
+		.spacedRepetitionAnswer .rem-container--default:hover .rem-text {
+			color: var(--focused-text-color) !important;
 		}
 
 		.spacedRepetition .queue__response-button__image {
