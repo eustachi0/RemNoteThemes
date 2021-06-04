@@ -9,7 +9,7 @@
 	- This is something I do for fun as I like simple and modern UI's. I wanted to make RemNote look awesome!!!
 	- Version 1.0
 	- Released date: 04-June 2021.
-	- For bugs and suggestions, please drop me an email to: `eustachio.dipaola@gmail.com` with some screenshots if possible.
+	- For bugs and suggestions, please drop me an email to: `eustachio.dipaola@gmail.com`  with some screenshots if possible.
 	- Please enable "Alternating Line Indent Colors" to see the treelines in two different colors.
 	- By defaul "Optionals" blocks are deactivated, you can play with each block by unchecking them and see what they do. 
 	- For future updates, I recommend that you create a CSS code block at the bottom after this theme for your custom lines of code, things that you would like your way. So when an update, you can delete this theme and paste the new updated version without losing your customizations.
