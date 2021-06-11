@@ -35,7 +35,7 @@
           --body-text-color: #DADADA;
           --accent-color: #8DABCC;
           --focused-accent-color: #9EBFE4;
-          --font-name: JetBrains Mono;
+          --font-name: myfont;
           --rem-margin-left: -16px;
           --rem-padding-left: 16px;
           --selected-background-color: #283645;
