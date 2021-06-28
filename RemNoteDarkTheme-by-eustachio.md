@@ -4587,14 +4587,11 @@
       .pdf-viewer__highlight-container--orange .AreaHighlight,
       .pdf-viewer__highlight-container--orange .Highlight__part {
           background-color: var(--highlight-orange)!important;
-          filter: brightness(.7);
           opacity: 0.7;
       }
       /*yellow*/
-      .pdf-viewer__highlight-container--yellow .AreaHighlight, .pdf-viewer__highlight-container--yellow .Highlight__part {
+      .highlight-color--yellow, .pdf-viewer__highlight-container--undefined .AreaHighlight, .pdf-viewer__highlight-container--undefined .Highlight__part, .pdf-viewer__highlight-container--yellow .AreaHighlight, .pdf-viewer__highlight-container--yellow .Highlight__part, .PdfHighlighter .textLayer ::selection {
           background-color: var(--highlight-yellow)!important;
-          filter: brightness(.6);
-          opacity: 0.7;
       }
       /*green*/
       .pdf-viewer__highlight-container--green .AreaHighlight,
@@ -4614,26 +4611,17 @@
           background-color: var(--highlight-purple)!important;
           opacity: 0.7;
       }
-
-      /*when selecting to highlight (by default is yellow) I set it to gray*/
-      .pdf-viewer__highlight-container--undefined .Highlight__part,
-      .pdf-viewer__highlight-container--undefined .AreaHighlight,
-      .PdfHighlighter .textLayer ::selection {
-          background-color: gray!important;
-          filter: brightness(.75)!important;
-          opacity: 0.7;
-      }
       ```
     - [x] Op11 Image Occlusion (inverted, no real colors)
       ```css
       .tumbnail--with-width {
-          filter: invert(87%) hue-rotate(170deg) !important;
+          filter: invert(90%) hue-rotate(180deg) !important;
       }
       #image-viewer-popup img {
-          filter: invert(87%) hue-rotate(170deg) !important;
+          filter: invert(90%) hue-rotate(180deg) !important;
       }
       .image-occlusion .image-occlusion__canvas-container {
-          filter: invert(87%) hue-rotate(170deg) !important;
+          filter: invert(90%) hue-rotate(180deg) !important;
       }
       ```
 ```
