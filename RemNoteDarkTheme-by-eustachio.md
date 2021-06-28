@@ -1,14 +1,18 @@
 - # RemNote Dark Theme by eustachio
 - Created by eustachio
 - This is something I do for fun as I like simple and modern UI's. I wanted to make RemNote look awesome!!!
-- Version 1.11
-- Released date: 11-June 2021
+- Version 1.2
+- Release date: 28 June 2021
 
 ```markdown
-- # RemNote Dark Theme by eustachio v1.11 ##Todo
+- # RemNote Dark Theme by eustachio v1.2 ##Todo
   - Designed, created and maintained by Eustachio
   - This theme has been created to work with the `Dark Mode ON`
   - This is something I do for fun as I like simple and modern UI's. I wanted to make RemNote look awesome!!!
+  - Version 1.2 - Released date: 28 June 2021
+    - Optional dark (inverted) PDF
+    - Optional dark (inverted) Image Occlusion
+    - Fixed some right-click menus and 'Quick Add' white backgrounds
   - Version 1.11 - Released date: 11 June 2021
     - More visible scrollbars
     - No Quote text jumps
@@ -26,6 +30,7 @@
   - Please enable "Alternating Line Indent Colors" to see the treelines in two different colors.
   - By default "Optionals" blocks are deactivated, you can play with each block by unchecking them and see what they do.
   - For future updates, I recommend that you create a CSS code block at the bottom after this theme for your custom lines of code, things that you would like your way. So when an update, you can delete this theme and paste the new updated version without losing your customizations.
+  - Latex and Image Occlusion jumps/glitches (on hover) seem to happen with and without the theme.
   - ## 0 Variable ##Todo
     - [ ] **General Customizations**
       ```css
@@ -648,11 +653,11 @@
     .dark-mode #show-embedded-search-button {
         background-color: var(--portal-background-color);
         padding-left: 10px;
-        padding-top: 7px;
-        padding-bottom: 8px;
+        padding-top: 8px;
+        padding-bottom: 10px;
         padding-right: 10px;
         margin-top: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
         border-color: var(--portal-border-color)!important;
         border: 2px solid var(--portal-border-color)!important;
         border-top: 2px solid var(--portal-border-color)!important;
@@ -665,7 +670,7 @@
         font-weight: 400;
     }
     .dark-mode .TreeNode #show-embedded-search-button {
-        margin-left: 10px;
+        margin-left: 10px!important;
     }
     .embeddedSearch {
         border-top-left-radius: var(--border-radius);
@@ -695,23 +700,25 @@
         margin-top: 0px;
         background-color: var(--embeddedsearch-background-color);
     }
+    /*modified 28 Jun 2021*/
     #hierarchy-editor .portal-rem--embedded-search {
-        background-color: var(--portal-background-color);
-        margin-right: 6px;
-        padding-top: 0px;
-        margin-top: 14px;
-        margin-left: 0px;
-        padding-bottom: 14px;
-        margin-bottom: 20px;
+        background-color: var(--portal-background-color)!important;
+        margin-right: 6px!important;
+        padding-top: 0px!important;
+        margin-top: 18px!important;
+        margin-left: 0px!important;
+        padding-bottom: 14px!important;
+        margin-bottom: 20px!important;
         border-color: var(--portal-border-color)!important;
         border-left: 2px solid var(--portal-border-color)!important;
         border-right: 2px solid var(--portal-border-color)!important;
-        border-bottom: 0px solid;
-        border-bottom-right-radius: 0px;
-        border-bottom-left-radius: 0px;
+        border-bottom: 0px solid!important;
+        border-bottom-right-radius: 0px!important;
+        border-bottom-left-radius: 0px!important;
     }
+    /*modified 28 Jun 2021*/
     #hierarchy-editor .TreeNode .portal-rem--embedded-search {
-        margin-left: 10px;
+        margin-left: 10px!important;
     }
     #hierarchy-editor .search-portal-tree-node--dark {
         border-bottom-width: 0px;
@@ -755,13 +762,14 @@
         padding-left: 2px;
         color: var(--icons-color);
     }
+    /*modified 28 Jun 2021*/
     i.icon.refresh:before {
         content: "\f021";
         zoom: 120%;
         color: var(--icons-color);
-        padding-right: 5px;
     }
-    #embedded-search-refresh-button {
+    /*modified 28 Jun 2021*/
+    #embedded-search__button, .embedded-search__menu-button {
         float: right;
         padding-top: 6px;
         padding-right: 15px;
@@ -2247,7 +2255,7 @@
     #hierarchy-editor .quote .searchKeywordHighlight {
         background: var(--searchkeywordhighlight-color)!important;
         border-radius: 0px!important;
-        margin-left: -2px!important;
+        margin-left: 2px!important;/*modified 28 Jun 2021*/
         margin-right: -2px!important;
         padding-left: 0px!important;
         padding-right: 0px!important;
@@ -2568,8 +2576,8 @@
     }
     /* added 05 Jun 2021 */
     #help-menu-popup .help-menu-item:hover {
-      background-color: var(--popup-hover-background-color);
-      color: var(--focused-accent-color);
+        background-color: var(--popup-hover-background-color);
+        color: var(--focused-accent-color);
     }
     /* added 11 Jun 2021 */
     .popup-menu {
@@ -2602,6 +2610,39 @@
     .popup-menu .popup-menu__item--small img {
         filter: var(--icons-filter);
     }
+    /*Added 28 Jun 2021*/
+    /*Search popup*/
+    #SearchPopup #PinnedResults .SectionHeader {
+        color: var(--accent-color);
+    }
+    #SearchPopup #PinnedResults .PinnedResult {
+        color: var(--body-text-color);
+    }
+    #SearchPopup #PinnedResults .PinnedResult:hover {
+        background-color: var(--popup-hover-background-color);
+    }
+    /*Quick Add*/
+    .mobile-quick-add .mobile-quick-add__rich-text-editor, .mobile-quick-add textarea {
+        background-color: var(--body-background-color);
+        border: 2px solid var(--popup-border-color);
+    }
+    /*Tags right-click menu*/
+    .react-contexify {
+        background-color: var(--popup-background-color)!important;
+        box-shadow: none;
+        border: var(--popup-border-width) solid var(--popup-border-color);
+        border-radius: var(--popup-border-radius);
+    }
+    .react-contexify__item__content {
+        margin-left: 3px;
+        margin-right: 3px;
+        border-radius: var(--border-radius);
+        color: var(--popup-text-color);
+    }
+    .react-contexify__item__content:hover {
+        background-color: var(--popup-hover-background-color)!important;
+    }
+    /*------ end of added 28 Jun 2021 ------*/
     ```
   - ## 10 Checkbox ##Todo
     ```css
@@ -3947,6 +3988,7 @@
         #hierarchy-editor .tree-node-container
             > .TreeNode > div:focus-within 
             > div:first-child .rem-container--default {
+            background: none;
             background-image: var(--focused-branch-tree-symbol);
             background-repeat: no-repeat;
             background-size: var(--branch-tree-symbol-size);
@@ -3956,6 +3998,7 @@
         #hierarchy-editor .tree-node-container
             > .TreeNode > div 
             > div:first-child .rem-container--focused {
+            background: none;
             background-image: var(--focused-branch-tree-symbol);
             background-repeat: no-repeat;
             background-size: var(--branch-tree-symbol-size);
@@ -3965,6 +4008,7 @@
         #hierarchy-editor .tree-node-container 
             > .TreeNode > div
             > div:first-child .rem-container--default:hover {
+            background: none;
             background-image: var(--hover-focused-branch-tree-symbol);
             background-repeat: no-repeat;
             background-size: var(--branch-tree-symbol-size);
@@ -3974,6 +4018,7 @@
         #hierarchy-editor .tree-node-container
             > .TreeNode > div 
             > div:first-child .rem-container--focused:hover {
+            background: none;
             background-image: var(--focused-branch-tree-symbol);
             background-repeat: no-repeat;
             background-size: var(--branch-tree-symbol-size);
@@ -3984,6 +4029,7 @@
         #hierarchy-editor .portal-tree-node .tree-node-container 
             > .TreeNode
             > div .rem-container--default:hover {
+            background: none;
             background-image: var(--hover-focused-branch-tree-symbol);
             background-repeat: no-repeat;
             background-size: var(--branch-tree-symbol-size);
@@ -3994,6 +4040,7 @@
         #hierarchy-editor .search-portal-tree-node--dark .tree-node-container 
             > .TreeNode
             > div .rem-container--default:hover {
+            background: none;
             background-image: var(--hover-focused-branch-tree-symbol);
             background-repeat: no-repeat;
             background-size: var(--branch-tree-symbol-size);
@@ -4004,6 +4051,7 @@
         #hierarchy-editor .tree-node-container
             > .TreeNode:not(:focus-within)
             > div ~ div .rem-container--default:hover {
+            background: none;
             background-image: var(--hover-branch-tree-symbol);
             background-repeat: no-repeat;
             background-size: var(--branch-tree-symbol-size);
@@ -4014,7 +4062,7 @@
         #hierarchy-editor .portal-tree-node .tree-node-container
             > .TreeNode:not(:focus-within)
             > div ~ div .rem-container--default:hover {
-            /*background: none;*/
+            background: none;
             background-image: var(--hover-branch-tree-symbol);
             background-repeat: no-repeat;
             background-size: var(--branch-tree-symbol-size);
@@ -4025,7 +4073,7 @@
         #hierarchy-editor .search-portal-tree-node--dark .tree-node-container
             > .TreeNode:not(:focus-within)
             > div ~ div .rem-container--default:hover {
-            /*background: none;*/
+            background: none;
             background-image: var(--hover-branch-tree-symbol);
             background-repeat: no-repeat;
             background-size: var(--branch-tree-symbol-size);
@@ -4082,6 +4130,7 @@
         #hierarchy-editor .tree-node-container 
             > .TreeNode--dark-indent-line > div:focus-within
             > div:first-child .rem-container--default {
+            background: none;
             background-image: var(--alt-focused-branch-tree-symbol);
             background-repeat: no-repeat;
             background-size: var(--branch-tree-symbol-size);
@@ -4093,6 +4142,7 @@
         #hierarchy-editor .tree-node-container 
             > .TreeNode--dark-indent-line > div
             > div:first-child .rem-container--focused {
+            background: none;
             background-image: var(--alt-focused-branch-tree-symbol);
             background-repeat: no-repeat;
             background-size: var(--branch-tree-symbol-size);
@@ -4103,6 +4153,7 @@
         #hierarchy-editor .tree-node-container 
             > .TreeNode--dark-indent-line > div
             > div:first-child .rem-container--default:hover {
+            background: none;
             background-image: var(--alt-hover-focused-branch-tree-symbol);
             background-repeat: no-repeat;
             background-size: var(--branch-tree-symbol-size);
@@ -4113,6 +4164,7 @@
         #hierarchy-editor .tree-node-container 
             > .TreeNode--dark-indent-line > div
             > div:first-child .rem-container--focused:hover {
+            background: none;
             background-image: var(--alt-focused-branch-tree-symbol);
             background-repeat: no-repeat;
             background-size: var(--branch-tree-symbol-size);
@@ -4123,6 +4175,7 @@
         #hierarchy-editor .tree-node-container 
             > .TreeNode--dark-indent-line:not(:focus-within) > div
             > div:first-child .rem-container--default:hover {
+            background: none;
             background-image: var(--alt-hover-branch-tree-symbol);
             background-repeat: no-repeat;
             background-size: var(--branch-tree-symbol-size);
@@ -4135,6 +4188,7 @@
         #hierarchy-editor .portal-tree-node .tree-node-container 
             > .TreeNode--dark-indent-line > div:focus-within
             > div:first-child .rem-container--default {
+            background: none;
             background-image: var(--alt-focused-branch-tree-symbol);
             background-repeat: no-repeat;
             background-size: var(--branch-tree-symbol-size);
@@ -4146,6 +4200,7 @@
         #hierarchy-editor .portal-tree-node .tree-node-container 
             > .TreeNode--dark-indent-line > div
             > div:first-child .rem-container--focused {
+            background: none;
             background-image: var(--alt-focused-branch-tree-symbol);
             background-repeat: no-repeat;
             background-size: var(--branch-tree-symbol-size);
@@ -4156,6 +4211,7 @@
         #hierarchy-editor .portal-tree-node .tree-node-container 
             > .TreeNode--dark-indent-line > div
             > div:first-child .rem-container--default:hover {
+            background: none;
             background-image: var(--alt-hover-focused-branch-tree-symbol);
             background-repeat: no-repeat;
             background-size: var(--branch-tree-symbol-size);
@@ -4166,6 +4222,7 @@
         #hierarchy-editor .portal-tree-node .tree-node-container 
             > .TreeNode--dark-indent-line > div
             > div:first-child .rem-container--focused:hover {
+            background: none;
             background-image: var(--alt-focused-branch-tree-symbol);
             background-repeat: no-repeat;
             background-size: var(--branch-tree-symbol-size);
@@ -4176,6 +4233,7 @@
         #hierarchy-editor .portal-tree-node .tree-node-container 
             > .TreeNode--dark-indent-line:not(:focus-within) > div
             > div:first-child .rem-container--default:hover {
+            background: none;
             background-image: var(--alt-hover-branch-tree-symbol);
             background-repeat: no-repeat;
             background-size: var(--branch-tree-symbol-size);
@@ -4188,6 +4246,7 @@
         #hierarchy-editor .search-portal-tree-node--dark .tree-node-container 
             > .TreeNode--dark-indent-line > div:focus-within
             > div:first-child .rem-container--default {
+            background: none;
             background-image: var(--alt-focused-branch-tree-symbol);
             background-repeat: no-repeat;
             background-size: var(--branch-tree-symbol-size);
@@ -4199,6 +4258,7 @@
         #hierarchy-editor .search-portal-tree-node--dark .tree-node-container 
             > .TreeNode--dark-indent-line > div
             > div:first-child .rem-container--focused {
+            background: none;
             background-image: var(--alt-focused-branch-tree-symbol);
             background-repeat: no-repeat;
             background-size: var(--branch-tree-symbol-size);
@@ -4209,6 +4269,7 @@
         #hierarchy-editor .search-portal-tree-node--dark .tree-node-container 
             > .TreeNode--dark-indent-line > div
             > div:first-child .rem-container--default:hover {
+            background: none;
             background-image: var(--alt-hover-focused-branch-tree-symbol);
             background-repeat: no-repeat;
             background-size: var(--branch-tree-symbol-size);
@@ -4219,6 +4280,7 @@
         #hierarchy-editor .search-portal-tree-node--dark .tree-node-container 
             > .TreeNode--dark-indent-line > div
             > div:first-child .rem-container--focused:hover {
+            background: none;
             background-image: var(--alt-focused-branch-tree-symbol);
             background-repeat: no-repeat;
             background-size: var(--branch-tree-symbol-size);
@@ -4229,6 +4291,7 @@
         #hierarchy-editor .search-portal-tree-node--dark .tree-node-container 
             > .TreeNode--dark-indent-line:not(:focus-within) > div
             > div:first-child .rem-container--default:hover {
+            background: none;
             background-image: var(--alt-hover-branch-tree-symbol);
             background-repeat: no-repeat;
             background-size: var(--branch-tree-symbol-size);
@@ -4505,6 +4568,72 @@
       }
       #QueueTypeAnswerBoxContainer #QueueTypeAnswerBox span {
           background-color: var(--focused-background-editing-color);
+      }
+      ```
+    - [x] Op10 Dark PDF (inverted, no real colors)
+      ```css
+      .pdfViewer {
+          filter: invert(100%) hue-rotate(180deg) !important;
+      }
+
+      /* highlight colors*/
+      /*red*/
+      .pdf-viewer__highlight-container--red .AreaHighlight,
+      .pdf-viewer__highlight-container--red .Highlight__part {
+          background-color: var(--highlight-red)!important;
+          opacity: 0.7;
+      }
+      /*orange*/
+      .pdf-viewer__highlight-container--orange .AreaHighlight,
+      .pdf-viewer__highlight-container--orange .Highlight__part {
+          background-color: var(--highlight-orange)!important;
+          filter: brightness(.7);
+          opacity: 0.7;
+      }
+      /*yellow*/
+      .pdf-viewer__highlight-container--yellow .AreaHighlight, .pdf-viewer__highlight-container--yellow .Highlight__part {
+          background-color: var(--highlight-yellow)!important;
+          filter: brightness(.6);
+          opacity: 0.7;
+      }
+      /*green*/
+      .pdf-viewer__highlight-container--green .AreaHighlight,
+      .pdf-viewer__highlight-container--green .Highlight__part {
+          background-color: var(--highlight-green)!important;
+          opacity: 0.7;
+      }
+      /*blue*/
+      .pdf-viewer__highlight-container--blue .AreaHighlight,
+      .pdf-viewer__highlight-container--blue .Highlight__part {
+          background-color: var(--highlight-blue)!important;
+          opacity: 0.7;
+      }
+      /*purple*/
+      .pdf-viewer__highlight-container--purple .AreaHighlight,
+      .pdf-viewer__highlight-container--purple .Highlight__part {
+          background-color: var(--highlight-purple)!important;
+          opacity: 0.7;
+      }
+
+      /*when selecting to highlight (by default is yellow) I set it to gray*/
+      .pdf-viewer__highlight-container--undefined .Highlight__part,
+      .pdf-viewer__highlight-container--undefined .AreaHighlight,
+      .PdfHighlighter .textLayer ::selection {
+          background-color: gray!important;
+          filter: brightness(.75)!important;
+          opacity: 0.7;
+      }
+      ```
+    - [x] Op11 Image Occlusion (inverted, no real colors)
+      ```css
+      .tumbnail--with-width {
+          filter: invert(87%) hue-rotate(170deg) !important;
+      }
+      #image-viewer-popup img {
+          filter: invert(87%) hue-rotate(170deg) !important;
+      }
+      .image-occlusion .image-occlusion__canvas-container {
+          filter: invert(87%) hue-rotate(170deg) !important;
       }
       ```
 ```
