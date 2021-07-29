@@ -1,8 +1,9 @@
-- # RemNote Dark Theme by eustachio
+- # RemNote Dark Theme by eustachio 
 - Created by eustachio
 - This is something I do for fun as I like simple and modern UI's. I wanted to make RemNote look awesome!!!
 - Version 1.2
 - Release date: 28 June 2021
+- [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=22TRCSWF3MZM6)
 
 ```markdown
 - # RemNote Dark Theme by eustachio v1.2 ##Todo
