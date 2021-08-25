@@ -1,15 +1,22 @@
 - # RemNote Dark Theme by eustachio 
 - Created by eustachio
 - This is something I do for fun as I like simple and modern UI's. I wanted to make RemNote look awesome!!!
-- Version 1.2
-- Release date: 28 June 2021
+- Version 1.3
+- Release date: 25 August 2021
 - [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=22TRCSWF3MZM6)
 
 ```markdown
-- # RemNote Dark Theme by eustachio v1.2 ##Todo
+- [ ] **RemNote Dark Theme by eustachio v1.3**
   - Designed, created and maintained by Eustachio
   - This theme has been created to work with the `Dark Mode ON`
   - This is something I do for fun as I like simple and modern UI's. I wanted to make RemNote look awesome!!!
+  - Version 1.3 - Released date: 25 August 2021
+    - Branches have been fixed
+    - Showing the hamburger (the 3 dots) this makes the 3 dots visible when in multiple windows, default and full width modes and when windows pane lab feature is ON and OFF.
+    - Windowed pane has been retouched
+    - The theme now works on mobile apps (BETA)
+    - Quote spacing has been fixed 🤞
+    - The todo tag has been removed from the markdown file that creates the theme to avoid some theme blocks to appear on your todo list (sorry about that)
   - Version 1.2 - Released date: 28 June 2021
     - Optional dark (inverted) PDF
     - Optional dark (inverted) Image Occlusion
@@ -32,8 +39,8 @@
   - By default "Optionals" blocks are deactivated, you can play with each block by unchecking them and see what they do.
   - For future updates, I recommend that you create a CSS code block at the bottom after this theme for your custom lines of code, things that you would like your way. So when an update, you can delete this theme and paste the new updated version without losing your customizations.
   - Latex and Image Occlusion jumps/glitches (on hover) seem to happen with and without the theme.
-  - ## 0 Variable ##Todo
-    - [ ] **General Customizations**
+  - [ ] **0 Variable**
+    - [ ] General Customizations
       ```css
       :root {
       /*body*/
@@ -129,7 +136,7 @@
           --button-color: #435371;
       }
       ```
-    - [x] **Bright highlight colors**
+    - [x] Bright highlight colors
       ```css
       /*Bright highlight colors*/
       :root {
@@ -153,7 +160,7 @@
           --highlight-purple-focused: rgb(106, 26, 196, 90%);
       }
       ```
-    - [ ] **Light highlight colors**
+    - [ ] Light highlight colors
       ```css
       /* Light highlight colors */
       :root {
@@ -177,7 +184,7 @@
           --highlight-purple-focused: #613E87;
       }
       ```
-    - [x] **TreeNode Purple/Magenta**
+    - [x] TreeNode Purple/Magenta
       - [ ] Lines
         ```css
         /* TreeNode Lines Purple/Magenta */
@@ -219,7 +226,7 @@
             --branch-tree-symbol-position-y: -3px;
         }
         ```
-    - [ ] **TreeNode Blue/Lightblue**
+    - [ ] TreeNode Blue/Lightblue
       - [ ] Lines
         ```css
         /* TreeNode Lines Blue/Lightblue */
@@ -237,7 +244,7 @@
         /*if Alternating lines indent color ON */    
             --alt-tree-lines-color: #536E87;
             --alt-hover-tree-lines-color: #5182AD;
-            --alt-focused-tree-lines-color: #4B90CC/*#36A6B2*/;
+            --alt-focused-tree-lines-color: #4B90CC;
             --alt-tree-focused-bullet-color: #4B90CC;
             --alt-tree-hover-bullet-color: #5182AD;
             --alt-tree-hover-focused-bullet-color: #67A7DE;
@@ -261,7 +268,7 @@
             --branch-tree-symbol-position-y: -3px;
         }
         ```
-  - ## 1 Body ##Todo
+  - [ ] **1 Body**
     ```css
     .dark-mode, .dark-mode-filter {
         filter: invert(0%) hue-rotate(0deg);
@@ -281,16 +288,6 @@
     #ExamplesPageContainer #ExamplesPageContent, #export-container #export, #HelpPage #HelpPageContent, #sign-up-page-container #sign-up-page, #StatsPage #StatsPageContent, .centered-page, .document--narrow {
         background-color: var(--body-background-color);
     }
-    /*----- this makes the 3 dots visible when in multiple window mode -----*/
-    #multiple-windows .multiple-windows__document .document--narrow {
-        padding-left: 42px;
-        margin-top: -10px;
-        padding-right: 25px;
-    }
-    #document {
-        width: calc(100% - 65px);
-    }
-    /*----------------------------------------------*/
     #multiple-windows .multiple-windows__document {
         background-color: var(--body-background-color);
     }
@@ -439,40 +436,7 @@
     .quote {
         background-color: var(--quote-background);
         color: var(--accent-color);
-        border-radius: 0px!important;
-        margin-left: 2px!important;
-        margin-right: -2px!important;
-        padding-left: 0px!important;
-        padding-right: 0px!important;
         font-style: italic;
-    }
-    #hierarchy-editor .rem-container--default .quote {
-        margin-right: -4px!important;
-        margin-left: -4px!important;
-        border-radius: 0px;
-        padding: 0px!important;
-        padding-left: 2px!important;
-        padding-right: 2px!important;
-    }
-    #hierarchy-editor .rem-container--default:hover .quote {
-        margin-right: -4px!important;
-        margin-left: -4px!important;
-        border-radius: 0px;
-        padding: 0px!important;
-        padding-left: 2px!important;
-        padding-right: 2px!important;
-        color: var(--focused-accent-color)!important;
-    }
-    #hierarchy-editor .rem-container--focused:hover .quote,
-    #hierarchy-editor .rem-container--focused .quote {
-        background-color: var(--focused-quote-background)!important;
-        margin-right: -4px!important;
-        margin-left: -4px!important;
-        border-radius: 0px!important;
-        padding: 0px!important;
-        padding-left: 2px!important;
-        padding-right: 2px!important;
-        color: var(--focused-accent-color)!important;
     }
     /* web links logo*/
     #hierarchy-editor .rem-container .LinkNode img {
@@ -585,7 +549,7 @@
         color: var(--icons-color);
     }
     ```
-  - ## 2 Scrollbars ##Todo
+  - [ ] **2 Scrollbars**
     ```css
     /*ScrollBar*/
     ::-webkit-scrollbar {
@@ -607,7 +571,7 @@
         border-radius: 25px!important;
     }
     ```
-  - ## 3 Portals ##Todo
+  - [ ] **3 Portals**
     ```css
     #hierarchy-editor .TreeNode {
         border-color: var(--tree-lines-color);
@@ -998,7 +962,7 @@
         border-bottom-left-radius: var(--border-radius);
     }
     ```
-  - ## 4 Side, Bottom, Nav Bars ##Todo
+  - [ ] **4 Side, Bottom, Nav Bars**
     ```css
     .dark-mode #document-sidebar {
         background-color: var(--sidebar-background-color)!important;
@@ -1236,7 +1200,7 @@
     /* added 09 June 2020 */
     #hierarchy-editor-toolbar-container {
         background-color: var(--body-background-color);
-        margin-bottom: 3px;
+        margin-bottom: 0px;
         border-radius: var(--bars-border-radius);
     }
     .hierarchy-editor-toolbar-container--thin {
@@ -1293,7 +1257,7 @@
     }
     /* added 04 Jun 2021 */
     #hierarchy-editor .rem-bullet__number:hover {
-      color: var(--focused-text-color);
+        color: var(--focused-text-color);
     }
     #view-as-card #view-as-card__cards .view-as-card__card .scroll-drag-component {
         background-color: transparent;
@@ -1318,7 +1282,7 @@
         margin-left: 6px!important;
         margin-right: 6px!important;
         padding-top: 6px!important;
-      padding-bottom: 6px!important;
+        padding-bottom: 6px!important;
     }
     /* modified 04 Jun 2021*/
     .hierarchy-editor-toolbar__menu .hierarchy-editor-toolbar__menu__item:hover {
@@ -1327,7 +1291,7 @@
         margin-left: 6px!important;
         margin-right: 6px!important;
         padding-top: 6px!important;
-      padding-bottom: 6px!important;
+        padding-bottom: 6px!important;
     }
     /* modified 04 Jun 2021*/
     .hierarchy-editor-toolbar__menu .hierarchy-editor-toolbar__menu__item--selected,
@@ -1337,7 +1301,7 @@
         margin-left: 6px!important;
         margin-right: 6px!important;
         padding-top: 6px!important;
-      padding-bottom: 6px!important;
+        padding-bottom: 6px!important;
     }
     /* modified 04 Jun 2021*/
     .hierarchy-editor-toolbar__menu .hierarchy-editor-toolbar__menu__item .hierarchy-editor-toolbar__menu__item__icon  {
@@ -1575,7 +1539,7 @@
         font-weight: 600;
     }
     ```
-  - ## 5 Highlight colours ##Todo
+  - [ ] **5 Highlight colours**
     ```css
     /*RED*/
     /*general*/
@@ -2176,7 +2140,7 @@
         border-radius: 0px;
     }
     ```
-  - ## 6 Search highlight boxes ##Todo
+  - [ ] **6 Search highlight boxes**
     ```css
     .embeddedSearch:focus-within {
         border-top-left-radius: var(--border-radius);
@@ -2218,51 +2182,15 @@
         border-color: var(--accent-color);
     }
     ```
-  - ## 7 Search keyword highlight ##Todo
+  - [ ] **7 Search keyword highlight**
     ```css
     .searchKeywordHighlight {
         background: var(--searchkeywordhighlight-color)!important;
         color: var(--searchkeywordhighlight-text-color)!important;
         border-radius: 0px!important;
-        margin-left: 0px!important;
-        margin-right: 0px!important;
-        padding-left: 0px!important;
-        padding-right: 0px!important;
-        position: relative;
-        z-index: 0!important;
-    }
-    #hierarchy-editor .rem-container--default:hover  .searchKeywordHighlight  {
-        background: var(--searchkeywordhighlight-color)!important;
-        color: var(--searchkeywordhighlight-text-color)!important;
-        border-radius: 0px!important;
-        margin-left: 0px!important;
-        margin-right: 0px!important;
-        padding-left: 0px!important;
-        padding-right: 0px!important;
-        position: relative;
-        z-index: 0!important;
-    }
-    #hierarchy-editor .rem-container--focused .searchKeywordHighlight  {
-        background: var(--searchkeywordhighlight-color)!important;
-        color: var(--searchkeywordhighlight-text-color)!important;
-        border-radius: 0px!important;
-        margin-left: 0px!important;
-        margin-right: 0px!important;
-        padding-left: 0px!important;
-        padding-right: 0px!important;
-        position: relative;
-        z-index: 0!important;
-    }
-    #hierarchy-editor .quote .searchKeywordHighlight {
-        background: var(--searchkeywordhighlight-color)!important;
-        border-radius: 0px!important;
-        margin-left: 2px!important;/*modified 28 Jun 2021*/
-        margin-right: -2px!important;
-        padding-left: 0px!important;
-        padding-right: 0px!important;
     }
     ```
-  - ## 8 Tags ##Todo
+  - [ ] **8 Tags**
     ```css
     .hierarchy-editor__tag-bar__tag {
         border-radius: 15px;
@@ -2301,9 +2229,9 @@
     }
     .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__power-up-tag {
         color: var(--icons-color);
-    }  
+    }
     ```
-  - ## 9 Popups ##Todo
+  - [ ] **9 Popups**
     ```css
     .ui.popup {
         background-color: var(--popup-background-color) !important;
@@ -2645,7 +2573,7 @@
     }
     /*------ end of added 28 Jun 2021 ------*/
     ```
-  - ## 10 Checkbox ##Todo
+  - [ ] **10 Checkbox**
     ```css
     .rem-checkbox {
         margin-right: 10px;
@@ -2716,7 +2644,7 @@
         color: rgb(54, 62, 78)!important;/*modified 11 June 2021*/
     }
     ```
-  - ## 11 Code block ##Todo
+  - [ ] **11 Code block**
     ```css
     #code-node {
         font-family: monaco,menlo,consolas,courier new;
@@ -2740,7 +2668,7 @@
         border-color: #62778D;
     }
     ```
-  - ## 12 Flashcards ##Todo
+  - [ ] **12 Flashcards**
     ```css
     .concept_rem_type, .question_rem_type, .descriptor_rem_type {
         font-weight: 700;
@@ -2941,7 +2869,7 @@
         background-color: var(--popup-hover-background-color)!important;
     }
     ```
-  - ## 13 Sticky menu ##Todo
+  - [ ] **13 Sticky menu**
     ```css
     #hierarchy-editor #hierarchy-editor-list__sticky-top__container #hierarchy-editor-list__sticky-top .hierarchy-editor-list__sticky-top__rem-container .rem-text {
         background-color: var(--body-background-color);
@@ -2973,7 +2901,7 @@
         border-radius: 10px;
     }
     ```
-  - ## 14 Sharing document ##Todo
+  - [ ] **14 Sharing document**
     ```css
     .article-publish-confirmation {
         color: var(--body-text-color);
@@ -2989,7 +2917,7 @@
         color: var(--body-text-color);
     }
     ```
-  - ## 15 Settings page ##Todo
+  - [ ] **15 Settings page**
     ```css
     /* settings page sidebar */
     .settings-page .settings-page__sidebar {
@@ -3020,7 +2948,7 @@
         border-radius: var(--border-radius);
     }
     .settings-page .settings-page__sidebar .settings-page__sidebar__link--active:hover {
-        font-weight: 600;
+        font-weight: 700; /*09 July 2021*/
         background-color: var(--sidebar-focused-background-color);
         color: var(--focused-text-color);
         border-left-style: none;
@@ -3259,7 +3187,7 @@
         filter: invert(0%) hue-rotate(0deg);
     }
     ```
-  - ## 16 Help Page ##Todo
+  - [ ] **16 Help Page**
     ```css
     #HelpPage a {
         color: var(--body-text-color);
@@ -3307,22 +3235,22 @@
     /* interactive tour*/
     /* added 05 Jun 2021*/
     .onboarding-panel {
-      background-color: var(--sidebar-background-color);
-      border-left-style: solid;
-      border-left-width: var(--bars-border-width);
-      border-left-color: var(--bars-border-color);
+        background-color: var(--sidebar-background-color);
+        border-left-style: solid;
+        border-left-width: var(--bars-border-width);
+        border-left-color: var(--bars-border-color);
     }
     .onboarding-panel .onboarding-panel__lesson-stub .onboarding-panel__lesson-stub__info .onboarding-panel__lesson-stub__title {
-      color: var(--body-text-color);
+        color: var(--body-text-color);
     }
     .onboarding-panel .onboarding-panel__title-container .onboarding-panel__close-button {
-      filter: var(--icons-filter);
+        filter: var(--icons-filter);
     }
     .onboarding-panel .onboarding-panel__title-container .onboarding-panel__close-button:hover {
-      filter: var(--accent-color-filter) grayscale(0.3) brightness(1.8);
+        filter: var(--accent-color-filter) grayscale(0.3) brightness(1.8);
     }
     .onboarding-panel .onboarding-panel__title-container .onboarding-panel__title {
-      color: var(--body-text-color);
+        color: var(--body-text-color);
     }
     .onboarding-panel .onboarding-panel__subtitle {
         color: var(--accent-color);
@@ -3340,1041 +3268,150 @@
         background-color: var(--button-color);
     }
     .onboarding-panel .onboarding-panel__image-container .onboarding-panel__image {
-      filter: var(--accent-color-filter) contrast(1.3);
+        filter: var(--accent-color-filter) contrast(1.3);
     }
     .onboarding-panel .onboarding-panel__active-lesson .onboarding-panel__active-lesson__tasks .onboarding-panel__active-lesson__task .onboarding-panel__active-lesson__task__subtext-read-more:hover {
         color: var(--accent-color);
     }
     ```
-  - ## 17 Highlighted focused rem ##Todo
-    - [ ] General in focus highlights
-        ```css
-        body {
-            caret-color: var(--focused-text-color);
-        }
-        #hierarchy-editor .tree-node-container 
-            > div:not(:first-child) .rem-container--focused  {
-            background: none;
-            background-image: none;
-        }
-        /*--------------- 1st Tree Lines ------------------ */
-        #hierarchy-editor .TreeNode:hover {
-            border-color: var(--hover-tree-lines-color) !important;
-        }
-        #hierarchy-editor .TreeNode:focus-within {
-            border-color: var(--focused-tree-lines-color) !important;
-            border-width: 2px;
-        }
-        /*--------------- Alt Tree Lines ------------------ */
-        #hierarchy-editor .TreeNode--dark-indent-line:hover {
-            border-color: var(--alt-hover-tree-lines-color) !important;
-        }
-        #hierarchy-editor .TreeNode--dark-indent-line:focus-within {
-            border-color: var(--alt-focused-tree-lines-color) !important;
-        }
-        /* rem text in focus and hover */
-        #hierarchy-editor .rem-container--default:hover .rem-text:not(.highlight-color--red):not(.highlight-color--orange):not(.highlight-color--yellow):not(.highlight-color--green):not(.highlight-color--blue):not(.highlight-color--purple):not(.rem-todo--finished) {
-            color: var(--focused-text-color);
-            background-color: transparent;
-            margin-left: 11px;
-            padding-left: 15px !important;
-            border-radius: 6px;
-        }
-        #hierarchy-editor .rem-container--focused .rem-text:not(.highlight-color--red):not(.highlight-color--orange):not(.highlight-color--yellow):not(.highlight-color--green):not(.highlight-color--blue):not(.highlight-color--purple):not(.rem-todo--finished) {
-            color: var(--focused-text-color);
-            background-color: var(--focused-background-color);
-            margin-left: 11px;
-            padding-left: 15px !important;
-            border-radius: 6px;
-        }
-        #hierarchy-editor .rem-container--focused:hover .rem-text:not(.highlight-color--red):not(.highlight-color--orange):not(.highlight-color--yellow):not(.highlight-color--green):not(.highlight-color--blue):not(.highlight-color--purple):not(.rem-todo--finished) {
-            color: var(--focused-text-color);
-            background-color: var(--focused-background-color);
-            margin-left: 11px;
-            padding-left: 15px !important;
-            border-radius: 6px;
-        }
-        #hierarchy-editor .rem-container--focused .concept_rem_type {
-            color: var(--focused-text-color);
-        }
-        #hierarchy-editor .rem-container--focused .question_rem_type {
-            color: var(--focused-text-color);
-        }
-        #hierarchy-editor .rem-container--focused .hierarchy-editor__tag-bar__tag {
-            color: var(--focused-text-color);
-        }
-        #hierarchy-editor .rem-container--focused .rem-text .descriptor_rem_type {
-            color: var(--focused-text-color);
-        }
-        /*---------- bullets in focus and hover ----------*/
-        /*----general rems bullet hover ----*/
-        #hierarchy-editor .rem-container--default:hover .rem-bullet {
-            background-color: var(--hover-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        #hierarchy-editor .rem-container--focused .rem-bullet {
-            background-color: var(--focused-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        /*---- 1st in focus hierarchy bullets ----*/
-        #hierarchy-editor .rem-container--focused .rem-bullet, .rem-bullet--in-list,
-        #hierarchy-editor  .TreeNode .tree-node-container:focus-within
-            > div:first-child .rem-bullet, .rem-bullet--in-list {
-            background-color: var(--tree-focused-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        /*--- 1st in focus hierarchy bullets hover ----*/
-        #hierarchy-editor .rem-container--focused .rem-bullet, .rem-bullet--in-list,
-        #hierarchy-editor .tree-node-container:focus-within
-            > div .rem-container:hover .rem-bullet, .rem-bullet--in-list  {
-            background-color: var(--tree-hover-focused-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        /*---- 1st in focus hierarchy bullets focused hover ----*/
-        #hierarchy-editor .rem-container--focused .rem-bullet, .rem-bullet--in-list,
-        #hierarchy-editor .tree-node-container:focus-within
-            > div .rem-container--focused:hover .rem-bullet, .rem-bullet--in-list  {
-            background-color: var(--tree-focused-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        /*---- 1st NOT in focus hierarchy bullets hover ----*/
-        #hierarchy-editor .tree-node-container
-            > .TreeNode:not(:focus-within)
-            > div ~ div .rem-container:hover .rem-bullet, .rem-bullet--in-list {
-            background-color: var(--hover-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        /*---- in portals ----*/
-        #hierarchy-editor .rem-container--focused .rem-bullet, .rem-bullet--in-list,
-        #hierarchy-editor .portal-tree-node .tree-node-container:focus-within
-            > div:first-child .rem-container--focused .rem-bullet, .rem-bullet--in-list {
-            background-color: var(--tree-focused-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        #hierarchy-editor .rem-container--focused .rem-bullet, .rem-bullet--in-list,
-        #hierarchy-editor .portal-tree-node .tree-node-container:focus-within
-            > div .rem-container:hover .rem-bullet, .rem-bullet--in-list  {
-            background-color: var(--tree-hover-focused-bullet-color);
-            width: 8px;
-            height: 8px;    
-        }
-        #hierarchy-editor .rem-container--focused .rem-bullet, .rem-bullet--in-list,
-        #hierarchy-editor .portal-tree-node .tree-node-container:focus-within
-            > div .rem-container--focused:hover .rem-bullet, .rem-bullet--in-list  {
-            background-color: var(--tree-focused-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        #hierarchy-editor .portal-tree-node .tree-node-container
-            > .TreeNode:not(:focus-within)
-            > div ~ div .rem-container:hover .rem-bullet, .rem-bullet--in-list {
-            background-color: var(--hover-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        /*---- in search portals ----*/
-        #hierarchy-editor .rem-container--focused .rem-bullet, .rem-bullet--in-list,
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container:focus-within
-            > div:first-child .rem-container--focused .rem-bullet, .rem-bullet--in-list {
-            background-color: var(--tree-focused-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        #hierarchy-editor .rem-container--focused .rem-bullet, .rem-bullet--in-list,
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container:focus-within
-            > div .rem-container:hover .rem-bullet, .rem-bullet--in-list  {
-            background-color: var(--tree-hover-focused-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        #hierarchy-editor .rem-container--focused .rem-bullet, .rem-bullet--in-list,
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container:focus-within
-            > div .rem-container--focused:hover .rem-bullet, .rem-bullet--in-list  {
-            background-color: var(--tree-focused-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container
-            > .TreeNode:not(:focus-within)
-            > div ~ div .rem-container:hover .rem-bullet, .rem-bullet--in-list {
-            background-color: var(--hover-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        /*---------- Alt bullets in focus and hover ----------*/
-        /*---- tree container ----*/
-        /*---- Alt in focus hierarchy bullets ----*/
-        #hierarchy-editor .tree-node-container 
-            > .TreeNode--dark-indent-line > div:focus-within
-            > div:first-child .rem-container--default .rem-bullet, .rem-bullet--in-list {
-            background-color: var(--alt-tree-focused-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        /*---- Alt in focus hierarchy bullets hover ----*/
-        #hierarchy-editor .tree-node-container 
-            > .TreeNode--dark-indent-line:focus-within > div:hover
-            > div:first-child .rem-container--default:hover .rem-bullet, .rem-bullet--in-list {
-            background-color: var(--alt-tree-hover-focused-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        /*---- Alt in focus hierarchy bullets focused ----*/
-        #hierarchy-editor .tree-node-container 
-            > .TreeNode--dark-indent-line:focus-within > div
-            > div:first-child .rem-container--focused .rem-bullet, .rem-bullet--in-list {
-            background-color: var(--alt-tree-focused-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        #hierarchy-editor .tree-node-container 
-            > .TreeNode--dark-indent-line > div
-            > div:first-child .rem-container--focused .rem-bullet, .rem-bullet--in-list {
-            background-color: var(--alt-tree-focused-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        /*---- Alt in focus hierarchy bullets focused:hover ----*/
-        #hierarchy-editor .tree-node-container 
-            > .TreeNode--dark-indent-line:focus-within > div:hover
-            > div:first-child .rem-container--focused:hover .rem-bullet, .rem-bullet--in-list {
-            background-color: var(--alt-tree-focused-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        /*---- Alt NOT in focus hierarchy bullets hover ----*/
-        #hierarchy-editor .tree-node-container 
-            > .TreeNode--dark-indent-line:not(:focus-within) > div:hover
-            > div:first-child .rem-container--default:hover .rem-bullet, .rem-bullet--in-list {
-            background-color: var(--alt-tree-hover-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        /*---- in portals ----*/
-        /*---- Alt in focus hierarchy bullets ----*/
-        #hierarchy-editor .portal-tree-node .tree-node-container 
-            > .TreeNode--dark-indent-line > div:focus-within
-            > div:first-child .rem-container--default .rem-bullet, .rem-bullet--in-list {
-            background-color: var(--alt-tree-focused-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        /*---- Alt in focus hierarchy bullets hover ----*/
-        #hierarchy-editor .portal-tree-node .tree-node-container 
-            > .TreeNode--dark-indent-line:focus-within > div:hover
-            > div:first-child .rem-container--default:hover .rem-bullet, .rem-bullet--in-list {
-            background-color: var(--alt-tree-hover-focused-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        /*---- Alt in focus hierarchy bullets focused ----*/
-        #hierarchy-editor .portal-tree-node .tree-node-container 
-            > .TreeNode--dark-indent-line:focus-within > div
-            > div:first-child .rem-container--focused .rem-bullet, .rem-bullet--in-list {
-            background-color: var(--alt-tree-focused-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        #hierarchy-editor .portal-tree-node .tree-node-container 
-            > .TreeNode--dark-indent-line > div
-            > div:first-child .rem-container--focused .rem-bullet, .rem-bullet--in-list {
-            background-color: var(--alt-tree-focused-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        /*---- Alt in focus hierarchy bullets focused:hover ----*/
-        #hierarchy-editor .portal-tree-node .tree-node-container 
-            > .TreeNode--dark-indent-line:focus-within > div:hover
-            > div:first-child .rem-container--focused:hover .rem-bullet, .rem-bullet--in-list {
-            background-color: var(--alt-tree-focused-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        /*---- Alt NOT in focus hierarchy bullets hover ----*/
-        #hierarchy-editor .portal-tree-node .tree-node-container 
-            > .TreeNode--dark-indent-line:not(:focus-within) > div:hover
-            > div:first-child .rem-container--default:hover .rem-bullet, .rem-bullet--in-list {
-            background-color: var(--alt-tree-hover-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        /*---- in search portals ----*/
-        /*---- Alt in focus hierarchy bullets ----*/
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container 
-            > .TreeNode--dark-indent-line > div:focus-within
-            > div:first-child .rem-container--default .rem-bullet, .rem-bullet--in-list {
-            background-color: var(--alt-tree-focused-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        /*---- Alt in focus hierarchy bullets hover ----*/
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container 
-            > .TreeNode--dark-indent-line:focus-within > div:hover
-            > div:first-child .rem-container--default:hover .rem-bullet, .rem-bullet--in-list {
-            background-color: var(--alt-tree-hover-focused-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        /*---- Alt in focus hierarchy bullets focused ----*/
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container 
-            > .TreeNode--dark-indent-line:focus-within > div
-            > div:first-child .rem-container--focused .rem-bullet, .rem-bullet--in-list {
-            background-color: var(--alt-tree-focused-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container 
-            > .TreeNode--dark-indent-line > div
-            > div:first-child .rem-container--focused .rem-bullet, .rem-bullet--in-list {
-            background-color: var(--alt-tree-focused-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        /*---- Alt in focus hierarchy bullets focused:hover ----*/
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container 
-            > .TreeNode--dark-indent-line:focus-within > div:hover
-            > div:first-child .rem-container--focused:hover .rem-bullet, .rem-bullet--in-list {
-            background-color: var(--alt-tree-focused-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        /*---- Alt NOT in focus hierarchy bullets hover ----*/
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container 
-            > .TreeNode--dark-indent-line:not(:focus-within) > div:hover
-            > div:first-child .rem-container--default:hover .rem-bullet, .rem-bullet--in-list {
-            background-color: var(--alt-tree-hover-bullet-color);
-            width: 8px;
-            height: 8px;
-        }
-        /*---------- bullets icons in focus and hover ----------*/
-        /*----general rems bullet icons hover ----*/
-        #hierarchy-editor .rem-container--default:hover .rem-bullet__icon {
-            color: var(--hover-bullet-color) !important;
-        }
-        /*---- 1st in focus hierarchy bullet icons ----*/
-        #hierarchy-editor .tree-node-container:focus-within
-            > div:first-child .rem-bullet__icon {
-            color: var(--tree-focused-bullet-color) !important;
-        }
-        #hierarchy-editor .tree-node-container 
-            > div
-            > div:first-child .rem-container--focused .rem-bullet__icon {
-            color: var(--tree-focused-bullet-color);
-        }
-        /*--- 1st in focus hierarchy bullet icons hover ----*/
-        #hierarchy-editor .tree-node-container:focus-within
-            > div .rem-container:hover .rem-bullet__icon  {
-            color: var(--tree-hover-focused-bullet-color) !important;
-        }
-        /*---- 1st in focus hierarchy bullet icons focused hover ----*/
-        #hierarchy-editor .tree-node-container:focus-within
-            > div .rem-container--focused:hover .rem-bullet__icon  {
-            color: var(--tree-focused-bullet-color) !important;
-        }
-        /*---- 1st NOT in focus hierarchy bullet icons hover ----*/
-        #hierarchy-editor .tree-node-container
-            > .TreeNode:not(:focus-within)
-            > div ~ div .rem-container:hover .rem-bullet__icon {
-            color: var(--hover-bullet-color) !important;
-        }
-        /*---- in portals ----*/
-        #hierarchy-editor .portal-tree-node .tree-node-container:focus-within
-            > div:first-child .rem-container--focused .rem-bullet__icon {
-            color: var(--tree-focused-bullet-color) !important;
-            width: 8px;
-            height: 8px;
-        }
-        #hierarchy-editor .portal-tree-node .tree-node-container 
-            > div
-            > div:first-child .rem-container--focused .rem-bullet__icon {
-            color: var(--tree-focused-bullet-color);
-        }
-        #hierarchy-editor .portal-tree-node .tree-node-container:focus-within
-            > div .rem-container:hover .rem-bullet__icon  {
-            color: var(--tree-hover-focused-bullet-color) !important;
-            width: 8px;
-            height: 8px;    
-        }
-        #hierarchy-editor .portal-tree-node .tree-node-container:focus-within
-            > div .rem-container--focused:hover .rem-bullet__icon  {
-            color: var(--tree-focused-bullet-color) !important;
-            width: 8px;
-            height: 8px;
-        }
-        #hierarchy-editor .portal-tree-node .tree-node-container
-            > .TreeNode:not(:focus-within)
-            > div ~ div .rem-container:hover .rem-bullet__icon {
-            color: var(--hover-bullet-color) !important;
-            width: 8px;
-            height: 8px;
-        }
-        /*---- in search portals ----*/
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container:focus-within
-            > div:first-child .rem-container--focused .rem-bullet__icon {
-            color: var(--tree-focused-bullet-color) !important;
-            width: 8px;
-            height: 8px;
-        }
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container 
-            > div
-            > div:first-child .rem-container--focused .rem-bullet__icon {
-            color: var(--tree-focused-bullet-color);
-        }
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container:focus-within
-            > div .rem-container:hover .rem-bullet__icon  {
-            color: var(--tree-hover-focused-bullet-color) !important;
-            width: 8px;
-            height: 8px;
-        }
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container:focus-within
-            > div .rem-container--focused:hover .rem-bullet__icon  {
-            color: var(--tree-focused-bullet-color) !important;
-            width: 8px;
-            height: 8px;
-        }
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container
-            > .TreeNode:not(:focus-within)
-            > div ~ div .rem-container:hover .rem-bullet__icon {
-            color: var(--hover-bullet-color) !important;
-            width: 8px;
-            height: 8px;
-        }
-        /*---------- Alt bullet icons in focus and hover ----------*/
-        /*---- tree container ----*/
-        /*---- Alt in focus hierarchy bullet icons ----*/
-        #hierarchy-editor .tree-node-container 
-            > .TreeNode--dark-indent-line > div:focus-within
-            > div:first-child .rem-container--default .rem-bullet__icon {
-            color: var(--alt-tree-focused-bullet-color) !important;
-            width: 8px;
-            height: 8px;
-        }
-        /*---- Alt in focus hierarchy bullet icons hover ----*/
-        #hierarchy-editor .tree-node-container 
-            > .TreeNode--dark-indent-line:focus-within > div:hover
-            > div:first-child .rem-container--default:hover .rem-bullet__icon {
-            color: var(--alt-tree-hover-focused-bullet-color) !important;
-            width: 8px;
-            height: 8px;
-        }
-        /*---- Alt in focus hierarchy bullet icons focused ----*/
-        #hierarchy-editor .tree-node-container 
-            > .TreeNode--dark-indent-line:focus-within > div
-            > div:first-child .rem-container--focused .rem-bullet__icon {
-            color: var(--alt-tree-focused-bullet-color) !important;
-        }
-        #hierarchy-editor .tree-node-container 
-            > .TreeNode--dark-indent-line > div
-            > div:first-child .rem-container--focused .rem-bullet__icon {
-            color: var(--alt-tree-focused-bullet-color);
-        }
-        /*---- Alt in focus hierarchy bullet icons focused:hover ----*/
-        #hierarchy-editor .tree-node-container 
-            > .TreeNode--dark-indent-line:focus-within > div:hover
-            > div:first-child .rem-container--focused:hover .rem-bullet__icon {
-            color: var(--alt-tree-focused-bullet-color) !important;
-            width: 8px;
-            height: 8px;
-        }
-        /*---- Alt NOT in focus hierarchy bullet icons hover ----*/
-        #hierarchy-editor .tree-node-container 
-            > .TreeNode--dark-indent-line:not(:focus-within) > div:hover
-            > div:first-child .rem-container--default:hover .rem-bullet__icon {
-            color: var(--alt-tree-hover-bullet-color) !important;
-            width: 8px;
-            height: 8px;
-        }
-        /*---- in portals ----*/
-        /*---- Alt in focus hierarchy bullet icons ----*/
-        #hierarchy-editor .portal-tree-node .tree-node-container 
-            > .TreeNode--dark-indent-line > div:focus-within
-            > div:first-child .rem-container--default .rem-bullet__icon {
-            color: var(--alt-tree-focused-bullet-color) !important;
-            width: 8px;
-            height: 8px;
-        }
-        /*---- Alt in focus hierarchy bullet icons hover ----*/
-        #hierarchy-editor .portal-tree-node .tree-node-container 
-            > .TreeNode--dark-indent-line:focus-within > div:hover
-            > div:first-child .rem-container--default:hover .rem-bullet__icon {
-            color: var(--alt-tree-hover-focused-bullet-color) !important;
-            width: 8px;
-            height: 8px;
-        }
-        /*---- Alt in focus hierarchy bullet icons focused ----*/
-        #hierarchy-editor .portal-tree-node .tree-node-container 
-            > .TreeNode--dark-indent-line:focus-within > div
-            > div:first-child .rem-container--focused .rem-bullet__icon {
-            color: var(--alt-tree-focused-bullet-color) !important;
-            width: 8px;
-            height: 8px;
-        }
-        #hierarchy-editor .portal-tree-node .tree-node-container 
-            > .TreeNode--dark-indent-line > div
-            > div:first-child .rem-container--focused .rem-bullet__icon {
-            color: var(--alt-tree-focused-bullet-color);
-        }
-        /*---- Alt in focus hierarchy bullet icons focused:hover ----*/
-        #hierarchy-editor .portal-tree-node .tree-node-container 
-            > .TreeNode--dark-indent-line:focus-within > div:hover
-            > div:first-child .rem-container--focused:hover .rem-bullet__icon {
-            color: var(--alt-tree-focused-bullet-color) !important;
-            width: 8px;
-            height: 8px;
-        }
-        /*---- Alt NOT in focus hierarchy bullet icons hover ----*/
-        #hierarchy-editor .portal-tree-node .tree-node-container 
-            > .TreeNode--dark-indent-line:not(:focus-within) > div:hover
-            > div:first-child .rem-container--default:hover .rem-bullet__icon {
-            color: var(--alt-tree-hover-bullet-color) !important;
-            width: 8px;
-            height: 8px;
-        }
-        /*---- in search portals ----*/
-        /*---- Alt in focus hierarchy bullet icons ----*/
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container 
-            > .TreeNode--dark-indent-line > div:focus-within
-            > div:first-child .rem-container--default .rem-bullet__icon {
-            color: var(--alt-tree-focused-bullet-color) !important;
-            width: 8px;
-            height: 8px;
-        }
-        /*---- Alt in focus hierarchy bullet icons hover ----*/
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container 
-            > .TreeNode--dark-indent-line:focus-within > div:hover
-            > div:first-child .rem-container--default:hover .rem-bullet__icon {
-            color: var(--alt-tree-hover-focused-bullet-color) !important;
-            width: 8px;
-            height: 8px;
-        }
-        /*---- Alt in focus hierarchy bullet icons focused ----*/
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container 
-            > .TreeNode--dark-indent-line:focus-within > div
-            > div:first-child .rem-container--focused .rem-bullet__icon {
-            color: var(--alt-tree-focused-bullet-color) !important;
-            width: 8px;
-            height: 8px;
-        }
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container 
-            > .TreeNode--dark-indent-line > div
-            > div:first-child .rem-container--focused .rem-bullet__icon {
-            color: var(--alt-tree-focused-bullet-color);
-        }
-        /*---- Alt in focus hierarchy bullet icons focused:hover ----*/
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container 
-            > .TreeNode--dark-indent-line:focus-within > div:hover
-            > div:first-child .rem-container--focused:hover .rem-bullet__icon {
-            color: var(--alt-tree-focused-bullet-color) !important;
-            width: 8px;
-            height: 8px;
-        }
-        /*---- Alt NOT in focus hierarchy bullet icons hover ----*/
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container 
-            > .TreeNode--dark-indent-line:not(:focus-within) > div:hover
-            > div:first-child .rem-container--default:hover .rem-bullet__icon {
-            color: var(--alt-tree-hover-bullet-color) !important;
-            width: 8px;
-            height: 8px;
-        }
-        /*---------- hamburger and collapse button position ----------*/
-        /*rem container*/
-        #hierarchy-editor .TreeNode .rem-container:hover .rem-hamburger {
-            margin-left: -16px;
-            margin-top: 0px !important;
-        }
-        #hierarchy-editor .TreeNode .rem-container--focused .rem-hamburger {
-            filter: brightness(1.4);
-            margin-left: -16px;
-            margin-top: 0px !important;
-        }
-        #hierarchy-editor .rem-container--focused .rem-hamburger {
-            filter: brightness(1.4);
-        }
-        #hierarchy-editor .TreeNode .rem-container:hover .toggleCollapseButton {
-            margin-left: -18px;
-            margin-top: 1px !important;
-        }
-        #hierarchy-editor .TreeNode .rem-container--focused .toggleCollapseButton {
-            filter: brightness(1.4);
-            margin-left: -18px;
-            margin-top: 1px !important;
-        }
-        #hierarchy-editor .rem-container--focused .toggleCollapseButton {
-            filter: brightness(1.4);
-        }
-        /*H1*/
-        #hierarchy-editor .rem__button-offset-1  {
-            margin-top: 0px !important;
-            padding-top: 1px !important;
-        } 
-        /*H2*/
-        #hierarchy-editor .rem__button-offset-2 {
-            margin-top: 0px !important;
-            padding-top: 1px !important;
-        }
-        /*H3*/
-        #hierarchy-editor .rem__button-offset-3 {
-            margin-top: 0px !important;
-            padding-top: 1px !important;
-        }
-        /* list in cards*/
-        #hierarchy-editor .tree-node-container .TreeNode--list--in-card-content  .rem-container:hover .rem-hamburger {
-            margin-left: -12px;
-            margin-top: 0px;
-        }
-        #hierarchy-editor .tree-node-container .TreeNode--list--in-card-content .rem-container:hover .toggleCollapseButton {
-            margin-left: -15px;
-            margin-top: 1px;
-        }
-        #hierarchy-editor .rem-container--focused .rem-reference-link {
-            color: var(--focused-accent-color);
-            font-weight: 500;
-        }
-        #hierarchy-editor .rem-container--focused .LinkNode {
-            text-decoration: underline;
-            color: var(--focused-accent-color);
-            font-weight: 500;
-        }
-        #hierarchy-editor .rem-container--default .rem-reference-link i.icon.calendar.alternate.outline::before {
-            filter: var(--accent-color-filter) brightness(1.3);
-        }
-        #hierarchy-editor .rem-container--focused .rem-reference-link i.icon.calendar.alternate.outline::before {
-            filter: var(--accent-color-filter) brightness(1.5);
-        }
-        #hierarchy-editor .rem-container--focused i.icon.calendar.alternate.outline::before {
-            filter: var(--icons-filter) brightness(1.5);
-        }
-        #hierarchy-editor .rem-container--focused .quote {
-            margin-right: 0px;
-            margin-left: 0px;
-            background-color: transparent;
-            border-radius: 5px;   
-        }
-        #hierarchy-editor .rem-container--focused .katex {
-            color: var(--focused-accent-color);
-        }
-        #hierarchy-editor .rem-container--focused .LinkNode img {
-            filter: var(--focused-accent-color-filter);
-        }
-        #hierarchy-editor .search-portal-tree-node--dark .quote {
-            margin-left: 0px;
-            margin-right: 0px;
-            padding-left: 2px;
-            padding-right: 2px;
-        }
-        /* Hannesfrank column library*/
-        #hierarchy-editor .tree-node-container[data-rem-container-tags~="columns"] > .TreeNode > .tree-node-container .rem-container:hover  {
-            background: none;
-            background-image: none!important;
-        }
-        #hierarchy-editor .tree-node-container[data-rem-container-tags~="columns"] > .TreeNode > .tree-node-container .rem-container--focused  {
-            background: none;
-            background-image: none!important;
-        }
-        #hierarchy-editor .tree-node-container[data-rem-container-tags~="columns"] > .TreeNode > .tree-node-container .rem-container--focused:hover  {
-            background: none;
-            background-image: none!important;    
-        }
-        ```
-    - [ ] Treenode Branch symbols
-        ```css
-        /*------- 1st Tree node symbols when in focus and hover ------*/
-        #hierarchy-editor .tree-node-container
-            > .TreeNode > div:focus-within 
-            > div:first-child .rem-container--default {
-            background: none;
-            background-image: var(--focused-branch-tree-symbol);
-            background-repeat: no-repeat;
-            background-size: var(--branch-tree-symbol-size);
-            background-position-x: var(--branch-tree-symbol-position-x);
-            background-position-y: var(--branch-tree-symbol-position-y);
-        }
-        #hierarchy-editor .tree-node-container
-            > .TreeNode > div 
-            > div:first-child .rem-container--focused {
-            background: none;
-            background-image: var(--focused-branch-tree-symbol);
-            background-repeat: no-repeat;
-            background-size: var(--branch-tree-symbol-size);
-            background-position-x: var(--branch-tree-symbol-position-x);
-            background-position-y: var(--branch-tree-symbol-position-y);
-        }
-        #hierarchy-editor .tree-node-container 
-            > .TreeNode > div
-            > div:first-child .rem-container--default:hover {
-            background: none;
-            background-image: var(--hover-focused-branch-tree-symbol);
-            background-repeat: no-repeat;
-            background-size: var(--branch-tree-symbol-size);
-            background-position-x: var(--branch-tree-symbol-position-x);
-            background-position-y: var(--branch-tree-symbol-position-y);
-        }
-        #hierarchy-editor .tree-node-container
-            > .TreeNode > div 
-            > div:first-child .rem-container--focused:hover {
-            background: none;
-            background-image: var(--focused-branch-tree-symbol);
-            background-repeat: no-repeat;
-            background-size: var(--branch-tree-symbol-size);
-            background-position-x: var(--branch-tree-symbol-position-x);
-            background-position-y: var(--branch-tree-symbol-position-y);
-        }
-        /*---- in portals ----*/
-        #hierarchy-editor .portal-tree-node .tree-node-container 
-            > .TreeNode
-            > div .rem-container--default:hover {
-            background: none;
-            background-image: var(--hover-focused-branch-tree-symbol);
-            background-repeat: no-repeat;
-            background-size: var(--branch-tree-symbol-size);
-            background-position-x: var(--branch-tree-symbol-position-x);
-            background-position-y: var(--branch-tree-symbol-position-y);
-        }
-        /*---- in search portals ----*/
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container 
-            > .TreeNode
-            > div .rem-container--default:hover {
-            background: none;
-            background-image: var(--hover-focused-branch-tree-symbol);
-            background-repeat: no-repeat;
-            background-size: var(--branch-tree-symbol-size);
-            background-position-x: var(--branch-tree-symbol-position-x);
-            background-position-y: var(--branch-tree-symbol-position-y);
-        }
-        /*---- Not in focus general ----*/
-        #hierarchy-editor .tree-node-container
-            > .TreeNode:not(:focus-within)
-            > div ~ div .rem-container--default:hover {
-            background: none;
-            background-image: var(--hover-branch-tree-symbol);
-            background-repeat: no-repeat;
-            background-size: var(--branch-tree-symbol-size);
-            background-position-x: var(--branch-tree-symbol-position-x);
-            background-position-y: var(--branch-tree-symbol-position-y);
-        }
-        /*---- Not in focus portals ----*/
-        #hierarchy-editor .portal-tree-node .tree-node-container
-            > .TreeNode:not(:focus-within)
-            > div ~ div .rem-container--default:hover {
-            background: none;
-            background-image: var(--hover-branch-tree-symbol);
-            background-repeat: no-repeat;
-            background-size: var(--branch-tree-symbol-size);
-            background-position-x: var(--branch-tree-symbol-position-x);
-            background-position-y: var(--branch-tree-symbol-position-y);
-        }
-        /*---- Not in focus search portals ----*/
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container
-            > .TreeNode:not(:focus-within)
-            > div ~ div .rem-container--default:hover {
-            background: none;
-            background-image: var(--hover-branch-tree-symbol);
-            background-repeat: no-repeat;
-            background-size: var(--branch-tree-symbol-size);
-            background-position-x: var(--branch-tree-symbol-position-x);
-            background-position-y: var(--branch-tree-symbol-position-y);
-        }
-        /*---- Portals within portals first symbol hidden ----*/
-        /*---- in portals ----*/
-        #hierarchy-editor .tree-node-container 
-            > .TreeNode .portal-tree-node
-            > div 
-            > div:first-child .rem-container--focused  {
-            background: none;
-            background-image: none;
-        }
-        #hierarchy-editor .tree-node-container 
-            > .TreeNode .portal-tree-node
-            > div 
-            > div:first-child .rem-container--default:hover  {
-            background: none;
-            background-image: none;
-        }
-        #hierarchy-editor .tree-node-container:focus-within 
-            > .TreeNode .portal-tree-node
-            > div 
-            > div:first-child .rem-container--default:hover  {
-            background: none;
-            background-image: none;
-        }
-        /*---- in search portal ----*/
-        #hierarchy-editor .tree-node-container 
-            > .TreeNode .search-portal-tree-node--dark
-            > div 
-            > div:first-child .rem-container--focused  {
-            background: none;
-            background-image: none;
-        }
-        #hierarchy-editor .tree-node-container 
-            > .TreeNode .search-portal-tree-node--dark
-            > div 
-            > div:first-child .rem-container--default:hover  {
-            background: none;
-            background-image: none;
-        }
-        #hierarchy-editor .tree-node-container:focus-within 
-            > .TreeNode .search-portal-tree-node--dark
-            > div 
-            > div:first-child .rem-container--default:hover {
-            background: none;
-            background-image: none;
-        }
-        /*------- Alt Tree node symbols when in focus and hover ------*/
-        /*general tree node hierarchy container symbol*/
-        #hierarchy-editor .tree-node-container 
-            > .TreeNode--dark-indent-line > div:focus-within
-            > div:first-child .rem-container--default {
-            background: none;
-            background-image: var(--alt-focused-branch-tree-symbol);
-            background-repeat: no-repeat;
-            background-size: var(--branch-tree-symbol-size);
-            background-position-x: var(--branch-tree-symbol-position-x);
-            background-position-y: var(--branch-tree-symbol-position-y);
-        }
-        /*------ Alt Tree node rem container when in focus and hover -----*/
-        /*general tree node container focused*/
-        #hierarchy-editor .tree-node-container 
-            > .TreeNode--dark-indent-line > div
-            > div:first-child .rem-container--focused {
-            background: none;
-            background-image: var(--alt-focused-branch-tree-symbol);
-            background-repeat: no-repeat;
-            background-size: var(--branch-tree-symbol-size);
-            background-position-x: var(--branch-tree-symbol-position-x);
-            background-position-y: var(--branch-tree-symbol-position-y);
-        }
-        /*general tree node container hover*/
-        #hierarchy-editor .tree-node-container 
-            > .TreeNode--dark-indent-line > div
-            > div:first-child .rem-container--default:hover {
-            background: none;
-            background-image: var(--alt-hover-focused-branch-tree-symbol);
-            background-repeat: no-repeat;
-            background-size: var(--branch-tree-symbol-size);
-            background-position-x: var(--branch-tree-symbol-position-x);
-            background-position-y: var(--branch-tree-symbol-position-y);   
-        }
-        /*general tree node container focused:hover*/
-        #hierarchy-editor .tree-node-container 
-            > .TreeNode--dark-indent-line > div
-            > div:first-child .rem-container--focused:hover {
-            background: none;
-            background-image: var(--alt-focused-branch-tree-symbol);
-            background-repeat: no-repeat;
-            background-size: var(--branch-tree-symbol-size);
-            background-position-x: var(--branch-tree-symbol-position-x);
-            background-position-y: var(--branch-tree-symbol-position-y);
-        }
-        /*general tree node container hover after the in focus rem container*/
-        #hierarchy-editor .tree-node-container 
-            > .TreeNode--dark-indent-line:not(:focus-within) > div
-            > div:first-child .rem-container--default:hover {
-            background: none;
-            background-image: var(--alt-hover-branch-tree-symbol);
-            background-repeat: no-repeat;
-            background-size: var(--branch-tree-symbol-size);
-            background-position-x: var(--branch-tree-symbol-position-x);
-            background-position-y: var(--branch-tree-symbol-position-y);
-        }
-        /*---------- in portals ----------*/
-        /*------- Alt Tree node symbols when in focus and hover ------*/
-        /*---- in portal tree node hierarchy container symbol ----*/
-        #hierarchy-editor .portal-tree-node .tree-node-container 
-            > .TreeNode--dark-indent-line > div:focus-within
-            > div:first-child .rem-container--default {
-            background: none;
-            background-image: var(--alt-focused-branch-tree-symbol);
-            background-repeat: no-repeat;
-            background-size: var(--branch-tree-symbol-size);
-            background-position-x: var(--branch-tree-symbol-position-x);
-            background-position-y: var(--branch-tree-symbol-position-y);
-        }
-        /*------ Alt Tree node rem container when in focus and hover -----*/
-        /*---- in portal tree node container focused ----*/
-        #hierarchy-editor .portal-tree-node .tree-node-container 
-            > .TreeNode--dark-indent-line > div
-            > div:first-child .rem-container--focused {
-            background: none;
-            background-image: var(--alt-focused-branch-tree-symbol);
-            background-repeat: no-repeat;
-            background-size: var(--branch-tree-symbol-size);
-            background-position-x: var(--branch-tree-symbol-position-x);
-            background-position-y: var(--branch-tree-symbol-position-y);
-        }
-        /*---- in portal tree node container hover ----*/
-        #hierarchy-editor .portal-tree-node .tree-node-container 
-            > .TreeNode--dark-indent-line > div
-            > div:first-child .rem-container--default:hover {
-            background: none;
-            background-image: var(--alt-hover-focused-branch-tree-symbol);
-            background-repeat: no-repeat;
-            background-size: var(--branch-tree-symbol-size);
-            background-position-x: var(--branch-tree-symbol-position-x);
-            background-position-y: var(--branch-tree-symbol-position-y);
-        }
-        /*---- in portal tree node container focused:hover ----*/
-        #hierarchy-editor .portal-tree-node .tree-node-container 
-            > .TreeNode--dark-indent-line > div
-            > div:first-child .rem-container--focused:hover {
-            background: none;
-            background-image: var(--alt-focused-branch-tree-symbol);
-            background-repeat: no-repeat;
-            background-size: var(--branch-tree-symbol-size);
-            background-position-x: var(--branch-tree-symbol-position-x);
-            background-position-y: var(--branch-tree-symbol-position-y);
-        }
-        /*---- in portal tree node container hover after the in focus rem container ----*/
-        #hierarchy-editor .portal-tree-node .tree-node-container 
-            > .TreeNode--dark-indent-line:not(:focus-within) > div
-            > div:first-child .rem-container--default:hover {
-            background: none;
-            background-image: var(--alt-hover-branch-tree-symbol);
-            background-repeat: no-repeat;
-            background-size: var(--branch-tree-symbol-size);
-            background-position-x: var(--branch-tree-symbol-position-x);
-            background-position-y: var(--branch-tree-symbol-position-y);
-        }
-        /*---------- Search portals ----------*/
-        /*------- Alt Tree node symbols when in focus and hover ------*/
-        /*---- in portal tree node hierarchy container symbol ----*/
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container 
-            > .TreeNode--dark-indent-line > div:focus-within
-            > div:first-child .rem-container--default {
-            background: none;
-            background-image: var(--alt-focused-branch-tree-symbol);
-            background-repeat: no-repeat;
-            background-size: var(--branch-tree-symbol-size);
-            background-position-x: var(--branch-tree-symbol-position-x);
-            background-position-y: var(--branch-tree-symbol-position-y);
-        }
-        /*------ Alt Tree node rem container when in focus and hover -----*/
-        /*---- in portal tree node container focused ----*/
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container 
-            > .TreeNode--dark-indent-line > div
-            > div:first-child .rem-container--focused {
-            background: none;
-            background-image: var(--alt-focused-branch-tree-symbol);
-            background-repeat: no-repeat;
-            background-size: var(--branch-tree-symbol-size);
-            background-position-x: var(--branch-tree-symbol-position-x);
-            background-position-y: var(--branch-tree-symbol-position-y);
-        }
-        /*---- in portal tree node container hover ----*/
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container 
-            > .TreeNode--dark-indent-line > div
-            > div:first-child .rem-container--default:hover {
-            background: none;
-            background-image: var(--alt-hover-focused-branch-tree-symbol);
-            background-repeat: no-repeat;
-            background-size: var(--branch-tree-symbol-size);
-            background-position-x: var(--branch-tree-symbol-position-x);
-            background-position-y: var(--branch-tree-symbol-position-y);
-        }
-        /*---- in portal tree node container focused:hover ----*/
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container 
-            > .TreeNode--dark-indent-line > div
-            > div:first-child .rem-container--focused:hover {
-            background: none;
-            background-image: var(--alt-focused-branch-tree-symbol);
-            background-repeat: no-repeat;
-            background-size: var(--branch-tree-symbol-size);
-            background-position-x: var(--branch-tree-symbol-position-x);
-            background-position-y: var(--branch-tree-symbol-position-y);
-        }
-        /*---- in portal tree node container hover after the in focus rem container ----*/
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container 
-            > .TreeNode--dark-indent-line:not(:focus-within) > div
-            > div:first-child .rem-container--default:hover {
-            background: none;
-            background-image: var(--alt-hover-branch-tree-symbol);
-            background-repeat: no-repeat;
-            background-size: var(--branch-tree-symbol-size);
-            background-position-x: var(--branch-tree-symbol-position-x);
-            background-position-y: var(--branch-tree-symbol-position-y);
-        }
-        /*--------- multi-line/list card in focus and hover ----------*/
-        #hierarchy-editor .tree-node-container
-            > .TreeNode
-            > div:focus-within .TreeNode--list--in-card-content .rem-container--focused {
-            background-image: none;
-        }
-        #hierarchy-editor .tree-node-container
-            > .TreeNode
-            > div:hover .TreeNode--list--in-card-content .rem-container:hover {
-            background-image: none;
-        }
-        #hierarchy-editor .tree-node-container
-            > .TreeNode
-            > div:focus-within .TreeNode--list--in-card-content .rem-container--focused:hover {
-            background-image: none;
-        }
-        /*-------- multi-line/list card in focus and hover -----------*/
-        /*inside portals*/
-        #hierarchy-editor .portal-tree-node .tree-node-container
-            > .TreeNode
-            > div:focus-within .TreeNode--list--in-card-content .rem-container--focused {
-            background-image: none;
-        }
-        #hierarchy-editor .portal-tree-node .tree-node-container
-            > .TreeNode
-            > div:hover .TreeNode--list--in-card-content .rem-container:hover {
-            background-image: none;
-        }
-        #hierarchy-editor .portal-tree-node .tree-node-container
-            > .TreeNode
-            > div:focus-within .TreeNode--list--in-card-content .rem-container--focused:hover {
-            background-image: none;
-        }
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container
-            > .TreeNode
-            > div:focus-within .TreeNode--list--in-card-content .rem-container--focused {
-            background-image: none;
-        }
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container
-            > .TreeNode
-            > div:hover .TreeNode--list--in-card-content .rem-container:hover {
-            background-image: none;
-        }
-        #hierarchy-editor .search-portal-tree-node--dark .tree-node-container
-            > .TreeNode
-            > div:focus-within .TreeNode--list--in-card-content .rem-container--focused:hover {
-            background-image: none;
-        }
-        ```
-  - ## 18 Windowed Panes ##Todo
+  - [ ] **17 Highlighted focused rem**
+    ```css
+    body {
+        caret-color: var(--focused-text-color);
+    }
+    #hierarchy-editor .tree-node-container 
+        > div:not(:first-child) .rem-container--focused  {
+        background: none;
+        background-image: none;
+    }
+    /*--------------- 1st Tree Lines ------------------ */
+    #hierarchy-editor .TreeNode:hover {
+        border-color: var(--hover-tree-lines-color) !important;
+    }
+    #hierarchy-editor .TreeNode:focus-within {
+        border-color: var(--focused-tree-lines-color) !important;
+        border-width: 2px;
+    }
+    /*--------------- Alt Tree Lines ------------------ */
+    #hierarchy-editor .TreeNode--dark-indent-line:hover {
+        border-color: var(--alt-hover-tree-lines-color) !important;
+    }
+    #hierarchy-editor .TreeNode--dark-indent-line:focus-within {
+        border-color: var(--alt-focused-tree-lines-color) !important;
+    }
+    /* rem text in focus and hover */
+    #hierarchy-editor .rem-container--default:hover .rem-text:not(.highlight-color--red):not(.highlight-color--orange):not(.highlight-color--yellow):not(.highlight-color--green):not(.highlight-color--blue):not(.highlight-color--purple):not(.rem-todo--finished) {
+        color: var(--focused-text-color);
+        background-color: transparent;
+        margin-left: 11px;
+        padding-left: 15px !important;
+        border-radius: 6px;
+    }
+    #hierarchy-editor .rem-container--focused .rem-text:not(.highlight-color--red):not(.highlight-color--orange):not(.highlight-color--yellow):not(.highlight-color--green):not(.highlight-color--blue):not(.highlight-color--purple):not(.rem-todo--finished) {
+        color: var(--focused-text-color);
+        background-color: var(--focused-background-color);
+        margin-left: 11px;
+        padding-left: 15px !important;
+        border-radius: 6px;
+    }
+    #hierarchy-editor .rem-container--focused:hover .rem-text:not(.highlight-color--red):not(.highlight-color--orange):not(.highlight-color--yellow):not(.highlight-color--green):not(.highlight-color--blue):not(.highlight-color--purple):not(.rem-todo--finished) {
+        color: var(--focused-text-color);
+        background-color: var(--focused-background-color);
+        margin-left: 11px;
+        padding-left: 15px !important;
+        border-radius: 6px;
+    }
+    #hierarchy-editor .rem-container--focused .concept_rem_type {
+        color: var(--focused-text-color);
+    }
+    #hierarchy-editor .rem-container--focused .question_rem_type {
+        color: var(--focused-text-color);
+    }
+    #hierarchy-editor .rem-container--focused .hierarchy-editor__tag-bar__tag {
+        color: var(--focused-text-color);
+    }
+    #hierarchy-editor .rem-container--focused .rem-text .descriptor_rem_type {
+        color: var(--focused-text-color);
+    }
+    #hierarchy-editor .rem-container--focused .rem-reference-link {
+        color: var(--focused-accent-color);
+        font-weight: 500;
+    }
+    #hierarchy-editor .rem-container--focused .LinkNode {
+        text-decoration: underline;
+        color: var(--focused-accent-color);
+        font-weight: 500;
+    }
+    #hierarchy-editor .rem-container--default .rem-reference-link i.icon.calendar.alternate.outline::before {
+        filter: var(--accent-color-filter) brightness(1.3);
+    }
+    #hierarchy-editor .rem-container--focused .rem-reference-link i.icon.calendar.alternate.outline::before {
+        filter: var(--accent-color-filter) brightness(1.5);
+    }
+    #hierarchy-editor .rem-container--focused i.icon.calendar.alternate.outline::before {
+        filter: var(--icons-filter) brightness(1.5);   
+    }
+    #hierarchy-editor .rem-container--focused .katex {
+        color: var(--focused-accent-color);
+    }
+    #hierarchy-editor .rem-container--focused .LinkNode img {
+        filter: var(--focused-accent-color-filter);
+    }
+    ```
+  - [ ] **18 Windowed Panes**
     ```css
     /* If Windowed Panes is ON*/
     /* Code by Henrik */
     /* added 09 June 2021 */
+    /* retouched by eustachio v1.3*/
+    .mosaic {
+        background: var(--blackout-background-color)!important;
+    }
     .mosaic-window-body {
         background: var(--body-background-color)!important;
-    }
-    .mosaic {
-        background: var(--blackout-background-color)!important
+        border: var(--bars-border-width) solid var(--bars-border-color);
+        border-bottom-left-radius: 10px!important;
+        border-bottom-right-radius: 10px!important;
     }
     .mosaic-window-toolbar.draggable,
     .mosaic-preview .mosaic-window-toolbar, .mosaic-window .mosaic-window-toolbar {
-        background-color: var(--body-background-color)!important;
+        background-color: var(--sidebar-background-color)!important;
+        border: var(--bars-border-width) solid var(--bars-border-color)!important;
     }
     .mosaic.mosaic-blueprint-theme .mosaic-preview .mosaic-window-toolbar.draggable:hover, .mosaic.mosaic-blueprint-theme .mosaic-window .mosaic-window-toolbar.draggable:hover
     {
         background: var(--selected-background-color)!important;
     }
     .mosaic-default-control {
-    color: var(--button-color)!important;
-    background: none;
-    border: none;
-    cursor: pointer;
+        color: var(--button-color)!important;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    .mosaic-blueprint-theme .mosaic-preview, .mosaic-blueprint-theme .mosaic-window {
+        box-shadow: none!important;
+        border: none!important;
+
+    }
+    .mx-3, .h-6 {
+        filter: var(--icons-filter)!important;
+    }
+    .mx-3:hover, .h-6:hover {
+        filter: var(--accent-color-filter)!important;
+    }
+    .mosaic--single-pane .mosaic-window {
+        border-radius: 10px!important;
+        border: var(--bars-border-width) solid var(--bars-border-color)!important;
+    }
+    .mosaic--single-pane .mosaic-window-body {
+        border-radius: 10px!important;
+        border: none!important;
+    }
+    .mosaic-preview, .mosaic-window {
+        border: none!important;
     }
     ```
-  - ## 19 Latex ##Todo
+  - [ ] **19 Latex**
     ```css
     .katex {
         color: var(--latex-text-color);
@@ -4400,7 +3437,414 @@
         background-color: rgb(34, 36, 36);
     }
     ```
-  - ## * Optionals * ##Todo
+  - [ ] **20 Branches**
+    ```css
+    /* svg position variables */
+    :root {
+        --branch-tree-symbol-size: 30px;
+        --branch-tree-symbol-position-x: 12px;
+        --branch-tree-symbol-position-y: -3px;
+    }
+    /*------- 1st Tree node symbols when in focus and hover ------*/
+    #hierarchy-editor .tree-node-container
+        > .TreeNode > div:focus-within 
+        > div:first-child  {
+        background: none;
+        background-image: var(--focused-branch-tree-symbol)!important;
+        background-repeat: no-repeat;
+        background-size: var(--branch-tree-symbol-size);
+        background-position-x: var(--branch-tree-symbol-position-x);
+        background-position-y: var(--branch-tree-symbol-position-y);
+        margin-left: -30px;
+        padding-left: 30px;         
+    }
+    #hierarchy-editor .tree-node-container 
+        > .TreeNode > div
+        > div:first-child:hover {
+        background: none;
+        background-image: var(--hover-focused-branch-tree-symbol)!important;
+        background-repeat: no-repeat;
+        background-size: var(--branch-tree-symbol-size);
+        background-position-x: var(--branch-tree-symbol-position-x);
+        background-position-y: var(--branch-tree-symbol-position-y);
+        margin-left: -30px;
+        padding-left: 30px;    
+    }
+    #hierarchy-editor .tree-node-container
+        > .TreeNode > div 
+        > div:focus-within:first-child:hover {
+        background: none;
+        background-image: var(--focused-branch-tree-symbol)!important;
+        background-repeat: no-repeat;
+        background-size: var(--branch-tree-symbol-size);
+        background-position-x: var(--branch-tree-symbol-position-x);
+        background-position-y: var(--branch-tree-symbol-position-y);
+    }
+
+    /*---- Portals within portals first symbol hidden ----*/
+    /*---- in portals ----*/
+    #hierarchy-editor .tree-node-container 
+        > .TreeNode .portal-tree-node
+        > div 
+        > div:focus-within:first-child:hover  {
+        background: none!important;
+        background-image: none!important;
+    }
+    #hierarchy-editor .tree-node-container 
+        > .TreeNode .portal-tree-node
+        > div 
+        > div:first-child:hover  {
+        background: none!important;
+        background-image: none!important;
+    }
+    #hierarchy-editor .tree-node-container:focus-within 
+        > .TreeNode .portal-tree-node
+        > div 
+        > div:first-child:hover  {
+        background: none!important;
+        background-image: none!important;
+    }
+    /*---- in search portal ----*/
+    #hierarchy-editor .tree-node-container 
+        > .TreeNode .search-portal-tree-node--dark
+        > div 
+        > div:focus-within:first-child:hover  {
+        background: none!important;
+        background-image: none!important;
+    }
+    #hierarchy-editor .tree-node-container 
+        > .TreeNode .search-portal-tree-node--dark
+        > div 
+        > div:first-child:hover  {
+        background: none!important;
+        background-image: none!important;
+    }
+    #hierarchy-editor .tree-node-container:focus-within 
+        > .TreeNode .search-portal-tree-node--dark
+        > div 
+        > div:first-child:hover {
+        background: none!important;
+        background-image: none!important;
+    }
+    /*------- Alt Tree node symbols when in focus and hover ------*/
+    /*general tree node hierarchy container symbol*/
+    #hierarchy-editor .tree-node-container 
+        > .TreeNode--dark-indent-line > div:focus-within
+        > div:first-child {
+        background: none;
+        background-image: var(--alt-focused-branch-tree-symbol)!important;
+        background-repeat: no-repeat;
+        background-size: var(--branch-tree-symbol-size);
+        background-position-x: var(--branch-tree-symbol-position-x);
+        background-position-y: var(--branch-tree-symbol-position-y);
+    }
+
+    /*general tree node container hover*/
+    #hierarchy-editor .tree-node-container 
+        > .TreeNode--dark-indent-line > div
+        > div:first-child:hover {
+        background: none;
+        background-image: var(--alt-hover-focused-branch-tree-symbol)!important;
+        background-repeat: no-repeat;
+        background-size: var(--branch-tree-symbol-size);
+        background-position-x: var(--branch-tree-symbol-position-x);
+        background-position-y: var(--branch-tree-symbol-position-y);   
+    }
+    /*general tree node container focused:hover*/
+    #hierarchy-editor .tree-node-container 
+        > .TreeNode--dark-indent-line > div
+        > div:focus-within:first-child:hover {
+        background: none;
+        background-image: var(--alt-focused-branch-tree-symbol)!important;
+        background-repeat: no-repeat;
+        background-size: var(--branch-tree-symbol-size);
+        background-position-x: var(--branch-tree-symbol-position-x);
+        background-position-y: var(--branch-tree-symbol-position-y);
+    }
+    /*general tree node container hover after the in focus rem container*/
+    #hierarchy-editor .tree-node-container 
+        > .TreeNode--dark-indent-line:not(:focus-within) > div
+        > div:first-child:hover {
+        background: none;
+        background-image: var(--alt-hover-branch-tree-symbol)!important;
+        background-repeat: no-repeat;
+        background-size: var(--branch-tree-symbol-size);
+        background-position-x: var(--branch-tree-symbol-position-x);
+        background-position-y: var(--branch-tree-symbol-position-y);
+    }
+
+    /*BULLETS AND ICONS*/
+    /*---------- bullets in focus and hover ----------*/
+    /*----general rems bullet hover ----*/
+    #hierarchy-editor .rem-container--default:hover .rem-bullet {
+        background-color: var(--hover-bullet-color);
+        width: 8px;
+        height: 8px;
+    }
+    #hierarchy-editor .rem-container--focused .rem-bullet {
+        background-color: var(--focused-bullet-color);
+        width: 8px;
+        height: 8px;
+    }
+    #hierarchy-editor .rem-container--focused:hover .rem-bullet {
+        background-color: var(--focused-bullet-color);
+        width: 8px;
+        height: 8px;
+    }
+
+    /*------- 1st Tree node symbols when in focus and hover ------*/
+    #hierarchy-editor .tree-node-container
+        > .TreeNode > div:focus-within 
+        > div:first-child .rem-bullet, .rem-bullet--in-list {
+        background-color: var(--tree-focused-bullet-color);
+        width: 8px;
+        height: 8px;
+        
+    }
+    #hierarchy-editor .tree-node-container 
+        > .TreeNode > div
+        > div:first-child:hover .rem-bullet, .rem-bullet--in-list {
+        background-color: var(--tree-hover-focused-bullet-color);
+        width: 8px;
+        height: 8px;
+        
+    }
+    #hierarchy-editor .tree-node-container
+        > .TreeNode > div 
+        > div:focus-within:first-child:hover .rem-bullet, .rem-bullet--in-list {
+        background-color: var(--tree-focused-bullet-color);
+        width: 8px;
+        height: 8px;
+    
+    }
+
+    /*------- Alt Tree node symbols when in focus and hover ------*/
+    /*general tree node hierarchy container symbol*/
+    #hierarchy-editor .tree-node-container 
+        > .TreeNode--dark-indent-line > div:focus-within
+        > div:first-child .rem-bullet, .rem-bullet--in-list {
+        background-color: var(--alt-tree-focused-bullet-color);
+        width: 8px;
+        height: 8px;
+        
+    }
+
+    /*general tree node container hover*/
+    #hierarchy-editor .tree-node-container 
+        > .TreeNode--dark-indent-line > div
+        > div:first-child:hover .rem-bullet, .rem-bullet--in-list {
+        background-color: var(--alt-tree-hover-focused-bullet-color);
+        width: 8px;
+        height: 8px;
+
+    }
+    /*general tree node container focused:hover*/
+    #hierarchy-editor .tree-node-container 
+        > .TreeNode--dark-indent-line > div
+        > div:focus-within:first-child:hover .rem-bullet, .rem-bullet--in-list {
+        background-color: var(--alt-tree-focused-bullet-color);
+        width: 8px;
+        height: 8px;
+    
+    }
+    /*general tree node container hover after the in focus rem container*/
+    #hierarchy-editor .tree-node-container 
+        > .TreeNode--dark-indent-line:not(:focus-within) > div
+        > div:first-child:hover .rem-bullet, .rem-bullet--in-list {
+        background-color: var(--alt-tree-hover-bullet-color);
+        width: 8px;
+        height: 8px;
+    
+    }
+
+    /*---------- bullets icons in focus and hover ----------*/
+    /*----general rems bullet icons hover ----*/
+    #hierarchy-editor .rem-container--default:hover .rem-bullet__icon {
+        color: var(--hover-bullet-color);
+    }
+    #hierarchy-editor .rem-container--focused .rem-bullet__icon {
+        color: var(--focused-bullet-color);
+    }
+    #hierarchy-editor .rem-container--focused:hover .rem-bullet__icon {
+        color: var(--focused-bullet-color);
+    }
+    /*------- 1st Tree node symbols when in focus and hover ------*/
+    #hierarchy-editor .tree-node-container
+        > .TreeNode > div:focus-within 
+        > div:first-child .rem-bullet__icon {
+        color: var(--tree-focused-bullet-color);
+    
+    }
+    #hierarchy-editor .tree-node-container 
+        > .TreeNode > div
+        > div:first-child:hover .rem-bullet__icon {
+        color: var(--tree-hover-focused-bullet-color);
+    
+    }
+    #hierarchy-editor .tree-node-container
+        > .TreeNode > div 
+        > div:focus-within:first-child:hover .rem-bullet__icon {
+        color: var(--tree-focused-bullet-color);
+    }
+
+    /*------- Alt Tree node symbols when in focus and hover ------*/
+    /*general tree node hierarchy container symbol*/
+    #hierarchy-editor .tree-node-container 
+        > .TreeNode--dark-indent-line > div:focus-within
+        > div:first-child .rem-bullet__icon {
+        color: var(--alt-tree-focused-bullet-color);
+    }
+
+    /*general tree node container hover*/
+    #hierarchy-editor .tree-node-container 
+        > .TreeNode--dark-indent-line > div
+        > div:first-child:hover .rem-bullet__icon {
+        color: var(--alt-tree-hover-focused-bullet-color);
+    }
+    /*general tree node container focused:hover*/
+    #hierarchy-editor .tree-node-container 
+        > .TreeNode--dark-indent-line > div
+        > div:focus-within:first-child:hover .rem-bullet__icon {
+        color: var(--alt-tree-focused-bullet-color);
+    
+    }
+    /*general tree node container hover after the in focus rem container*/
+    #hierarchy-editor .tree-node-container 
+        > .TreeNode--dark-indent-line:not(:focus-within) > div
+        > div:first-child:hover .rem-bullet__icon {
+        color: var(--alt-tree-hover-bullet-color);
+    }
+
+    /*---------- hamburger and collapse button position ----------*/
+    /*rem container*/
+    #hierarchy-editor .TreeNode .rem-container:hover .rem-hamburger {
+        margin-left: -16px;
+        margin-top: 0px !important;
+    }
+    #hierarchy-editor .TreeNode .rem-container--focused .rem-hamburger {
+        filter: brightness(1.4);
+        margin-left: -16px;
+        margin-top: 0px !important;
+    }
+    #hierarchy-editor .rem-container--focused .rem-hamburger {
+        filter: brightness(1.4);
+    }
+    #hierarchy-editor .TreeNode .rem-container:hover .toggleCollapseButton {
+        margin-left: -18px;
+        margin-top: 1px !important;
+    }
+    #hierarchy-editor .TreeNode .rem-container--focused .toggleCollapseButton {
+        filter: brightness(1.4);
+        margin-left: -18px;
+        margin-top: 1px !important;
+    }
+    #hierarchy-editor .rem-container--focused .toggleCollapseButton {
+        filter: brightness(1.4);
+    }
+    /*H1*/
+    #hierarchy-editor .rem__button-offset-1  {
+        margin-top: 0px !important;
+        padding-top: 1px !important;
+    } 
+    /*H2*/
+    #hierarchy-editor .rem__button-offset-2 {
+        margin-top: 0px !important;
+        padding-top: 1px !important;
+    }
+    /*H3*/
+    #hierarchy-editor .rem__button-offset-3 {
+        margin-top: 0px !important;
+        padding-top: 1px !important;
+    }
+    /* list in cards*/
+    #hierarchy-editor .TreeNode--list--in-card-content:hover .rem-hamburger {
+        margin-left: -12px;
+        margin-top: 0px;
+    }
+    #hierarchy-editor .TreeNode--list--in-card-content:hover .toggleCollapseButton {
+        margin-left: -15px;
+        margin-top: 1px;
+    }
+
+    /* Hannesfrank column library*/
+    #hierarchy-editor .tree-node-container[data-rem-container-tags~="columns"] > .TreeNode > .tree-node-container > div:hover  {
+        background: none!important;
+        background-image: none!important;
+    }
+    #hierarchy-editor .tree-node-container[data-rem-container-tags~="columns"] > .TreeNode > .tree-node-container > div:focus-within  {
+        background: none!important;
+        background-image: none!important;
+    }
+    #hierarchy-editor .tree-node-container[data-rem-container-tags~="columns"] > .TreeNode > .tree-node-container > div:focus-within:hover  {
+        background: none!important;
+        background-image: none!important;    
+    }
+    ```
+  - [ ] **21 Showing the hamburger**
+    ```css
+    /*----- this makes the 3 dots visible when in multiple windows, default and full width modes and when windows pane lab feauture is ON and OFF -----*/
+    #multiple-windows .multiple-windows__document .document--narrow {
+        padding-left: 42px!important;
+    }
+    #multiple-windows .multiple-windows__document {
+        padding-right: 42px!important;
+    }
+    .document--full-width {
+        padding-left: 27px!important;
+    }
+    .pane {
+        padding-right: 42px!important;
+    }
+    .mosaic-window-body {
+        padding-right: 42px!important;
+    }
+    .tile__document {
+        padding-right: 42px!important;
+    }
+    .mosaic-window-body .document--narrow {
+        padding-left: 42px!important;
+    }
+    /*----------------------------------------------*/
+    ```
+  - [ ] **22 Mobile v1.3 (Beta)**
+    ```css
+    .markdown-editor .markdown-editor-textarea {
+        color: var(--body-text-color)!important;
+    }
+    .app-container--small-window .document-sidebar--collapsed--horizontal {
+        border-bottom: var(--bars-border-width) solid var(--bars-border-color);
+    }
+    .app-container--small-window #document-sidebar--collapsed, #document-sidebar__hiden-link {
+
+        background-color: var(--sidebar-background-color)!important;
+
+    }
+    .document-sidebar__mobile-collapsed-button:hover,
+    .document-sidebar__mobile-collapsed-button__document:hover {
+        background-color: var(--sidebar-background-color)!important;
+
+    }
+
+    .app-container--small-window #document-sidebar__hidden-link__container {
+        border-right-style: none;
+    }
+    .document-sidebar__mobile-collapsed-button i.icon.checkmark:before {
+        color: #008468!important;
+    }
+    .document-sidebar__mobile-collapsed-button i.icon.sync.large:before {
+        color: #1E79A1!important;
+    }
+    .document-sidebar__mobile-collapsed-button .flashcards-icon--large {
+        filter: var(--icons-filter)!important;
+    }
+    .document-sidebar__mobile-collapsed-button .flashcards-icon--large:hover {
+        filter: var(--accent-color-filter) contrast(0.6) brightness(115%)!important;
+    }
+    .document-sidebar__mobile-collapsed-button i.large.icon:hover, i.large.icons:hover {
+        color: var(--accent-color)!important;
+    }
+    ```
+  - [ ] **Optionals**
     - [x] Op01 Hide Remnote Logo
       ```css
       #document-sidebar_top #logo {
@@ -4574,7 +4018,7 @@
     - [x] Op10 Dark PDF (inverted, no real colors)
       ```css
       .pdfViewer {
-          filter: invert(100%) hue-rotate(180deg) !important;
+          filter: invert(90%) hue-rotate(180deg) !important;
       }
 
       /* highlight colors*/
@@ -4591,7 +4035,11 @@
           opacity: 0.7;
       }
       /*yellow*/
-      .highlight-color--yellow, .pdf-viewer__highlight-container--undefined .AreaHighlight, .pdf-viewer__highlight-container--undefined .Highlight__part, .pdf-viewer__highlight-container--yellow .AreaHighlight, .pdf-viewer__highlight-container--yellow .Highlight__part, .PdfHighlighter .textLayer ::selection {
+      .highlight-color--yellow,
+      .pdf-viewer__highlight-container--undefined .AreaHighlight,
+      .pdf-viewer__highlight-container--undefined .Highlight__part,
+      .pdf-viewer__highlight-container--yellow .AreaHighlight,
+      .pdf-viewer__highlight-container--yellow .Highlight__part, .PdfHighlighter .textLayer ::selection {
           background-color: var(--highlight-yellow)!important;
       }
       /*green*/
@@ -4616,13 +4064,13 @@
     - [x] Op11 Image Occlusion (inverted, no real colors)
       ```css
       .tumbnail--with-width {
-          filter: invert(90%) hue-rotate(180deg) !important;
+          filter: invert(87%) hue-rotate(170deg) !important;
       }
       #image-viewer-popup img {
-          filter: invert(90%) hue-rotate(180deg) !important;
+          filter: invert(87%) hue-rotate(170deg) !important;
       }
       .image-occlusion .image-occlusion__canvas-container {
-          filter: invert(90%) hue-rotate(180deg) !important;
+          filter: invert(87%) hue-rotate(170deg) !important;
       }
       ```
 ```
