@@ -438,6 +438,14 @@
         color: var(--accent-color);
         font-style: italic;
     }
+    .quote,
+    .quote.bold,
+    .quote.underline {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
     /* web links logo*/
     #hierarchy-editor .rem-container .LinkNode img {
         filter: var(--accent-color-filter);
