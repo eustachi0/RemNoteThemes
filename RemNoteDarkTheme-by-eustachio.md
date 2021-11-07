@@ -7,7 +7,7 @@
 - Please consider donate, it will help me to keep myself motivated to maintain the theme, fix bugs and introduce new ideas. I will appreciate it.
 - [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=22TRCSWF3MZM6)
 
-```markdown
+```md
 - [ ] **RemNote Dark Theme by eustachio v2.0**
   - Designed, created and maintained by Eustachio (I do not work for RemNote)
   - Please consider donate, it will help me to keep myself motivated to maintain the theme, fix bugs and introduce new ideas. I will appreciate it.
@@ -139,7 +139,7 @@
           --highlightcolor-border-radius: 20px;
           --highlightcolor-tags-border-radius: 10px;
       }
-        ```
+      ```
     - [x] Bright highlight colors
       ```css
       /*Bright highlight colors*/
