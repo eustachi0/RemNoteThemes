@@ -1,0 +1,21 @@
+#multiple-windows .multiple-windows__document .document--narrow {
+    padding-left: 42px!important;
+}
+#multiple-windows .multiple-windows__document {
+    padding-right: 0px!important;
+}
+.document--full-width {
+    padding-left: 27px!important;
+}
+.pane {
+    padding-right: 0px!important;
+}
+.mosaic-window-body {
+    padding-right: 0px!important;
+}
+.tile__document {
+    padding-right: 0px!important;
+}
+.mosaic-window-body .document--narrow {
+    padding-left: 42px!important;
+}

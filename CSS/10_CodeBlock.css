@@ -1,0 +1,21 @@
+#code-node {
+    font-family: monaco,menlo,consolas,courier new;
+    color: var(--code-block-text-color);
+    background-color: var(--code-block-background-color);
+    border-color: var(--code-block-border-color);
+    border-width: var(--code-block-border-width);
+    margin-left: -18px;
+    padding-right: 86px !important;
+    margin-top: -3px;
+    margin-bottom: -3px;   
+}
+body #code-node {
+    caret-color: red;
+}
+#code-node .token.url {
+    background-color: transparent;
+}
+#hierarchy-editor .rem-container--focused > div #code-node {
+    background-color: var(--code-block-focused-background-color);
+    border-color: #62778D;
+}

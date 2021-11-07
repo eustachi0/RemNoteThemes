@@ -1,0 +1,298 @@
+.dark-mode, .dark-mode-filter {
+    filter: invert(0%) hue-rotate(0deg);
+}
+
+.dark-mode, .dark-mode-background {
+    background-color: var(--body-background-color);
+}
+
+#ExamplesPageContainer .dark-mode #ExamplesPageContent, #export-container .dark-mode #export, #HelpPage .dark-mode #HelpPageContent, #sign-up-page-container .dark-mode #sign-up-page, #StatsPage .dark-mode #StatsPageContent, .dark-mode #ExamplesPageContainer #ExamplesPageContent, .dark-mode #export-container #export, .dark-mode #HelpPage #HelpPageContent, .dark-mode #sign-up-page-container #sign-up-page, .dark-mode #StatsPage #StatsPageContent, .dark-mode .centered-page, .dark-mode .document--narrow {
+    background-color: var(--body-background-color);
+}
+body, button {
+    font-family: var(--font-name), "Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+   color: var(--body-text-color);
+}
+#multiple-windows .multiple-windows__document {
+    background-color: var(--body-background-color);
+}
+/* added 08 June 2021*/
+.tile__document {
+    background-color: var(--body-background-color)!important;
+}
+#hierarchy-editor .rem-container .rem-text {
+    color: var(--body-text-color);
+}
+#hierarchy-editor .rem {
+    color: var(--body-text-color);
+}
+
+/*document-top breadcrumbs*/
+.parent-link {
+	color: var(--icons-color);
+    background-color: transparent;
+}
+.parent-link:hover {
+    color: var(--accent-color)!important;
+    background-color: transparent;
+}
+/* Document Title */
+.document-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--body-text-color)!important;
+}
+
+/* top document show source, show tags when hover */
+.text-gray-30 {
+	background-color: transparent;
+	color: var(--icons-color);
+}
+.text-gray-30:hover {
+	background-color: transparent;
+	color: var(--accent-color);
+}
+.css-ertidT {
+    fill: var(--icons-color);
+    color: var(--icons-color);
+}
+.text-gray-30:hover .css-ertidT {
+    fill: var(--accent-color);
+    color: var(--accent-color);
+}
+
+/* top document displayed source and tags titles*/
+.gap-x-4 .hover\:bg-gray-5:hover {
+	background-color: transparent!important;
+}
+
+/* top document displayed tags */
+.gap-x-4 .bg-gray-10 {
+	background-color: transparent;
+	border: 1px solid var(--bars-border-color);
+	border-radius: 15px;
+}
+.gap-x-4 .bg-gray-10:hover {
+	background-color: transparent;
+	border: 1px solid var(--accent-color);
+	border-radius: 15px;
+}
+.gap-x-4 .text-gray-70 {
+	color: var(--body-text-color);
+}
+
+/* add a Document to this document*/
+#document #AddNewDocumentButtonSmall {
+    color: var(--icons-color);
+    font-size: 13px;
+    font-style: italic;
+    margin-top: 6px;
+    margin-left: 10px;
+}
+#document #AddNewDocumentButtonSmall:hover {
+    color: var(--accent-color);
+}
+
+/* web links */
+.LinkNode,
+.rich-text-editor a {
+    text-decoration: underline;
+    color: var(--link-text-color);
+    font-weight: 500;
+}
+/* web links */
+.rich-text-editor:hover a {
+    text-decoration: underline;
+    color: var(--link-text-color);
+    font-weight: 500;
+}
+/* web links logo */
+#hierarchy-editor .rem-container .LinkNode img {
+    filter: var(--accent-color-filter);
+}
+
+/* rem references */
+.rem-reference-link {
+	background-color: transparent!important;
+    color: var(--link-text-color);
+    font-weight: 500;
+}
+.rem-reference-link:hover {
+    background-color: transparent!important;
+    color: var(--focused-accent-color);
+}
+
+/* L a t e x */
+.katex {
+    color: var(--latex-text-color);
+}
+
+/* quotes */
+.quote {
+    background-color: var(--quote-background);
+    color: var(--accent-color);
+    font-style: italic;
+}
+.quote,
+.quote.bold,
+.quote.underline {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* split line/gap when windows pane is off*/
+.gutter {
+        background-color: var(--bars-border-color);
+        max-width: 3px!important;
+
+}
+.gutter:hover {
+        background-color: var(--accent-color);
+        max-width: 3px!important;
+        filter: brightness(0.8);
+}
+
+/* pdf highlight*/
+.rem-reference--pdf-highlight {
+    border-color: transparent;
+    border-bottom: solid transparent;
+    border-width: 0px;
+    color: var(--pdf-highlight-text-color);
+    border-radius: 0px;
+    text-decoration: underline;
+}
+
+/* help button */
+#help-button {
+    color: var(--icons-color);
+    box-shadow: none;
+    background-color: var(--popup-background-color);
+    border-style: solid;
+    border-color: var(--bars-border-color);
+}
+#help-button:hover {
+    color: var(--accent-color);
+    box-shadow: none;
+    background-color: var(--popup-hover-background-color);
+}
+
+
+.ui.message {
+    background: var(--portal-background-color);
+    color: var(--popup-text-color);
+    border-radius: var(--popup-border-radius);
+    border-color: var(--popup-border-color);
+    box-shadow: none;
+}
+.ui.button {
+    background: var(--popup-background-color);
+    color: var(--popup-text-color);
+    border-style: solid;
+    border-color: var(--popup-border-color);
+    border-width: var(--popup-border-width);
+    border-radius: var(--popup-border-radius);
+}
+.ui.button:focus {
+    background: var(--button-color);
+    color: var(--popup-text-color);
+}
+.ui.button:hover {
+    background: var(--button-color);
+    color: var(--popup-text-color);
+}
+.ui.basic.button, .ui.basic.buttons {
+    background: var(--popup-background-color)!important;
+    color: var(--popup-text-color)!important;
+    border-style: solid!important;
+    border-color: var(--popup-border-color)!important;
+    border-width: var(--popup-border-width)!important;
+    border-radius: var(--popup-border-radius)!important;
+}
+.ui.basic.button:hover, .ui.basic.buttons:hover {
+    background: var(--popup-hover-background-color)!important;
+    color: var(--popup-text-color)!important;
+    border-style: solid!important;
+    border-color: var(--popup-border-color)!important;
+    border-width: var(--popup-border-width)!important;
+    border-radius: var(--popup-border-radius)!important;
+}
+
+/* top document x(close) and ...  */
+#multiple-windows .multiple-windows__document .multiple-windows__close-pane__container .multiple-windows__close-pane {
+    filter: var(--icons-filter);
+}
+#multiple-windows .multiple-windows__document .multiple-windows__close-pane__container:hover .multiple-windows__close-pane {
+    filter: var(--accent-color-filter) brightness(1.2) grayscale(0.4);
+}
+.px-6 .hover\:bg-gray-5:hover {
+    background-color: transparent;
+}
+.px-6 .fill-current {
+    fill: var(--icons-color);
+}
+.px-6 .hover\:bg-hover-bg:hover .fill-current {
+    fill: var(--accent-color);
+}
+.px-6 .hover\:bg-hover-bg:hover {
+    background-color: transparent;
+}
+
+/* new hamburger and dropdown arrow */
+#hierarchy-editor .rem-container--default .fill-current {
+	color: var(--hover-bullet-color);
+}
+#hierarchy-editor .rem-container--focused .fill-current {
+	color: var(--focused-bullet-color);
+}
+#hierarchy-editor .six-dot, #hierarchy-editor .toggle-collapse-button, #hierarchy-editor .zoom-button {
+	background-color: transparent!important;
+	margin-right: -4px;
+}
+#hierarchy-editor .plus-button {
+	background-color: transparent!important;
+}
+
+#hierarchy-editor .TreeNode .rem-container .rem-button__container .six-dot {
+    margin-right: -2px !important;
+    margin-top: 7px !important;
+}
+#hierarchy-editor .TreeNode .rem-container .rem-button__container .toggle-collapse-button {
+    margin-top: 7px !important;
+}
+
+#hierarchy-editor .TreeNode .css-iviqd {
+    width: 19px;
+    height: 19px;
+}
+
+/* calendar icon */
+.rem-reference .text-icon.rem-calendar-icon {
+    color: var(--accent-color) !important;
+}
+
+/* selection background color */
+
+::selection {
+    background-color: var(--selected-background-color);
+}
+
+#hierarchy-editor .rem-container .bg-gray-10 {
+    background-color: rgb(35, 38, 38, .6);
+    border-radius: 8px;
+    /* border: 1px solid var(--portal-border-color) */;
+    color: var(--icons-color);
+}
+
+/* bullet border color */
+.rem-container--not-in-article .rem-bullet__container:hover .rem-bullet, .rem-container--not-in-article .rem-bullet__container:hover .rem-bullet--in-list, .sortSidebarOption {
+    border-color: var(--hover-border-bullet-color);
+}
+.rem-container--not-in-article .rem-bullet__container:hover .rem-bullet--all-children-visible {
+    border: 3px solid var(--hover-border-bullet-color);
+}
+#hierarchy-editor .rem-container--default .rem-bullet, #hierarchy-editor .rem-container--default .rem-bullet--in-list {
+   --tw-border-opacity: .3;
+    border-color: rgba(236,236,248,var(--tw-border-opacity));
+}

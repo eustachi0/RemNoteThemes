@@ -1,0 +1,104 @@
+/* If Windowed Panes is ON*/
+/* Code by Henrik */
+/* added 09 June 2021 */
+/* retouched by eustachio v1.3*/
+/* split line between winwdows*/
+.mosaic.mosaic-blueprint-theme .mosaic-split .mosaic-split-line {
+    box-shadow: 0 0 0 1px var(--bars-border-color);
+}
+.mosaic.mosaic-blueprint-theme .mosaic-split:hover .mosaic-split-line {
+    box-shadow: 0 0 0 1px var(--accent-color);
+}
+
+.mosaic {
+    background: var(--blackout-background-color)!important;
+}
+.mosaic-window-body {
+    background: var(--body-background-color)!important;
+    border: var(--bars-border-width) solid var(--bars-border-color);
+/*     border-bottom-left-radius: 10px!important;
+    border-bottom-right-radius: 10px!important; */
+}
+.mosaic-window-toolbar.draggable,
+.mosaic-preview .mosaic-window-toolbar, .mosaic-window .mosaic-window-toolbar {
+    background-color: var(--sidebar-background-color)!important;
+    border: var(--bars-border-width) solid var(--bars-border-color)!important;
+}
+.mosaic.mosaic-blueprint-theme .mosaic-preview .mosaic-window-toolbar.draggable:hover, .mosaic.mosaic-blueprint-theme .mosaic-window .mosaic-window-toolbar.draggable:hover
+{
+    background: var(--selected-background-color)!important;
+}
+.mosaic-default-control {
+    color: var(--button-color)!important;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.mosaic-blueprint-theme .mosaic-preview, .mosaic-blueprint-theme .mosaic-window {
+    box-shadow: none!important;
+    border: none!important;
+    
+}
+.mx-3, .h-6 {
+    filter: var(--icons-filter)!important;
+}
+.mx-3:hover, .h-6:hover {
+    filter: var(--accent-color-filter)!important;
+}
+.mosaic--single-pane .mosaic-window {
+    border-radius: 10px!important;
+    border: var(--bars-border-width) solid var(--bars-border-color)!important;
+}
+.mosaic--single-pane .mosaic-window-body {
+    border-radius: 10px!important;
+    border: none!important;
+    margin-bottom: 2px !important;
+    margin-right: 2px !important;
+}
+.mosaic-preview, .mosaic-window {
+    border: none!important;
+}
+
+.mosaic-root {
+    background-color: var(--bars-border-color);
+}
+
+.mosaic.mosaic-blueprint-theme {
+    background-color: var(--bars-border-color)!important;
+    margin-bottom: 0px !important;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    border-radius: 10px !important;
+}
+
+
+.mosaic-split.-row {
+    margin-left: -2px;
+    width: 5px;
+}
+.mosaic-split.-row .mosaic-split-line {
+    top: 8px;
+    bottom: 8px;
+    left: 2px;
+    right: 3px;
+}
+
+.mosaic.mosaic-blueprint-theme .mosaic-split {
+    background: transparent;
+}
+.mosaic.mosaic-blueprint-theme .mosaic-split:hover {
+    background: transparent;
+}
+
+.mosaic.mosaic-blueprint-theme .mosaic-preview, .mosaic.mosaic-blueprint-theme .mosaic-window {
+    border-radius: 15px!important;
+}
+
+
+.mosaic-tile {
+    border-color: var(--bars-border-color);
+}
+.mosaic.mosaic-blueprint-theme .mosaic-preview .mosaic-window-toolbar.draggable .mosaic-window-title:hover, .mosaic.mosaic-blueprint-theme .mosaic-window .mosaic-window-toolbar.draggable .mosaic-window-title:hover {
+    background-color: rgb(49, 81, 113);
+}

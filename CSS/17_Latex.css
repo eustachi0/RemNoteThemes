@@ -1,0 +1,24 @@
+.katex {
+    color: var(--latex-text-color);
+}
+
+.katex-display {
+    border: 1px solid rgb(45, 48, 48);
+    border-radius: 10px;
+}
+
+.latex-editor {
+	background-color: var(--popup-background-color);
+}
+
+.latex-node--focused .latex-node__tex .katex-display {
+	background-color: var(--body-background-color);
+	border: 1px solid var(--latex-text-color);
+	border-radius: 10px;
+}
+
+.latex-editor__input {
+	background-color: var(--body-background-color);
+	color: var(--body-text-color);
+	border-radius: 6px;
+}

@@ -1,0 +1,38 @@
+.hierarchy-editor__tag-bar__tag {
+    border-radius: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 5px;
+    color: var(--body-text-color);
+    font-size: 13px;
+    background-color: transparent;
+    white-space: pre;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 5px;
+}
+.hierarchy-editor__tag-bar {
+    top: 1px;
+    bottom: 0px;
+}
+.hierarchy-editor__tag-bar__tag__delete:hover {
+    color: var(--accent-color);
+    background-color: transparent;
+}
+#hierarchy-editor .rem-container--focused .hierarchy-editor__tag-bar__tag .gray {
+    color: var(--focused-text-color)!important;
+}
+#hierarchy-editor .rem-container--default .hierarchy-editor__tag-bar__tag .gray {
+    color: var(--body-text-color);
+}
+#hierarchy-editor .rem-container--default .hierarchy-editor__tag-bar__tag .join-arrow {
+    color:  var(--body-text-color);
+}
+#hierarchy-editor .rem-container--focused .hierarchy-editor__tag-bar__tag .join-arrow {
+    color: var(--focused-text-color);
+}
+.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__power-up-tag {
+    color: var(--icons-color);
+}

@@ -1,0 +1,13 @@
+.article-publish-confirmation {
+    color: var(--body-text-color);
+}
+.ui.checkbox+label, .ui.checkbox label {
+    color: var(--body-text-color);
+}
+ArticleViewer #ArticleViewerTop {
+    color: var(--body-text-color);
+}
+#ExamplesPageContainer #ExamplesPageContent, #export-container #export, #HelpPage #HelpPageContent, #sign-up-page-container #sign-up-page, #StatsPage #StatsPageContent, .centered-page, .document--narrow {
+    background-color: var(--body-background-color);
+    color: var(--body-text-color);
+}

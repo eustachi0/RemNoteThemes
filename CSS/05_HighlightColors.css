@@ -1,0 +1,511 @@
+/*RED*/
+/*general */
+.highlight-color--red {
+    background: var(--highlight-red);
+    border-radius: var(--highlightcolor-border-radius);
+    color: var(--highlightcolor-text-color);
+    font-weight: 600;
+}
+
+/*container*/
+div > .highlight-color--red {
+    background-color: var(--highlight-red) !important;
+    border-radius: var(--highlightcolor-border-radius);
+}
+
+/* container text */
+div > .highlight-color--red span {
+    color: var(--highlightcolor-text-color);
+}
+
+/* highlight text*/
+#hierarchy-editor .rem-text .highlight-color--red {
+    background: var(--highlight-red);
+    border-radius: var(--highlightcolor-border-radius);
+    margin-left: -3px!important;
+    margin-right: -3px!important;
+    padding-left: 3px!important;
+    padding-right: 3px!important;
+    color: var(--highlightcolor-text-color);
+}
+
+/*--- highlight container tag ---*/
+#hierarchy-editor .rem .hierarchy-editor__tag-bar .highlight-color--red {
+    background: var(--highlight-red);
+    padding-left: 6px!important;
+    border-radius: var(--highlightcolor-tags-border-radius);
+    color: var(--highlightcolor-text-color);
+    font-weight: 700;
+}
+
+/*--- highlight text tag ---*/
+#hierarchy-editor .rem .hierarchy-editor__tag-bar .RichTextViewer .highlight-color--red {
+    border-radius: var(--highlightcolor-tags-border-radius);
+    margin-left: 3px!important;
+    margin-right: -3px!important;
+    padding-left: 3px!important;
+    padding-right: 3px!important;
+    color: var(--highlightcolor-text-color);
+    font-weight: 700;
+}
+
+/* sidebar effects */
+#document-sidebar > div .highlight-color--red span,
+#document-sidebar .highlight-color--red .group-hover-bg-hover-bg-transparent .css-drbSAB,
+#document-sidebar > div .highlight-color--red .nowrap-RichTextViewer {
+    color: var(--highlightcolor-text-color) !important;
+}
+#document-sidebar .group:hover .highlight-color--red .group-hover-bg-hover-bg-transparent {
+    background: var(--highlight-red)!important;
+    filter: opacity(.8)!important;
+    border-radius: var(--highlightcolor-border-radius);
+    margin-left: -3px;
+    margin-right: -3px;
+    padding-left: 11px;
+}
+/* (+) plus symbol and flashcards icon color - sidebar */
+#document-sidebar .group:hover .highlight-color--red .group-hover\:flex svg {
+    color: var(--highlightcolor-text-color) !important;
+}
+#document-sidebar .group:hover .highlight-color--red .group-hover\:flex:hover svg {
+    color: var(--highlightcolor-text-color) !important;
+    filter: brightness(.8);
+}
+/* end of sidebar effects */
+
+/* rem-bullet when within highlight coloured container */
+.highlight-color--red .rem-bullet {
+    background-color: var(--highlightcolor-text-color);
+}
+
+/*---------- ORANGE ----------*/
+/*general */
+.highlight-color--orange {
+    background: var(--highlight-orange);
+    border-radius: var(--highlightcolor-border-radius);
+    color: var(--highlightcolor-text-color);
+    font-weight: 600;
+}
+
+/*container*/
+div > .highlight-color--orange {
+    background-color: var(--highlight-orange) !important;
+    border-radius: var(--highlightcolor-border-radius);
+}
+
+/* container text */
+div > .highlight-color--orange span {
+    color: var(--highlightcolor-text-color);
+}
+
+/* highlight text*/
+#hierarchy-editor .rem-text .highlight-color--orange {
+    background: var(--highlight-orange);
+    border-radius: var(--highlightcolor-border-radius);
+    margin-left: -3px!important;
+    margin-right: -3px!important;
+    padding-left: 3px!important;
+    padding-right: 3px!important;
+    color: var(--highlightcolor-text-color);
+}
+
+/*--- highlight container tag ---*/
+#hierarchy-editor .rem .hierarchy-editor__tag-bar .highlight-color--orange {
+    background: var(--highlight-orange);
+    padding-left: 6px!important;
+    border-radius: var(--highlightcolor-tags-border-radius);
+    color: var(--highlightcolor-text-color);
+    font-weight: 700;
+}
+
+/*--- highlight text tag ---*/
+#hierarchy-editor .rem .hierarchy-editor__tag-bar .RichTextViewer .highlight-color--orange {
+    border-radius: var(--highlightcolor-tags-border-radius);
+    margin-left: 3px!important;
+    margin-right: -3px!important;
+    padding-left: 3px!important;
+    padding-right: 3px!important;
+    color: var(--highlightcolor-text-color);
+    font-weight: 700;
+}
+
+/* sidebar effects */
+#document-sidebar > div .highlight-color--orange span,
+#document-sidebar .highlight-color--orange .group-hover-bg-hover-bg-transparent .css-drbSAB,
+#document-sidebar > div .highlight-color--orange .nowrap-RichTextViewer {
+    color: var(--highlightcolor-text-color)!important;
+}
+#document-sidebar .group:hover .highlight-color--orange .group-hover-bg-hover-bg-transparent {
+    background: var(--highlight-orange)!important;
+    filter: opacity(.8)!important;
+    border-radius: var(--highlightcolor-border-radius);
+    margin-left: -3px;
+    margin-right: -3px;
+    padding-left: 11px;
+}
+/* (+) plus symbol and flashcards icon color - sidebar */
+#document-sidebar .group:hover .highlight-color--orange .group-hover\:flex svg {
+    color: var(--highlightcolor-text-color) !important;    
+}
+#document-sidebar .group:hover .highlight-color--orange .group-hover\:flex:hover svg {
+    color: var(--highlightcolor-text-color) !important;
+    filter: brightness(.8);
+}
+/* end of sidebar effects */
+
+/* rem-buller when within highlight coloured container */
+.highlight-color--orange .rem-bullet {
+    background-color: var(--highlightcolor-text-color);
+}
+
+/*---------- YELLOW ----------*/
+/*general */
+.highlight-color--yellow {
+    background: var(--highlight-yellow);
+    border-radius: var(--highlightcolor-border-radius);
+    color: var(--highlightcolor-text-color);
+    font-weight: 600;
+}
+
+/*container*/
+div > .highlight-color--yellow {
+    background-color: var(--highlight-yellow) !important;
+    border-radius: var(--highlightcolor-border-radius);
+}
+
+/* container text */
+div > .highlight-color--yellow span {
+    color: var(--highlightcolor-text-color);
+}
+
+/* highlight text*/
+#hierarchy-editor .rem-text .highlight-color--yellow {
+    background: var(--highlight-yellow);
+    border-radius: var(--highlightcolor-border-radius);
+    margin-left: -3px!important;
+    margin-right: -3px!important;
+    padding-left: 3px!important;
+    padding-right: 3px!important;
+    color: var(--highlightcolor-text-color);
+}
+
+/*--- highlight container tag ---*/
+#hierarchy-editor .rem .hierarchy-editor__tag-bar .highlight-color--yellow {
+    background: var(--highlight-yellow);
+    padding-left: 6px!important;
+    border-radius: var(--highlightcolor-tags-border-radius);
+    color: var(--highlightcolor-text-color);
+    font-weight: 700;
+}
+
+/*--- highlight text tag ---*/
+#hierarchy-editor .rem .hierarchy-editor__tag-bar .RichTextViewer .highlight-color--yellow {
+    border-radius: var(--highlightcolor-tags-border-radius);
+    margin-left: 3px!important;
+    margin-right: -3px!important;
+    padding-left: 3px!important;
+    padding-right: 3px!important;
+    color: var(--highlightcolor-text-color);
+    font-weight: 700;
+}
+
+/* sidebar effects */
+#document-sidebar > div .highlight-color--yellow span,
+#document-sidebar .highlight-color--yellow .group-hover-bg-hover-bg-transparent .css-drbSAB,
+#document-sidebar > div .highlight-color--yellow .nowrap-RichTextViewer {
+    color: var(--highlightcolor-text-color)!important;
+}
+#document-sidebar .group:hover .highlight-color--yellow .group-hover-bg-hover-bg-transparent {
+    background: var(--highlight-yellow)!important;
+    filter: opacity(.8)!important;
+    border-radius: var(--highlightcolor-border-radius);
+    margin-left: -3px;
+    margin-right: -3px;
+    padding-left: 11px;
+}
+/* (+) plus symbol and flashcards icon color - sidebar */
+#document-sidebar .group:hover .highlight-color--yellow .group-hover\:flex svg {
+    color: var(--highlightcolor-text-color) !important;    
+}
+#document-sidebar .group:hover .highlight-color--yellow .group-hover\:flex:hover svg {
+    color: var(--highlightcolor-text-color) !important;
+    filter: brightness(.8);
+}
+/* end of sidebar effects */
+
+/* rem-buller when within highlight coloured container */
+.highlight-color--yellow .rem-bullet {
+    background-color: var(--highlightcolor-text-color);
+}
+
+/*---------- GREEN ----------*/
+/*general */
+.highlight-color--green {
+    background: var(--highlight-green) !important;
+    border-radius: var(--highlightcolor-border-radius);
+    color: var(--highlightcolor-text-color);
+    font-weight: 600;
+}
+
+/*container*/
+div > .highlight-color--green {
+    background-color: var(--highlight-green) !important;
+    border-radius: var(--highlightcolor-border-radius);
+}
+
+/* container text */
+div > .highlight-color--green span {
+    color: var(--highlightcolor-text-color);
+}
+
+/* highlight text*/
+#hierarchy-editor .rem-text .highlight-color--green {
+    background: var(--highlight-green);
+    border-radius: var(--highlightcolor-border-radius);
+    margin-left: -3px!important;
+    margin-right: -3px!important;
+    padding-left: 3px!important;
+    padding-right: 3px!important;
+    color: var(--highlightcolor-text-color);
+}
+
+/*--- highlight container tag ---*/
+#hierarchy-editor .rem .hierarchy-editor__tag-bar .highlight-color--green {
+    background: var(--highlight-green);
+    padding-left: 6px!important;
+    border-radius: var(--highlightcolor-tags-border-radius);
+    color: var(--highlightcolor-text-color);
+    font-weight: 700;
+}
+
+/*--- highlight text tag ---*/
+#hierarchy-editor .rem .hierarchy-editor__tag-bar .RichTextViewer .highlight-color--green {
+    border-radius: var(--highlightcolor-tags-border-radius);
+    margin-left: 3px!important;
+    margin-right: -3px!important;
+    padding-left: 3px!important;
+    padding-right: 3px!important;
+    color: var(--highlightcolor-text-color);
+    font-weight: 700;
+}
+
+/* sidebar effects */
+#document-sidebar > div .highlight-color--green span,
+#document-sidebar .highlight-color--green .group-hover-bg-hover-bg-transparent .css-drbSAB,
+#document-sidebar > div .highlight-color--green .nowrap-RichTextViewer {
+    color: var(--highlightcolor-text-color)!important;
+}
+#document-sidebar .group:hover .highlight-color--green .group-hover-bg-hover-bg-transparent {
+    background: var(--highlight-green)!important;
+    filter: opacity(.8)!important;
+    border-radius: var(--highlightcolor-border-radius);
+    margin-left: -3px;
+    margin-right: -3px;
+    padding-left: 11px;
+}
+/* (+) plus symbol and flashcards icon color - sidebar */
+#document-sidebar .group:hover .highlight-color--green .group-hover\:flex svg {
+    color: var(--highlightcolor-text-color) !important;    
+}
+#document-sidebar .group:hover .highlight-color--green .group-hover\:flex:hover svg {
+    color: var(--highlightcolor-text-color) !important;
+    filter: brightness(.8);
+}
+/* end of sidebar effects */
+
+/* rem-buller when within highlight coloured container */
+.highlight-color--green .rem-bullet {
+    background-color: var(--highlightcolor-text-color);
+}
+
+/*---------- BLUE ----------*/
+/*general */
+.highlight-color--blue {
+    background: var(--highlight-blue);
+    border-radius: var(--highlightcolor-border-radius);
+    color: var(--highlightcolor-text-color);
+    font-weight: 600;
+}
+
+/*container*/
+div > .highlight-color--blue {
+    background-color: var(--highlight-blue) !important;
+    border-radius: var(--highlightcolor-border-radius);
+}
+
+/* container text */
+div > .highlight-color--blue span {
+    color: var(--highlightcolor-text-color);
+}
+
+/* highlight text*/
+#hierarchy-editor .rem-text .highlight-color--blue {
+    background: var(--highlight-blue);
+    border-radius: var(--highlightcolor-border-radius);
+    margin-left: -3px!important;
+    margin-right: -3px!important;
+    padding-left: 3px!important;
+    padding-right: 3px!important;
+    color: var(--highlightcolor-text-color);
+}
+
+/*--- highlight container tag ---*/
+#hierarchy-editor .rem .hierarchy-editor__tag-bar .highlight-color--blue {
+    background: var(--highlight-blue);
+    padding-left: 6px!important;
+    border-radius: var(--highlightcolor-tags-border-radius);
+    color: var(--highlightcolor-text-color);
+    font-weight: 700;
+}
+
+/*--- highlight text tag ---*/
+#hierarchy-editor .rem .hierarchy-editor__tag-bar .RichTextViewer .highlight-color--blue {
+    border-radius: var(--highlightcolor-tags-border-radius);
+    margin-left: 3px!important;
+    margin-right: -3px!important;
+    padding-left: 3px!important;
+    padding-right: 3px!important;
+    color: var(--highlightcolor-text-color);
+    font-weight: 700;
+}
+
+/* sidebar effects */
+#document-sidebar > div .highlight-color--blue span,
+#document-sidebar .highlight-color--blue .group-hover-bg-hover-bg-transparent .css-drbSAB,
+#document-sidebar > div .highlight-color--blue .nowrap-RichTextViewer {
+    color: var(--highlightcolor-text-color)!important;
+}
+#document-sidebar .group:hover .highlight-color--blue .group-hover-bg-hover-bg-transparent {
+    background: var(--highlight-blue)!important;
+    filter: opacity(.8)!important;
+    border-radius: var(--highlightcolor-border-radius);
+    margin-left: -3px;
+    margin-right: -3px;
+    padding-left: 11px;
+}
+/* (+) plus symbol and flashcards icon color - sidebar */
+#document-sidebar .group:hover .highlight-color--blue .group-hover\:flex svg {
+    color: var(--highlightcolor-text-color) !important;
+}
+
+#document-sidebar .group:hover .highlight-color--blue .group-hover\:flex svg {
+    color: var(--highlightcolor-text-color) !important;
+}
+#document-sidebar .group:hover .highlight-color--blue .group-hover\:flex:hover svg {
+    color: var(--highlightcolor-text-color) !important;
+    filter: brightness(.8);
+}
+/* end of sidebar effects */
+
+/* rem-buller when within highlight coloured container */
+.highlight-color--blue .rem-bullet {
+    background-color: var(--highlightcolor-text-color);
+}
+
+
+/*---------- PURPLE ----------*/
+/*general */
+.highlight-color--purple {
+    background: var(--highlight-purple);
+    border-radius: var(--highlightcolor-border-radius);
+    color: var(--highlightcolor-text-color);
+    font-weight: 600;
+}
+
+/*container*/
+div > .highlight-color--purple {
+    background-color: var(--highlight-purple) !important;
+    border-radius: var(--highlightcolor-border-radius);
+}
+
+/* container text */
+div > .highlight-color--purple span {
+    color: var(--highlightcolor-text-color);
+}
+
+/* highlight text*/
+#hierarchy-editor .rem-text .highlight-color--purple {
+    background: var(--highlight-purple);
+    border-radius: var(--highlightcolor-border-radius);
+    margin-left: -3px!important;
+    margin-right: -3px!important;
+    padding-left: 3px!important;
+    padding-right: 3px!important;
+    color: var(--highlightcolor-text-color);
+}
+
+/*--- highlight container tag ---*/
+#hierarchy-editor .rem .hierarchy-editor__tag-bar .highlight-color--purple {
+    background: var(--highlight-purple);
+    padding-left: 6px!important;
+    border-radius: var(--highlightcolor-tags-border-radius);
+    color: var(--highlightcolor-text-color);
+    font-weight: 700;
+}
+
+/*--- highlight text tag ---*/
+#hierarchy-editor .rem .hierarchy-editor__tag-bar .RichTextViewer .highlight-color--purple {
+    border-radius: var(--highlightcolor-tags-border-radius);
+    margin-left: 3px!important;
+    margin-right: -3px!important;
+    padding-left: 3px!important;
+    padding-right: 3px!important;
+    color: var(--highlightcolor-text-color);
+    font-weight: 700;
+}
+
+/* sidebar effects */
+#document-sidebar > div .highlight-color--purple span,
+#document-sidebar .highlight-color--purple .group-hover-bg-hover-bg-transparent .css-drbSAB,
+#document-sidebar > div .highlight-color--purple .nowrap-RichTextViewer {
+    color: var(--highlightcolor-text-color)!important;
+}
+#document-sidebar .group:hover .highlight-color--purple .group-hover-bg-hover-bg-transparent {
+    background: var(--highlight-purple)!important;
+    filter: opacity(.8)!important;
+    border-radius: var(--highlightcolor-border-radius);
+    margin-left: -3px;
+    margin-right: -3px;
+    padding-left: 11px;
+}
+/* (+) plus symbol and flashcards icon color - sidebar */
+#document-sidebar .group:hover .highlight-color--purple .group-hover\:flex svg {
+    color: var(--highlightcolor-text-color) !important;    
+}
+#document-sidebar .group:hover .highlight-color--purple .group-hover\:flex:hover svg {
+    color: var(--highlightcolor-text-color) !important;
+    filter: brightness(.8);
+}
+/* end of sidebar effects */
+
+/* rem-buller when within highlight coloured container */
+.highlight-color--purple .rem-bullet {
+    background-color: var(--highlightcolor-text-color);
+}
+
+/* rem reference highlight hover color */
+.rem-reference-container:hover .highlight-color--red,
+.rem-reference-container:hover .highlight-color--orange,
+.rem-reference-container:hover .highlight-color--yellow,
+.rem-reference-container:hover .highlight-color--green,
+.rem-reference-container:hover .highlight-color--blue,
+.rem-reference-container:hover .highlight-color--purple {
+    background-color: var(--link-text-color) !important;
+}
+.highlight-color--red .gray,
+.highlight-color--red .join-arrow,
+.highlight-color--orange .gray,
+.highlight-color--orange .join-arrow,
+.highlight-color--yellow .gray,
+.highlight-color--yellow .join-arrow,
+.highlight-color--green .gray,
+.highlight-color--green .join-arrow,
+.highlight-color--blue .gray,
+.highlight-color--blue .join-arrow,
+.highlight-color--purple .gray,
+.highlight-color--purple .join-arrow {
+	color: var(--highlightcolor-text-color) !important;
+}
+.rem-reference__exclude-type-parent__delete {
+	color: var(--highlightcolor-text-color);
+}

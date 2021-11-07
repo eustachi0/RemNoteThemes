@@ -1,0 +1,338 @@
+/* settings page sidebar */
+.settings-page .settings-page__sidebar {
+    border-color: var(--popup-border-color);
+    border-right: solid var(--popup-border-color);
+    border-width: 1px;
+    background-color: var(--sidebar-background-color);
+}
+
+/* sidebar search bar */
+.settings-page .settings-page__sidebar input[type=text] {
+    filter: invert(80%) !important;
+}
+
+/* sidebar text color */
+.settings-page .css-exQOrH,
+.settings-page .css-jBUFtN,
+.settings-page .css-ATSnA,
+.settings-page .css-jvHraL,
+.settings-page .css-dcfFHl {
+    color: var(--sidebar-text-color);
+}
+
+/* sidebar icons color */
+.settings-page .settings-page__sidebar .css-drbSAB {
+    fill: var(--icons-color);
+}
+/* buttons */
+.settings-page .css-GbLOh {
+    background-color: var(--button-color);
+    color: var(--popup-text-color);
+    border-color: var(--popup-border-color);
+}
+.settings-page .css-GbLOh:hover {
+    filter: brightness(1.2);
+}
+/* advance button */
+.settings-page .css-cvJUnF {
+    background-color: rgb(153, 36, 36);
+    color: var(--popup-text-color);
+}
+.settings-page .css-cvJUnF:hover {
+    filter: brightness(1.2);
+}
+
+/* subscription */
+/* plan text */
+.settings-page .css-emvqyP {
+    color: var(--accent-color);
+}
+/* most popular plan background */
+.settings-page .bg-mint-10 {
+    background-color: var(--highlight-green);
+    opacity: 0.7;
+}
+/* most popular plan text */
+.settings-page .css-bseYpJ {
+    color: black;
+}
+
+/* feature breakdown... button */
+.settings-page .css-jWWeXl {
+    filter: invert(85%);
+    box-shadow: none;
+}
+.settings-page .css-jWWeXl:hover {
+    filter: invert(80%) !important;
+}
+
+/* input fields */
+.settings-page .border-gray-15 {
+    filter: invert(85%);
+}
+.settings-page .css-hcODQQ {
+    color: var(--popup-text-color);
+    background-color: var(--button-color);
+}
+
+/* separator lines */
+.settings-page .bg-gray-10 {
+    background-color: var(--popup-border-color);
+}
+
+.settings-page .settings-page__sidebar .settings-page__sidebar__link {
+    border-color: var(--popup-border-color) !important;
+    color: var(--sidebar-text-color);
+    font-size: 16px;
+    padding: 10px 10px 10px 10px;
+    border-bottom: solid var(--popup-border-color);
+    border-width: 0;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    border-radius: var(--border-radius);
+}
+.settings-page .settings-page__sidebar .settings-page__sidebar__link:hover {
+    background-color: var(--sidebar-hover-background-color);
+    margin: 5px;
+    border-radius: var(--border-radius);
+}
+.settings-page .settings-page__sidebar .settings-page__sidebar__link--active:hover {
+    font-weight: 700;
+    background-color: var(--sidebar-focused-background-color);
+    color: var(--focused-text-color);
+    border-left-style: none;
+    margin: 5px;
+    border-radius: var(--border-radius);
+}
+.settings-page .settings-page__sidebar .settings-page__sidebar__link--active {
+    font-weight: 700;
+    background-color: var(--sidebar-focused-background-color);
+    color: var(--focused-text-color);
+    border-left-style: none;
+    margin: 5px;
+    border-radius: var(--border-radius);
+}
+.settings-page .settings-page__sidebar .settings-page__sidebar__title {
+    color: var(--sidebar-text-color);
+    font-weight: 700;
+    font-size: 24px;
+    margin: 20px;
+}
+/* settings page body*/
+.settings-page .settings-page__content {
+    background-color: var(--body-background-color) !important;
+}
+.settings-page label {
+    font-size: 14px!important;
+    color: var(--body-text-color);
+    font-weight: 600;
+}
+.settings-page .settings-page__content .settings-page__content-inner {
+    padding: 30px;
+    color: var(popup-text-color);
+    background-color: var(--body-background-color);
+}
+.settings-page__option {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    border-width: 1px;
+    border-color: var(--popup-border-color);
+}
+.settings-page .settings-page__sub-header {
+    border-width: 1px;
+    border-color: var(--popup-border-color);
+    color: var(--popup-text-color);
+    font-size: 18px;
+    margin: 40px 0 10px;
+    padding-bottom: 5px;
+    font-weight: 700;
+}
+.settings-page__option .settings-page__text .settings-page__text__subtext {
+    color: var(--icons-color);
+    margin-top: 5px;
+    font-weight: 400;
+}
+.settings-page__option .settings-page__input .settings-page__input-box {
+    border-style: none;
+    background-color: var(--search-box-background-color);
+    color: var(--focused-text-color);
+}
+.ui.dropdown .menu .selected.item, .ui.dropdown.selected {
+    background: var(--popup-background-color);
+    color: var(--popup-text-color);
+}
+/* custom schedulers */
+.ui.form .field>label {
+    color: var(--accent-color);
+}
+.ui.input>input {
+    border: 1px solid var(--popup-border-color);
+    background: var(--body-background-color);
+    box-shadow: none;
+    color: var(--body-text-color);
+}
+.ui.input.focus>input, .ui.input>input:focus {
+    border-color: var(--popup-border-color);
+    background: var(--body-background-color);
+    color: var(--body-text-color);
+    box-shadow: none;
+}
+.ui.checkbox+label, .ui.checkbox label {
+    color: var(--body-text-color);
+    font-weight: 400;
+}
+.ui.checkbox+label, .ui.checkbox label:hover {
+    color: var(--accent-color);
+    font-weight: 400;
+}
+.spaced-repetition-scheduler-form .spaced-repetition-scheduler-form__section--examples {
+    background-color: var(--body-background-color);
+    border-color: var(--popup-border-color);
+}
+/* keyboard shortcuts*/
+#change-keyboard-shortcuts .change-keyboard-shortcut-list-item .change-keyboard-shortcut-list-item__code {
+    color: var(--accent-color);
+}
+/* plugins */
+.ui.card, .ui.cards>.card {
+    background: var(--body-background-color);
+    border: 1px solid var(--popup-border-color);
+    box-shadow: none;
+    color: var(--popup-text-color);
+}
+a {
+    color: var(--accent-color);
+}
+#PluginsConfiguration img {
+    background: white;
+    filter: invert(1) hue-rotate(160deg);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;    
+}
+.ui.card>.content>.header, .ui.cards>.card>.content>.header {
+    color: var(--accent-color);
+}
+.ui.table {
+    background: var(--body-background-color);
+    border: 1px solid var(--popup-border-color);
+    box-shadow: none;
+    color: var(--accent-color);
+    border-radius: 5px;
+}
+.ui.table thead th {
+    background: var(--body-background-color);
+    color: var(--body-text-color);
+    border-bottom: 1px solid var(--popup-border-color);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; 
+}
+.PluginsConfiguration__table {
+    overflow-y: overlay;
+    height: 100%;
+    width: 100%;
+}
+/* Account */
+.HomePageComponents button {
+    background-color: var(--button-color);
+    color: var(--body-text-color);
+}
+/* subscription */
+.HomePageComponents h1,
+.HomePageComponents h2,
+.HomePageComponents h3,
+.HomePageComponents h4,
+.HomePageComponents h5 {
+    color: var(--accent-color);
+}
+.HomePageComponents p {
+    color: var(--body-text-color);
+}
+.HomePageComponents .visual-link {
+    color: var(--accent-color);
+}
+.HomePageComponents .settings__pricing-options .settings__pricing-option-item__current {
+    background-color: var(--popup-background-color);
+}
+.HomePageComponents .from-container-blue-background {
+    background-color: var(--popup-background-color);
+}
+.HomePageComponents .form-input {
+    border: 2px solid var(--popup-border-color);
+    color: var(--body-text-color);
+    background-color: var(--sidebar-background-color);
+}
+.HomePageComponents .button--light {
+    background-color: var(--popup-background-color);
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+.popup-close-button {
+    filter: var(--icons-filter);
+}
+.popup-close-button:hover {
+    filter: var(--accent-color-filter) brightness(1.6);
+}
+#export-container #export #export__preview {
+    border-style: solid;
+    border-color: var(--popup-border-color);
+    border-radius: 5px;
+    overflow-x: overlay!important;
+    overflow-y: overlay!important;
+}
+/* knowledgebase import */
+#ImportContainer .ImportTabs .menu .item {
+    background-color: var(--popup-background-color);
+    border-color: var(--popup-border-color);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-width: var(--popup-border-width);
+    color: var(--icons-color);
+    border-bottom-style: solid;
+}
+#ImportContainer .ImportTabs .menu .item:hover {
+    color: var(--accent-color);
+}
+.ui.tabular.menu+.attached:not(.top).segment, .ui.tabular.menu+.attached:not(.top).segment+.attached:not(.top).segment {
+    margin-top: -2px;
+}
+#ImportContainer .bottom {
+    box-shadow: none;
+}
+.ui.segment {
+    background: var(--popup-background-color);
+    border: 1px solid var(--popup-border-color);
+    padding: 9px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.ui.tabular.menu .active.item {
+    background-color: var(--popup-background-color)!important;
+    color: var(--popup-text-color)!important;
+    border-bottom-style: solid !important;
+    border-bottom-width: 0px!important;
+    border-bottom-left-radius: 0px!important;
+    border-bottom-right-radius: 0px!important;
+    font-weight: 500!important;
+    margin-bottom: 0px;
+}
+/* dynalist */
+.ui.blue.button, .ui.blue.buttons .button {
+    background-color: var(--button-color);
+    color: var(--body-text-color);
+    text-shadow: none;
+    background-image: none;
+    border-style: none;
+}
+/* paste */
+.ui.form textarea {
+    background: var(--body-background-color);
+    border: 1px solid var(--popup-border-color);
+    color: var(--body-text-color);
+}
+.graph-viewer--dark {
+    filter: invert(0%) hue-rotate(0deg);
+}

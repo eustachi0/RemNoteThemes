@@ -1,0 +1,17 @@
+.embeddedSearch:focus-within {
+    background-color: var(--portal-background-color);
+    border-color: var(--accent-color);
+}
+#hierarchy-editor-toolbar-container #hierarchy-editor__add-to-portal:focus-within .rich-text-editor {
+    border: var(--popup-border-width) solid var(--accent-color);
+    border-radius: var(--popup-border-radius);
+    background-color: var(--search-box-background-color);
+    color: var(--popup-text-color);
+    padding-top: 3px;
+    margin-right: -7px;
+}
+.hierarchy-editor__hidden-children .hierarchy-editor__hidden-children__search:focus-within .rich-text-editor {
+    border-color: var(--accent-color);
+    background-color: var(--search-box-background-color);
+    border-width: 1px;
+}

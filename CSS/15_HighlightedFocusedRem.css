@@ -1,0 +1,69 @@
+body {
+    caret-color: var(--focused-text-color);
+}
+#hierarchy-editor .tree-node-container 
+    > div:not(:first-child) .rem-container--focused  {
+    background: none;
+    background-image: none;
+}
+/*--------------- 1st Tree Lines ------------------ */
+#hierarchy-editor .TreeNode:hover {
+    border-color: var(--hover-tree-lines-color) !important;
+}
+#hierarchy-editor .TreeNode:focus-within {
+    border-color: var(--focused-tree-lines-color) !important;
+    border-width: 2px;
+}
+/*--------------- Alt Tree Lines ------------------ */
+#hierarchy-editor .TreeNode--dark-indent-line:hover {
+    border-color: var(--alt-hover-tree-lines-color) !important;
+}
+#hierarchy-editor .TreeNode--dark-indent-line:focus-within {
+    border-color: var(--alt-focused-tree-lines-color) !important;
+}
+/* rem text in focus and hover */
+#hierarchy-editor .rem-container--focused:not(.highlight-color--red):not(.highlight-color--orange):not(.highlight-color--yellow):not(.highlight-color--green):not(.highlight-color--blue):not(.highlight-color--purple):not(.rem-container--todo-finished)  .rem-text {
+    color: var(--focused-text-color);
+    background-color: var(--focused-background-color);
+    border-radius: 5px;
+    filter: brightness(1.1);
+    margin-left: 20px;
+    padding-left: 4px;
+}
+
+#hierarchy-editor .rem-container--focused .concept_rem_type {
+    color: var(--focused-text-color);
+}
+#hierarchy-editor .rem-container--focused .question_rem_type {
+    color: var(--focused-text-color);
+}
+#hierarchy-editor .rem-container--focused .hierarchy-editor__tag-bar__tag {
+    color: var(--focused-text-color);
+}
+#hierarchy-editor .rem-container--focused .rem-text .descriptor_rem_type {
+    color: var(--focused-text-color);
+}
+#hierarchy-editor .rem-container--focused .rem-reference-link {
+    color: var(--focused-accent-color);
+    font-weight: 500;
+}
+#hierarchy-editor .rem-container--focused .LinkNode {
+    text-decoration: underline;
+    color: var(--focused-accent-color);
+    font-weight: 500;
+}
+#hierarchy-editor .rem-container--default .rem-reference-link i.icon.calendar.alternate.outline::before {
+    filter: var(--accent-color-filter) brightness(1.3);
+}
+#hierarchy-editor .rem-container--focused .rem-reference-link i.icon.calendar.alternate.outline::before {
+    filter: var(--accent-color-filter) brightness(1.5);
+}
+#hierarchy-editor .rem-container--focused i.icon.calendar.alternate.outline::before {
+    filter: var(--icons-filter) brightness(1.5);   
+}
+#hierarchy-editor .rem-container--focused .katex {
+    color: var(--focused-accent-color);
+}
+#hierarchy-editor .rem-container--focused .LinkNode img {
+    filter: var(--focused-accent-color-filter);
+}

@@ -1,0 +1,50 @@
+:root {
+/*body*/
+    --body-background-color: rgb(21, 24, 24);
+    --body-text-color: #DADADA;
+    --accent-color: #8DABCC;
+    --focused-accent-color: #9EBFE4;
+    --selected-background-color: rgb(65, 129, 195, 0.5);
+    --blackout-background-color: rgb(33, 36, 36);
+    --focused-background-color: rgb(15,18,18); 
+    --hover-background-color: rgb(40, 43, 43);
+    --focused-text-color: #FDFDFD;
+
+    --portal-background-color: rgb(28, 31, 31);
+    --portal-focused-background-color: rgb(22, 25, 25);
+
+    --portal-border-color: rgb(35, 38, 38);
+    --portal-focused-border-color: rgb(142, 171, 203); /*#8DABCC*/
+
+    --embedded-search-button-closed: rgb(35, 38, 38);
+    --embedded-search-button-open: rgb(35, 38, 38);
+
+    --portal-breadcrumb-background-color: rgb(35, 38, 38);
+    --portal-focused-breadcrumb-background-color: rgb(142, 171, 203);
+    --portal-breadcrumb-text-color: rgb(80, 83, 83);
+
+    --portal-search-selected-background-color: rgb(171, 201, 234);
+    --portal-search-selected-breadcrumb-text-color: rgb(60, 63, 63);
+
+    --sidebar-background-color: rgb(17, 20, 20);
+
+    /* scrollbar color*/
+    --scrollbar-color: rgb(49, 51, 51);
+    --scrollbar-hover-color: rgb(59, 61, 61);
+    --scrollbar-track-color: rgb(28, 31, 31);
+
+    /* popups */
+    --popup-background-color: rgb(32, 35, 35);
+    --popup-text-color: var(--body-text-color);
+    --popup-hover-background-color: rgb(38, 41, 41);
+
+    --bars-border-color: rgb(35, 38, 38);
+
+    /*Focused rem*/
+    --accent-color-filter: grayscale(1) invert(80%) sepia(5%) saturate(3440%) hue-rotate(182deg) brightness(87%) contrast(81%);
+    --focused-accent-color-filter: grayscale(1) invert(77%) sepia(47%) saturate(535%) hue-rotate(181deg) brightness(96%) contrast(86%);
+
+
+/* highlight colors text*/
+    --highlightcolor-text-color: rgb(27, 30, 30);
+}

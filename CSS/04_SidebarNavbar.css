@@ -1,0 +1,637 @@
+.dark-mode #document-sidebar {
+    background-color: var(--sidebar-background-color)!important;
+}
+
+#homepage #content #document-sidebar, #main #content #document-sidebar {
+	background-color: var(--sidebar-background-color);
+	border-right-style: solid;
+	border-color: var(--bars-border-color);
+    border-width: var(--bars-border-width);
+    border-top-right-radius: var(--bars-border-radius)!important;
+    border-bottom-right-radius: var(--bars-border-radius)!important;
+}
+
+#homepage #content .document-sidebar--pinned, #main #content .document-sidebar--pinned {
+	background-color: var(--sidebar-background-color);
+	border-color: var(--bars-border-color);
+}
+
+#homepage #content .document-sidebar--pinned .w-full, #main #content .document-sidebar--pinned .w-full {
+	background-color: var(--sidebar-background-color);
+	border-top-style: solid;
+	border-color: var(--bars-border-color);
+	border-width: var(--bars-border-width);
+}
+
+#homepage #content .document-sidebar--floating #document-sidebar_top, #main #content .document-sidebar--floating #document-sidebar_top {
+    border-top-right-radius: var(--bars-border-radius);
+}
+
+#homepage #content .document-sidebar--floating .w-full, #main #content .document-sidebar--floating .w-full {
+	background-color: var(--sidebar-background-color);
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: var(--bars-border-color);
+    border-width: var(--bars-border-width);
+    border-bottom-right-radius: var(--bars-border-radius);
+}
+
+#document-sidebar .text-gray-100,
+#document-sidebar .text-gray-60 {
+	color: var(--sidebar-text-color);
+}
+
+
+#document-sidebar .bg-gray-10-transparent {
+    background: linear-gradient(124deg, #2D9DD4, #2b1de8, #dd00f3);
+    background-size: 170% 170%;
+    border-radius: 6px;
+    color: var(--focused-accent-color);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.document-sidebar--collapsed--vertical {
+	background-color: var(--sidebar-background-color);
+	border-right-style: solid;
+    border-color: var(--bars-border-color);
+    border-width: var(--bars-border-width);
+}
+
+/* all popup menus background */
+ .bg-white {
+    background-color: var(--popup-background-color)!important;
+    border-radius: 4px;
+}
+
+/* all popup menu item container background */
+.popup-menu .css-kbbFlF {
+    background-color: var(--popup-background-color)!important;
+}
+/* all popup menu item icon color */
+.popup-menu .css-fQFckt, .popup-menu .css-pUlLN {
+    fill: var(--icons-color);
+    color: var(--icons-color);
+}
+/* all popup menu item container background - when on hover  */
+.popup-menu .css-kbbFlF:hover {
+    background-color: var(--popup-hover-background-color)!important;
+}
+ 
+/* all popup menu item container background - when on hover  */
+.popup-menu .css-huwYra {
+    background-color: var(--popup-hover-background-color)!important;
+    filter: brightness(1.2);
+}
+
+/* all popup menu line separator */
+.popup-menu .bg-gray-10 {
+    background-color: var(--bars-border-color)!important;
+}
+
+/* search bar background - top sidebar */
+#document-sidebar_top .bg-gray-5 {
+    background-color: var(--embeddedsearch-background-color)!important;
+}
+
+/* text inside search bar - top sidebar */
+#document-sidebar .w-full .hover\:text-gray-50 {
+    color: var(--icons-color)!important;
+    border-bottom: none!important;
+    letter-spacing: 0px!important;
+}
+
+/* doc status titles - sidebar */
+#document-sidebar .hover\:text-gray-50 {
+
+    color: var(--icons-color);
+    border-bottom: var(--bars-border-width) solid var(--bars-border-color);
+    letter-spacing: 5px;
+}
+
+/* margin between doc status titles*/
+#document-sidebar .mb-4 {
+    margin-bottom: 0.5rem;
+}
+#document-sidebar .w-full .mb-4 {
+    margin-bottom: 1rem;
+}
+
+/* when hover on All Notes and Flashcards - top sidebar */
+#document-sidebar_top .hover\:bg-hover-bg:hover {
+    background-color: var(--sidebar-hover-background-color);
+}
+
+/* documents container - sidebar */
+#document-sidebar .accordion .block    {
+	margin-top: .3rem;
+}
+/* when hover on documents - sidebar */
+#document-sidebar .group .group-hover-bg-hover-bg-transparent {
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+/* when hover on documents - sidebar */
+#document-sidebar .group:hover .group-hover-bg-hover-bg-transparent {
+    background-color: var(--sidebar-hover-background-color);
+}
+
+/* background focused/opened documents - sidebar */
+#document-sidebar .bg-primary-5 {
+    background-color: var(--sidebar-focused-background-color);
+}
+
+/* background when hover on focused/opened documents - sidebar */
+#document-sidebar .bg-primary-5:hover .group-hover-bg-hover-bg-transparent {
+    background-color: transparent;
+}
+
+/* text color - focused/opened documents - sidebar */
+#document-sidebar .bg-primary-5 .group-hover-bg-hover-bg-transparent .nowrap-RichTextViewer span {
+	/* color: var(--focused-text-color); */
+    font-weight: 800;
+}
+
+/* (+) plus symbol and flashcards icon color - sidebar */
+#document-sidebar .group .group-hover\:flex svg {
+    color: transparent;
+}
+
+#document-sidebar .group:hover .group-hover\:flex svg {
+    color: var(--icons-color);
+}
+
+/* (+) plus symbol and flashcards icon color when hover - sidebar */
+#document-sidebar .group:hover .group-hover\:flex:hover svg {
+    color: var(--icons-color);
+    filter: brightness(1.2);
+}
+
+/* (+) plus symbol and flashcards icon color when focused - sidebar */
+#document-sidebar .hover\:text-blue-100 svg {
+    color: var(--accent-color);
+}
+
+/* (+) plus symbol and flashcards icon color when focused:hover - sidebar */
+#document-sidebar .hover\:text-blue-100:hover svg {
+    color: var(--accent-color)!important;
+    filter: brightness(1.1);
+}
+
+/* arrow symbol color - sidebar */
+#document-sidebar .group-hover-bg-hover-bg-transparent .css-drbSAB {
+	color: var(--icons-color);
+}
+
+/* arrow symbol color when focused - sidebar */
+#document-sidebar .bg-primary-5 .css-drbSAB {
+	color: var(--accent-color);
+}
+
+#document-sidebar svg {
+    color: var(--icons-color);
+}
+
+
+.dark-mode #document-sidebar_top {
+  /*  background-color: var(--sidebar-top-background-color); */
+    border-bottom-style: solid;
+    border-color: var(--bars-border-color);
+    border-width: var(--bars-border-width);
+    border-bottom-right-radius: 0px!important;
+}
+
+
+/* when hover on the account name */
+.dark-mode #document-sidebar__account-capsule:hover {
+    background-color: var(--sidebar-hover-background-color);
+}
+
+.only-scrollbar-on-hover::-webkit-scrollbar-track {
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+
+/* knowledgebase page*/
+#KnowledgeBasePage {
+    background-color: var(--knowledgebasepage-background-color);
+}
+#KnowledgeBasePage #KnowledgeBaseButtons .KnowledgeBaseButtons__display-settings {
+    color: var(--body-text-color);
+}
+#KnowledgeBasePage #KnowledgeBaseButtons button {
+    background-color: var(--body-background-color);
+    color: var(--body-text-color);
+}
+#DocumentTable .ReactVirtualized__Table__headerRow {
+    color: var(--accent-color);
+    background-color: var(--knowledgebasepage-title-background-color);
+    box-shadow: none !important;
+    border-radius: 10px 10px 0px 0px;
+}
+#DocumentTable .ReactVirtualized__Grid {
+    background-color: var(--knowledgebasepage-background-color);
+    border-radius: 0 0 10px 10px;
+    box-shadow: none !important;
+    border-style: solid;
+    border-color: var(--knowledgebasepage-title-background-color) !important;
+}
+#DocumentTable a, .black-links a {
+    text-decoration: none!important;
+    color: var(--body-text-color) !important;
+}
+#DocumentTable a:hover, .black-links a:hover {
+    text-decoration: none!important;
+    background-color: var(--hover-background-color) !important;
+    color: var(--body-text-color) !important;
+}
+#documentList .document-list-item__plus-icon {
+    filter: var(--icons-filter) !important;
+}
+#documentList .document-list-item__plus-icon:hover {
+    filter: brightness(0.8) !important;
+}
+#DocumentationList .folder-float-button:hover, #documentList .folder-float-button:hover {
+    -webkit-filter: var(--accent-color-filter) !important;
+    filter: var(--accent-color-filter) !important;
+}
+.document-sidebar__document-buttons__menu:hover .document-sidebar__document-buttons__menu__button:hover {
+    background-color: var(--popup-hover-background-color);
+    color: var(--popup-hover-text-color);
+}
+.document-sidebar__document-buttons__menu:hover .document-sidebar__document-buttons__menu__button:hover {
+    background-color: var(--popup-hover-background-color);
+    color: var(--popup-hover-text-color);
+}
+#DocumentationList .document-list-item .document-list-item__folder-icon-container, #documentList .document-list-item .document-list-item__folder-icon-container {
+    filter: var(--icons-filter);
+}
+/* bottom bar */
+/* added 09 June 2020 */
+#hierarchy-editor-toolbar-container {
+    background-color: var(--body-background-color);
+    margin-bottom: 0px;
+    border-radius: var(--bars-border-radius);
+}
+.hierarchy-editor-toolbar-container--thin {
+    display: flow-root;
+    border-color: var(--bars-border-color)!important;
+    border-top: solid var(--bars-border-color);
+    border-width: var(--bars-border-width)!important;
+    border-radius: var(--bars-border-radius)!important;
+    background-color: var(--body-background-color)!important;
+    height: 28px!important;
+    margin-bottom: 2px!important;
+}
+.hierarchy-editor-toolbar-container--opened #hierarchy-editor-toolbar {
+    background-color: var(--sidebar-background-color);
+    border-style: solid;
+    border-width: var(--bars-border-width);
+    border-color: var(--bars-border-color);
+    border-radius: var(--bars-border-radius);
+}
+.hierarchy-editor-toolbar-container--opened #hierarchy-editor-toolbar .hierarchy-editor-toolbar-item {
+    color: var(--icons-color);
+}
+.hierarchy-editor-toolbar-container--opened #hierarchy-editor-toolbar .hierarchy-editor-toolbar-item__type-icon--dark {
+    -webkit-filter: var(--icons-filter);
+    filter: var(--icons-filter);
+}
+.hierarchy-editor-toolbar-container--opened #hierarchy-editor-toolbar .hierarchy-editor-toolbar-item__type-icon--dark:hover {
+    -webkit-filter: var(--focused-accent-color-filter);
+    filter: var(--focused-accent-color-filter);
+}
+.hover-card-menu__view-as-card {
+    background-color: var(--popup-background-color);
+    border-radius: var(--popup-border-radius) !important;
+}
+.hover-card-menu__view-as-card .view-as-card__no-card-focus {
+    color: var(--popup-text-color);
+}
+.hover-card-menu__view-as-card .view-as-card__no-card-focus #quote {
+    background-color: var(--popup-background-color);
+    border-color: var(--popup-border-color);
+    color: var(--popup-text-color);
+}
+/* modified 04 Jun 2021*/
+.hover-card-menu__view-as-card--on-right {
+    background-color: var(--blackout-background-color)!important;
+    margin-left: 40px;
+    border: var(--bars-border-width) solid var(--bars-border-color);
+}
+/* modified 04 Jun 2021*/
+#view-as-card #view-as-card__cards .view-as-card__card .spacedRepetition {
+    border: 2px solid var(--popup-border-color);
+    box-shadow: none;
+    border-radius: var(--popup-border-radius);
+}
+/* added 04 Jun 2021 */
+#hierarchy-editor .rem-bullet__number:hover {
+    color: var(--focused-text-color);
+}
+#view-as-card #view-as-card__cards .view-as-card__card .scroll-drag-component {
+    background-color: transparent;
+}
+#view-as-card #view-as-card__cards .view-as-card__card .spacedRepetition .spacedRepetitionContent {
+    border-top-right-radius: var(--popup-border-radius);
+    border-top-left-radius: var(--popup-border-radius);
+}
+/* modified 04 Jun 2021*/
+.hierarchy-editor-toolbar-container--opened #hierarchy-editor-toolbar .hierarchy-editor-toolbar-item__type-icon {
+    -webkit-filter: var(--accent-color-filter) grayscale(.5) brightness(1.2);
+    filter: var(--accent-color-filter) grayscale(0.5) brightness(1.2);
+}
+/* modified 04 Jun 2021*/
+.hierarchy-editor-toolbar-container--opened #hierarchy-editor-toolbar .hierarchy-editor-toolbar-item__type-icon:hover {
+    -webkit-filter: var(--accent-color-filter) grayscale(0.4) brightness(1.4);
+    filter: var(--accent-color-filter) grayscale(0.4) brightness(1.4);
+}
+/* added 05 Jun 2021*/
+.hierarchy-editor-toolbar__menu .hierarchy-editor-toolbar__menu__item {
+    border-radius: 7px;
+    margin-left: 6px!important;
+    margin-right: 6px!important;
+    padding-top: 6px!important;
+    padding-bottom: 6px!important;
+}
+/* modified 04 Jun 2021*/
+.hierarchy-editor-toolbar__menu .hierarchy-editor-toolbar__menu__item:hover {
+    background-color: var(--popup-hover-background-color);
+    border-radius: 7px;
+    margin-left: 6px!important;
+    margin-right: 6px!important;
+    padding-top: 6px!important;
+    padding-bottom: 6px!important;
+}
+/* modified 04 Jun 2021*/
+.hierarchy-editor-toolbar__menu .hierarchy-editor-toolbar__menu__item--selected,
+.hierarchy-editor-toolbar__menu .hierarchy-editor-toolbar__menu__item--selected:hover {
+    background-color: var(--popup-selected-background-color);
+    border-radius: 7px;
+    margin-left: 6px!important;
+    margin-right: 6px!important;
+    padding-top: 6px!important;
+    padding-bottom: 6px!important;
+}
+/* modified 04 Jun 2021*/
+.hierarchy-editor-toolbar__menu .hierarchy-editor-toolbar__menu__item .hierarchy-editor-toolbar__menu__item__icon  {
+    filter: var(--accent-color-filter) grayscale(1);
+}
+/* modified 04 Jun 2021*/
+.hierarchy-editor-toolbar__menu .hierarchy-editor-toolbar__menu__item:hover .hierarchy-editor-toolbar__menu__item__icon  {
+    filter: var(--accent-color-filter) grayscale(0.4) brightness(1.4);
+}
+/* modified 04 Jun 2021*/
+.hierarchy-editor-toolbar__menu .hierarchy-editor-toolbar__menu__item--selected .hierarchy-editor-toolbar__menu__item__icon  {
+    filter: var(--accent-color-filter) grayscale(0.5) brightness(1.2);
+}
+/* added 04 Jun 2021*/
+.hierarchy-editor-toolbar__menu .hierarchy-editor-toolbar__menu__item--selected:hover .hierarchy-editor-toolbar__menu__item__icon  {
+    filter: var(--accent-color-filter) grayscale(0.5) brightness(1.2);
+}
+.hierarchy-editor-toolbar__menu #quote {
+    background-color: var(--popup-background-color);
+    border-color: var(--popup-border-color);
+    color: var(--popup-text-color);
+}
+.hierarchy-editor-toolbar-container--opened #hierarchy-editor-toolbar .hierarchy-editor-toolbar__vertical-divider {
+    border-color: var(--popup-border-color);
+}
+.hierarchy-editor-toolbar-container--opened .hierarchy-editor-toolbar__button {
+    color: var(--icons-color);
+}
+.hierarchy-editor-toolbar-container--opened .hierarchy-editor-toolbar__button:hover {
+    color: var(--accent-color)!important;
+}
+.hierarchy-editor-toolbar-container--opened .header-editor-toolbar__button-header {
+    color: var(--accent-color)!important;
+}
+.hierarchy-editor-toolbar-container--opened .header-editor-toolbar__button-header i.icon.header:before {
+    color: var(--icons-color);
+}
+.hierarchy-editor-toolbar-container--opened .header-editor-toolbar__button-header:hover i.icon.header:before {
+    color: var(--accent-color);
+}
+.hierarchy-editor-toolbar-container--opened i.icon.circle:before,
+.hierarchy-editor-toolbar-container--opened i.icon.check.square:before,
+.hierarchy-editor-toolbar-container--opened i.icon.numbered.list:before,
+.hierarchy-editor-toolbar-container--opened i.icon.inbox:before,
+.hierarchy-editor-toolbar-container--opened i.icon.file:before,
+.hierarchy-editor-toolbar-container--opened i.icon.chess.board:before {
+    color: var(--accent-color);
+}
+/* merge bottom */
+.hierarchy-editor-toolbar-container--opened #hierarchy-editor-toolbar .ToolbarDuplicateKeyButton {
+    color: grey;
+    border-radius: 5px;
+    border: none;
+    padding: 3px;
+    margin-left: 5px;
+    background-color: var(--popup-background-color);
+}
+.hierarchy-editor-toolbar-container--opened #hierarchy-editor-toolbar .ToolbarDuplicateKeyButton:hover {
+    color: var(--accent-color);
+    border-radius: 5px;
+    border: none;
+    padding: 3px;
+    margin-left: 5px;
+    background-color: var(--popup-hover-background-color);
+}
+.popup .toolbar-button {
+    border-color: var(--popup-border-color);
+    border-width: var(--popup-border-width);
+    border-radius: var(--popup-border-radius);
+    color: var(--popup-text-color);
+}
+.popup .toolbar-button:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+.popup .toolbar-button--selected__header {
+    background-color: var(--popup-background-color);
+}
+.popup #BulletFormatIcons .BulletFormatIcons__icon__active, .popup #BulletFormatIcons .icon:hover {
+    color: var(--accent-color) !important;
+}
+#hierarchy-editor-toolbar-container #hierarchy-editor__add-to-portal .rich-text-editor {
+    border: var(--popup-border-width) solid var(--popup-border-color);
+    border-radius: var(--popup-border-radius);
+    background-color: var(--search-box-background-color);
+    color: var(--popup-text-color);
+    padding-top: 4px;
+    margin-right: -7px;
+}
+.search-results #search-results__no-results {
+    padding: 10px;
+    color: var(--popup-text-color);
+    background-color: var(--popup-background-color);
+}
+#hierarchy-editor-toolbar-container #hierarchy-editor__add-to-portal .search-results {
+    box-shadow: none;
+    border-style: solid;
+    border-width: var(--popup-border-width);
+    border-color: var(--popup-border-color);
+    border-radius: var(--popup-border-radius);
+}
+.document-sidebar--collapsed--horizontal {
+    border-color: rgba(0,0,0,0);
+    border-bottom: solid rgba(0,0,0,0);
+    border-width: thin;
+    width: 100%;
+    height: 40px;
+    flex-shrink: 0;
+}
+.underlined-link {
+    color: var(--accent-color);
+}
+
+
+/*Tutorial menu*/
+#DocumentationList #documentation-list__section__large-title {
+    background-color: #3B464B;
+}
+#DocumentationList #documentation-list__section {
+    border-color: cyan;
+}
+.navigation-bar  {
+    background-color: var(--sidebar-background-color);
+    border-bottom-style: solid;
+    border-bottom-color: var(--bars-border-color);
+    border-bottom-width: var(--bars-border-width); 
+}
+.navigation-bar i.icon  {
+    filter: var(--icons-filter) !important; 
+}
+.navigation-bar i.icon:hover  {
+    filter: var(--accent-color-filter) !important; 
+}
+#UpdateIndicator {
+    border: 0px;
+    font-size: 13px;
+    color: var(--focused-accent-color);
+    font-weight: 600;
+}
+
+/* document - table list */
+/* all notes focused */
+#document-sidebar .text-primary {
+    color: var(--accent-color);
+}
+#document-sidebar .text-primary .css-fqRAnH {
+    fill: var(--accent-color);
+}
+
+/* All notes title */
+.css-crJvPT {
+    color: var(--body-text-color);
+}
+/* all notes number */
+.css-QtSry {
+    color: var(--accent-color);
+}
+/* sort button */
+.css-kgZxQP {
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+    color: var(--body-text-color);
+}
+/* hover */
+.css-kgZxQP:hover {
+    background-color: var(--button-color);
+
+    filter: brightness(1.2);
+}
+
+/* filter buttom and ... buttons */
+.css-GbLOh {
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+    color: var(--body-text-color);
+}
+/* hover */
+.css-GbLOh:hover {
+    background-color: var(--button-color);
+    filter: brightness(1.2);
+}
+
+/* sort and filter button icons */
+.css-kRCqMn {
+    fill: var(--body-text-color);
+}
+
+/* tab title text */
+.css-eZPJVR .css-exQOrH {
+    color: var(--icons-color);
+}
+
+/* tab title background hover */
+.css-jcbvum:hover {
+    background-color: var(--sidebar-hover-background-color);
+    border-bottom-color: rgb(60, 63, 63);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* tab tiltle active */
+.css-iwfiTu {
+    border-bottom-color: var(--accent-color);
+    background-color: rgb(45, 48, 48);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.css-iwfiTu:hover {
+    background-color: rgb(45, 48, 48);
+    border-bottom-color: var(--accent-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+/* active tab text color */
+.css-iwfiTu .css-exQOrH {
+    color: var(--accent-color);
+}
+
+/* all tabs bottom line */
+.css-huFlzA {
+    border-bottom: 1px solid var(--bars-border-color);
+}
+
+/* document icons */
+.css-kGSmzl {
+    filter: invert(85%) hue-rotate(180deg);
+}
+
+/* document symbol dot and count */
+.css-jyUCXr {
+    color: var(--accent-color);
+}
+
+/* document name color */
+.css-jlRuPl {
+    color: var(--body-text-color);
+}
+/* document rute color */
+.css-dcfFHl {
+    color: var(--icons-color);
+}
+/* background color when hover on documents */
+.css-favSPh:hover {
+    background-color: var(--sidebar-hover-background-color);
+    border-radius: 10px;
+}
+
+/* New Document button */
+.hover\:bg-primary-70 {
+    background-color: var(--button-color);
+}
+
+.hover\:bg-primary-70:hover {
+    background-color: var(--button-color);
+    filter: brightness(1.3);
+}
+.hover\:bg-primary-70 .css-pUlLN,
+.hover\:bg-primary-70 .font-semibold {
+    fill: var(--sidebar-text-color);
+    color: var(--sidebar-text-color);
+}

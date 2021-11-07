@@ -1,0 +1,288 @@
+/* svg position variables */
+:root {
+    --branch-tree-symbol-size: 30px;
+    --branch-tree-symbol-position-x: -1px;
+    --branch-tree-symbol-position-y: -1px;
+}
+/*------- 1st Tree node symbols when in focus and hover ------*/
+/* focused all */
+#hierarchy-editor .TreeNode > div:focus-within
+    > div:first-child .rem-container--default:not(.rem-container--header-1):not(.rem-container--header-2):not(.rem-container--header-3):not(.rem-container--not-included-in-document-scope) {
+    background: none;
+    background-image: var(--focused-branch-tree-symbol);
+    background-repeat: no-repeat;
+    background-size: var(--branch-tree-symbol-size);
+    background-position-x: var(--branch-tree-symbol-position-x);
+    background-position-y: var(--branch-tree-symbol-position-y);
+    margin-left: -18px !important;
+    padding-left: 18px !important;
+}
+
+/* focused h1 */
+#hierarchy-editor .TreeNode > div:focus-within
+    > div:first-child .rem-container--header-1 {
+    background: none;
+    background-image: var(--focused-branch-tree-symbol);
+    background-repeat: no-repeat;
+    background-size: var(--branch-tree-symbol-size);
+    background-position-x: var(--branch-tree-symbol-position-x);
+    background-position-y: calc(var(--branch-tree-symbol-position-y) + 6px);
+    margin-left: -18px;
+    padding-left: 18px;
+}
+/* focused h2 */
+#hierarchy-editor .TreeNode > div:focus-within
+    > div:first-child .rem-container--header-2 {
+    background: none;
+    background-image: var(--focused-branch-tree-symbol);
+    background-repeat: no-repeat;
+    background-size: var(--branch-tree-symbol-size);
+    background-position-x: var(--branch-tree-symbol-position-x);
+    background-position-y: calc(var(--branch-tree-symbol-position-y) + 4px);
+    margin-left: -18px;
+    padding-left: 18px;
+}
+/* focused h3 */
+#hierarchy-editor .TreeNode > div:focus-within
+    > div:first-child .rem-container--header-3 {
+    background: none;
+    background-image: var(--focused-branch-tree-symbol);
+    background-repeat: no-repeat;
+    background-size: var(--branch-tree-symbol-size);
+    background-position-x: var(--branch-tree-symbol-position-x);
+    background-position-y: calc(var(--branch-tree-symbol-position-y) + 2px);
+    margin-left: -18px;
+    padding-left: 18px;
+}
+/* focused portal breadcrumb */
+#hierarchy-editor .TreeNode > div:focus-within
+    > div:first-child .rem-container--not-included-in-document-scope {
+    background: none;
+    background-image: var(--focused-branch-tree-symbol) !important;
+    background-repeat: no-repeat !important;
+    background-size: var(--branch-tree-symbol-size) !important;
+    background-position-x: var(--branch-tree-symbol-position-x) !important;
+    background-position-y: var(--branch-tree-symbol-position-y) !important;
+    margin-left: -18px !important;
+    padding-left: 22px !important;
+}
+
+
+/* hover all */
+#hierarchy-editor .TreeNode > div
+    > div:first-child:hover .rem-container--default:not(.rem-container--header-1):not(.rem-container--header-2):not(.rem-container--header-3):not(.rem-container--not-included-in-document-scope):not(.rem-container--focused) {
+    background: none;
+    background-image: var(--hover-focused-branch-tree-symbol)!important;
+    background-repeat: no-repeat;
+    background-size: var(--branch-tree-symbol-size);
+    background-position-x: var(--branch-tree-symbol-position-x);
+    background-position-y: var(--branch-tree-symbol-position-y);
+    margin-left: -18px;
+    padding-left: 18px;
+}
+/* hover h1 */
+#hierarchy-editor .TreeNode > div
+    > div:first-child:hover .rem-container--header-1 {
+    background: none;
+    background-image: var(--hover-focused-branch-tree-symbol);
+    background-repeat: no-repeat;
+    background-size: var(--branch-tree-symbol-size);
+    background-position-x: var(--branch-tree-symbol-position-x);
+    background-position-y: calc(var(--branch-tree-symbol-position-y) + 6px);
+    margin-left: -18px;
+    padding-left: 18px;
+}
+/* hover h2 */
+#hierarchy-editor .TreeNode > div
+    > div:first-child:hover .rem-container--header-2 {
+    background: none;
+    background-image: var(--hover-focused-branch-tree-symbol);
+    background-repeat: no-repeat;
+    background-size: var(--branch-tree-symbol-size);
+    background-position-x: var(--branch-tree-symbol-position-x);
+    background-position-y: calc(var(--branch-tree-symbol-position-y) + 4px);
+    margin-left: -18px;
+    padding-left: 18px;
+}
+/* hover h3 */
+#hierarchy-editor .TreeNode > div
+    > div:first-child:hover .rem-container--header-3 {
+    background: none;
+    background-image: var(--hover-focused-branch-tree-symbol);
+    background-repeat: no-repeat;
+    background-size: var(--branch-tree-symbol-size);
+    background-position-x: var(--branch-tree-symbol-position-x);
+    background-position-y: calc(var(--branch-tree-symbol-position-y) + 2px);
+    margin-left: -18px;
+    padding-left: 18px;
+}
+/* hover portal breadcrumb */
+#hierarchy-editor .TreeNode > div
+    > div:first-child:hover .rem-container--not-included-in-document-scope {
+    background: none;
+    background-image: var(--hover-focused-branch-tree-symbol);
+    background-repeat: no-repeat;
+    background-size: var(--branch-tree-symbol-size);
+    background-position-x: var(--branch-tree-symbol-position-x);
+    background-position-y: var(--branch-tree-symbol-position-y);
+    margin-left: -18px;
+    padding-left: 22px !important;
+}
+
+/* focused:hover all */
+#hierarchy-editor .TreeNode > div
+    > div:first-child:hover .rem-container--focused:not(.rem-container--header-1):not(.rem-container--header-2):not(.rem-container--header-3) {
+    background: none;
+    background-image: var(--focused-branch-tree-symbol) !important;
+    background-repeat: no-repeat !important;
+    background-size: var(--branch-tree-symbol-size) !important;
+    background-position-x: var(--branch-tree-symbol-position-x) !important;
+    background-position-y: var(--branch-tree-symbol-position-y) !important;
+    margin-left: -18px !important;
+    padding-left: 18px !important;
+}
+/* focused:hover h1 */
+#hierarchy-editor .TreeNode > div
+    > div:first-child:hover .rem-container--header-1:focus-within {
+    background: none;
+    background-image: var(--focused-branch-tree-symbol);
+    background-repeat: no-repeat;
+    background-size: var(--branch-tree-symbol-size);
+    background-position-x: var(--branch-tree-symbol-position-x);
+    background-position-y: calc(var(--branch-tree-symbol-position-y) + 6px);
+    margin-left: -18px;
+    padding-left: 18px;
+}
+/* focused:hover h2 */
+#hierarchy-editor .TreeNode > div
+    > div:first-child:hover .rem-container--header-2:focus-within {
+    background: none;
+    background-image: var(--focused-branch-tree-symbol);
+    background-repeat: no-repeat;
+    background-size: var(--branch-tree-symbol-size);
+    background-position-x: var(--branch-tree-symbol-position-x);
+    background-position-y: calc(var(--branch-tree-symbol-position-y) + 4px);
+    margin-left: -18px;
+    padding-left: 18px;
+}
+/* focused:hover h3 */
+#hierarchy-editor .TreeNode > div
+    > div:first-child:hover .rem-container--header-3:focus-within {
+    background: none;
+    background-image: var(--focused-branch-tree-symbol);
+    background-repeat: no-repeat;
+    background-size: var(--branch-tree-symbol-size);
+    background-position-x: var(--branch-tree-symbol-position-x);
+    background-position-y: calc(var(--branch-tree-symbol-position-y) + 2px);
+    margin-left: -18px;
+    padding-left: 18px;
+}
+
+
+/*BULLETS AND ICONS*/
+/*---------- bullets in focus and hover ----------*/
+/*----general rems bullet hover ----*/
+#hierarchy-editor .rem-container--default:hover .rem-bullet {
+    background-color: var(--hover-bullet-color);
+    width: 8px;
+    height: 8px;
+}
+#hierarchy-editor .rem-container--focused .rem-bullet {
+    background-color: var(--focused-bullet-color);
+    width: 8px;
+    height: 8px;
+}
+#hierarchy-editor .rem-container--focused:hover .rem-bullet {
+    background-color: var(--focused-bullet-color);
+    width: 8px;
+    height: 8px;
+}
+
+/*------- 1st Tree node symbols when in focus and hover ------*/
+#hierarchy-editor .TreeNode > div:focus-within 
+    > div:first-child .rem-bullet, .rem-bullet--in-list {
+    background-color: var(--tree-focused-bullet-color);
+    width: 8px;
+    height: 8px;
+    
+}
+#hierarchy-editor /* .tree-node-container 
+    > */ .TreeNode > div
+    > div:first-child:hover .rem-bullet, .rem-bullet--in-list {
+    background-color: var(--tree-hover-focused-bullet-color);
+    width: 8px;
+    height: 8px;
+    
+}
+#hierarchy-editor /* .tree-node-container
+    > */ .TreeNode > div 
+    > div:focus-within:first-child:hover .rem-bullet, .rem-bullet--in-list {
+    background-color: var(--tree-focused-bullet-color);
+    width: 8px;
+    height: 8px;
+    
+}
+
+/*---------- bullets icons in focus and hover ----------*/
+/*----general rems bullet icons hover ----*/
+#hierarchy-editor .rem-container--default:hover .rem-bullet__icon {
+    color: var(--hover-bullet-color);
+}
+#hierarchy-editor .rem-container--focused .rem-bullet__icon {
+    color: var(--focused-bullet-color);
+}
+#hierarchy-editor .rem-container--focused:hover .rem-bullet__icon {
+    color: var(--focused-bullet-color);
+}
+
+/*------- 1st Tree node symbols when in focus and hover ------*/
+#hierarchy-editor .TreeNode > div:focus-within 
+    > div:first-child .rem-bullet__icon {
+    color: var(--tree-focused-bullet-color);
+}
+#hierarchy-editor .TreeNode > div
+    > div:first-child:hover .rem-bullet__icon {
+    color: var(--tree-hover-focused-bullet-color);
+}
+#hierarchy-editor .TreeNode > div 
+    > div:focus-within:first-child:hover .rem-bullet__icon {
+    color: var(--tree-focused-bullet-color);
+}
+
+
+/*---------- hamburger and collapse button position ----------*/
+/*rem container*/
+#hierarchy-editor .TreeNode .rem-container:hover .rem-hamburger {
+    margin-left: -16px;
+    margin-top: 0px !important;
+}
+#hierarchy-editor .TreeNode .rem-container--focused .rem-hamburger {
+    filter: brightness(1.4);
+    margin-left: -16px;
+    margin-top: 0px !important;
+}
+#hierarchy-editor .rem-container--focused .rem-hamburger {
+    filter: brightness(1.4);
+}
+#hierarchy-editor .TreeNode .rem-container:hover .toggleCollapseButton {
+    margin-left: -18px;
+    margin-top: 1px !important;
+}
+#hierarchy-editor .TreeNode .rem-container--focused .toggleCollapseButton {
+    filter: brightness(1.4);
+    margin-left: -18px;
+    margin-top: 1px !important;
+}
+#hierarchy-editor .rem-container--focused .toggleCollapseButton {
+    filter: brightness(1.4);
+}
+
+/* list in cards*/
+#hierarchy-editor .TreeNode--list--in-card-content:hover .rem-hamburger {
+    margin-left: -12px;
+    margin-top: 0px;
+}
+#hierarchy-editor .TreeNode--list--in-card-content:hover .toggleCollapseButton {
+    margin-left: -15px;
+    margin-top: 1px;
+}

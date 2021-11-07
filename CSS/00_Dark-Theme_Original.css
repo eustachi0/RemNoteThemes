@@ -1,0 +1,48 @@
+:root {
+/*body*/
+    --body-background-color: rgb(38, 40, 40);
+    --body-text-color: #DADADA;
+    --accent-color: #8DABCC;
+    --focused-accent-color: #9EBFE4;
+    --selected-background-color: rgb(65, 129, 195, 0.5);
+    --blackout-background-color: rgb(33, 36, 36); 
+    --focused-background-color: rgb(25,30,30); 
+    --hover-background-color: rgb(40, 43, 43);
+    --focused-text-color: #FDFDFD;/*#DCDCDC*/
+    --portal-background-color: rgb(42, 44, 44);
+    --portal-focused-background-color: rgb(38, 40, 40);
+    --portal-border-color: rgb(50, 53, 53);
+    --portal-focused-border-color: rgb(142, 171, 203);
+
+    --embedded-search-button-closed: rgb(50, 53, 53);
+    --embedded-search-button-open: rgb(50, 53, 53);
+
+    --portal-breadcrumb-background-color: rgb(50, 53, 53);
+    --portal-focused-breadcrumb-background-color: rgb(142, 171, 203);
+    --portal-breadcrumb-text-color: rgb(80, 83, 83);
+
+    --portal-search-selected-background-color: rgb(171, 201, 234);
+    --portal-search-selected-breadcrumb-text-color: rgb(60, 63, 63);
+
+    --sidebar-background-color: rgb(30, 33, 33);
+
+    /* scrollbar color*/
+    --scrollbar-color: rgb(59, 61, 61); /*modified 04 Jun 2021*/
+    --scrollbar-hover-color: rgb(69, 71, 71); /*modified 09 Jun 2021*/
+    --scrollbar-track-color: rgb(42, 44, 44); /*added 09 Jun 2021*/
+
+    /* popups */
+    --popup-background-color: rgb(40, 42, 42);
+    --popup-text-color: var(--body-text-color);
+    --popup-hover-background-color: rgb(48, 50, 50);
+
+    --bars-border-color: rgb(52, 54, 54);
+
+    /*Focused rem*/
+    --accent-color-filter: grayscale(1) invert(80%) sepia(5%) saturate(3440%) hue-rotate(182deg) brightness(87%) contrast(81%);
+    --focused-accent-color-filter: grayscale(1) invert(77%) sepia(47%) saturate(535%) hue-rotate(181deg) brightness(96%) contrast(86%);
+
+
+    /* highlight colors text*/
+    --highlightcolor-text-color: rgb(30, 33, 33);
+}
