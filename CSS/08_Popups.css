@@ -438,3 +438,92 @@
     background-color: var(--popup-hover-background-color)!important;
 }
 /*------ end of added 28 Jun 2021 ------*/
+
+
+
+
+/* ------ main search popup ------- */
+
+/* recent pages */
+.css-khYwOj {
+	background-color: var(--popup-hover-background-color);
+}
+.css-hBWTgk {
+	background-color: var(--popup-background-color);
+}
+.css-exQOrH {
+    color: var(--popup-text-color);
+}
+
+/* main background color */
+.css-ZPdGi {
+    background-color: var(--popup-background-color);
+    border: 1px solid var(--popup-border-color);
+    border-radius: 15px;
+}
+
+/* recent pages */
+.css-khYwOj {
+	background-color: var(-popup-background-color);
+}
+
+/* highlighted result */
+.bg-warning-10 {
+	background-color: rgb(174, 158, 38, 0.4);
+
+}
+/* top area search a rem */
+.css-dwIDzn {
+    background-color: var(--sidebar-background-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 15px;
+}
+/* search a rem text background */
+.css-jQQQnw {
+	background-color: var(--sidebar-background-color);
+	color: var(--popup-text-color);
+}
+
+/* results area background */
+.css-LusbH {
+	background-color: var(--popup-background-color);
+}
+
+/* bottom area */
+.css-czVtdR {
+    border-top: 1px solid var(--popup-border-color);
+}
+
+/* search results area background */
+.css-ezQqrb {
+	background-color: var(--popup-backgroung-color);
+}
+
+/* search results items */
+.css-edMwoJ {
+	background-color: var(--popup-background-color);
+}
+
+/* search results hover background */
+.css-cCyKhM {
+	background-color: var(--popup-hover-background-color);
+}
+
+/* bottom list line separador */
+.css-ezQqrb .bg-gray-10 {
+	background-color: var(--popup-border-color);
+}
+
+/* last element - add rem */
+.css-cMUIYB {
+	background-color: var(--popup-hover-background-color);
+}
+
+.css-bwtzVW {
+	background-color: var(--popup-background-color);
+}
+.css-kodynN {
+    background-color: var(--button-color);
+    color: var(--popup-text-color);
+}
+/* end of main search popup *
