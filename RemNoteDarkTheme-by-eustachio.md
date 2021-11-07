@@ -10,7 +10,7 @@
 ```markdown
   - [ ] **RemNote Dark Theme by eustachio v2.0**
     - Designed, created and maintained by Eustachio (I do not work for RemNote)
-    - Please consider donate, it will help me to keep myself motivated to maintain the theme, fix bugs and introduce new ideas. I will appreciate it.
+    - `Please consider donate, it will help me to keep myself motivated to maintain the theme, fix bugs and introduce new ideas. I will appreciate it.`
     - This theme has been created to work with the `Dark Mode ON`
     - This is something I do for fun as I like simple and modern UI's. I wanted to make RemNote look awesome!!!
     - Version 2.0 - Released date: 07 November 2021
