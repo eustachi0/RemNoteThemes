@@ -22,7 +22,7 @@ body {
     border-color: var(--alt-focused-tree-lines-color) !important;
 }
 /* rem text in focus and hover */
-#hierarchy-editor .rem-container--focused:not(.highlight-color--red):not(.highlight-color--orange):not(.highlight-color--yellow):not(.highlight-color--green):not(.highlight-color--blue):not(.highlight-color--purple):not(.rem-container--todo-finished)  .rem-text {
+#hierarchy-editor .rem-container--focused:not(.highlight-color--red):not(.highlight-color--orange):not(.highlight-color--yellow):not(.highlight-color--green):not(.highlight-color--blue):not(.highlight-color--purple):not(.rem-container--todo-finished) .rem-text {
     color: var(--focused-text-color);
     background-color: var(--focused-background-color);
     border-radius: 5px;

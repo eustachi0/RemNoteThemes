@@ -1,7 +1,7 @@
 /*RED*/
 /*general */
 .highlight-color--red {
-    background: var(--highlight-red);
+    background: var(--highlight-red) !important;
     border-radius: var(--highlightcolor-border-radius);
     color: var(--highlightcolor-text-color);
     font-weight: 600;
@@ -81,7 +81,7 @@ div > .highlight-color--red span {
 /*---------- ORANGE ----------*/
 /*general */
 .highlight-color--orange {
-    background: var(--highlight-orange);
+    background: var(--highlight-orange) !important;
     border-radius: var(--highlightcolor-border-radius);
     color: var(--highlightcolor-text-color);
     font-weight: 600;
@@ -161,7 +161,7 @@ div > .highlight-color--orange span {
 /*---------- YELLOW ----------*/
 /*general */
 .highlight-color--yellow {
-    background: var(--highlight-yellow);
+    background: var(--highlight-yellow) !important;
     border-radius: var(--highlightcolor-border-radius);
     color: var(--highlightcolor-text-color);
     font-weight: 600;
@@ -321,7 +321,7 @@ div > .highlight-color--green span {
 /*---------- BLUE ----------*/
 /*general */
 .highlight-color--blue {
-    background: var(--highlight-blue);
+    background: var(--highlight-blue) !important;
     border-radius: var(--highlightcolor-border-radius);
     color: var(--highlightcolor-text-color);
     font-weight: 600;
@@ -406,7 +406,7 @@ div > .highlight-color--blue span {
 /*---------- PURPLE ----------*/
 /*general */
 .highlight-color--purple {
-    background: var(--highlight-purple);
+    background: var(--highlight-purple) !important;
     border-radius: var(--highlightcolor-border-radius);
     color: var(--highlightcolor-text-color);
     font-weight: 600;
@@ -483,7 +483,19 @@ div > .highlight-color--purple span {
     background-color: var(--highlightcolor-text-color);
 }
 
-/* rem reference highlight hover color */
+
+
+/* rem reference highlight color */
+.rem-reference-container .highlight-color--red,
+.rem-reference-container .highlight-color--orange,
+.rem-reference-container .highlight-color--yellow,
+.rem-reference-container .highlight-color--green,
+.rem-reference-container .highlight-color--blue,
+.rem-reference-container .highlight-color--purple {
+    color: var(--highlightcolor-text-color) !important;
+    font-weight: 600 !important;
+}
+
 .rem-reference-container:hover .highlight-color--red,
 .rem-reference-container:hover .highlight-color--orange,
 .rem-reference-container:hover .highlight-color--yellow,
@@ -492,6 +504,7 @@ div > .highlight-color--purple span {
 .rem-reference-container:hover .highlight-color--purple {
     background-color: var(--link-text-color) !important;
 }
+
 .highlight-color--red .gray,
 .highlight-color--red .join-arrow,
 .highlight-color--orange .gray,

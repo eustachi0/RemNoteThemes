@@ -8,13 +8,6 @@
 
 /* portals */
 
-/* portal six-dot visible - not in focus */
-/* .portal-tree-node-box .portal-rem-top__button-container .six-dot {
-	visibility: visible !important;
-    margin-bottom: 50px !important;
-    margin-left: -2px;
-} */
-
 .portal-tree-node-box .portal-rem-top__button-container .bg-white .fill-current {
     color: var(--portal-border-color);
 }
@@ -22,67 +15,19 @@
 /* portal .six-dot when focused */
 #hierarchy-editor .node-top-level-in-portal-container .node-top-level-in-portal .bg-white {
     background-color: transparent !important;
-/*     position: absolute; */
-/*     left: -24px !important;
-    bottom: -9px; */
 }
 #hierarchy-editor .node-top-level-in-portal-container .node-top-level-in-portal .bg-white .fill-current {
     color: var(--focused-bullet-color) !important;
+    filter: brightness(.8);
 }
 
-
-/* background and position - portal breadcrumb tab */
-/* .hidden {
-    display: block !important;
-} */
-
-/* Portal breadcrumbs */
-/* when not in focus */
-/* #hierarchy-editor .portal-tree-node-box .node-top-level-in-portal-container .node-top-level-in-portal {
-    background-color: red !important;
-    bottom: -18px;
-    left: -4px;
-    padding-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    box-shadow: none !important;
-    position: absolute;
-} */
-
 /* breadcrumbs container level */
-/* #hierarchy-editor .portal-tree-node-box .node-top-level-in-portal-container .node-top-level-in-portal .rem-container {
-    background-color: blue var(--portal-breadcrumb-background-color);
-    margin-top: -2px !important;
-    padding-top: 0px !important;
-    padding-bottom: 2px !important;
-    margin-right: -4px;
-    margin-left: -2px;
-    margin-bottom: -8px;
-    padding-left: 5px;
-    border: 2px solid var(--portal-border-color) !important;
-    border-bottom-style: none !important;
-    border-bottom-style: none;
-    border-radius: var(--portal-border-radius);
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-} */
-
-/* #hierarchy-editor .portal-tree-node-box .node-top-level-in-portal-container::before {
-    content: "";
-    position: absolute;
-    background-color: transparent;
-    vertical-align: top;
-    margin-left: -15px;
-    top: 26px !important;
-    height: 30px;
-    width: 100%;
-    padding-left: 0px;
-    border-top-left-radius: var(--portal-inverted-radius);
-    border-top-right-radius: var(--portal-inverted-radius);
-    border-style: none;
-    box-shadow: 0 -14px 0 0 var(--portal-breadcrumb-background-color);
-    transition: none !important;
-} */
+#hierarchy-editor .portal-tree-node-box .node-top-level-in-portal-container .node-top-level-in-portal .rem-container {
+  background-color: var(--portal-focused-breadcrumb-background-color) !important;
+  border-radius: 2px;
+  margin-right: 2px;
+  margin-bottom: -1px;
+}
 
 /* Portal breadcrumbs */
 /* when focused */
@@ -97,48 +42,8 @@
     border-radius: 2px;
     margin-right: 2px;
     margin-bottom: -1px;
-/*     border: 2px solid var(--portal-focused-breadcrumb-background-color) !important; */
-/*     border-bottom-style: none !important;
-    border-radius: var(--portal-border-radius) !important;
-    border-bottom-left-radius: 0px !important;
-    border-bottom-right-radius: 0px !important; */
 }
 
-/* #hierarchy-editor .portal-tree-node-box--focused .node-top-level-in-portal-container::before {
-    content: "";
-    position: absolute;
-    background-color: transparent;
-    vertical-align: top;
-    margin-left: -15px;
-    top: 20px;
-    height: 30px;
-    width: 100%;
-    padding-left: 0px;
-    border-top-left-radius: var(--portal-inverted-radius);
-    border-top-right-radius: var(--portal-inverted-radius);
-    border-style: none;
-    box-shadow: 0 -14px 0 0 var(--portal-focused-breadcrumb-background-color) !important;
-} */
-
-/* -------- test search portal inside portal ----------*/
-/* when not focused */
-/* #hierarchy-editor .portal-tree-node-box .portal-tree-node-box .node-top-level-in-portal-container .node-top-level-in-portal .rem-container {
-    border-bottom: 1px solid transparent !important;
-} */
-
-/* when focused */
-/* #hierarchy-editor .portal-tree-node-box--focused .portal-tree-node-box .node-top-level-in-portal-container .node-top-level-in-portal .rem-container {
-    background-color: var(--portal-breadcrumb-background-color) !important;
-    border: 1px solid var(--portal-border-color) !important;
-    border-bottom: 1px solid transparent !important;
-} */
-/* #hierarchy-editor .portal-tree-node-box--focused .portal-tree-node-box .node-top-level-in-portal-container::before {
-    box-shadow: 0 -14px 0 0 var(--portal-breadcrumb-background-color) !important;
-} */
-
-.animate-zoom-into-bullet {
-    transition: none !important;
-}
 
 
 /* power-up symbol */
@@ -230,21 +135,13 @@
 
 /* portal background */
 #hierarchy-editor .portal-tree-node-box {
-    /* border: 2px solid var(--portal-border-color) !important; */
-/*     background-color: var(--portal-background-color); */
-/*     border-radius: var(--portal-border-radius); */
-/*     margin-top: 0px;
-    padding-top: 28px;
-    padding-right: 10px;
-    padding-bottom: 2px; */
     padding-left: 15px;
     padding-right: 10px;
 }
 /* portal background when focused */
 #hierarchy-editor .portal-tree-node-box--focused {
   border: 2px solid var(--portal-focused-border-color) !important;
-  background-color: var(--portal-focused-background-color);
-/*   border-radius: var(--portal-border-radius); */
+  background-color: var(--portal-focused-background-color) !important;
 }
 
 #hierarchy-editor .portal-rem-top {
@@ -268,7 +165,6 @@
 #hierarchy-editor .portal-tree-node-box--selected {
     box-shadow: none;
     border-color: var(--portal-search-selected-background-color) !important;
-/*     border-radius: var(--portal-border-radius); */
 }
 
 /* v2.0 when hover on breadcrumb titles */
