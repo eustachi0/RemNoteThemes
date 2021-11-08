@@ -6,12 +6,12 @@
     --focused-accent-color: #9EBFE4;
     --selected-background-color: rgb(65, 129, 195, 0.5);
     --blackout-background-color: rgb(33, 36, 36);
-    --focused-background-color: rgb(15,18,18); 
+    --focused-background-color: rgb(13,16,16); 
     --hover-background-color: rgb(40, 43, 43);
     --focused-text-color: #FDFDFD;
 
     --portal-background-color: rgb(28, 31, 31);
-    --portal-focused-background-color: rgb(22, 25, 25);
+    --portal-focused-background-color: rgb(18, 21, 21);
 
     --portal-border-color: rgb(35, 38, 38);
     --portal-focused-border-color: rgb(142, 171, 203); /*#8DABCC*/

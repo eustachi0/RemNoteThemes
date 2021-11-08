@@ -1,11 +1,11 @@
 #multiple-windows .multiple-windows__document .document--narrow {
-    padding-left: 42px!important;
+    padding-left: 40px!important;
 }
 #multiple-windows .multiple-windows__document {
     padding-right: 0px!important;
 }
 .document--full-width {
-    padding-left: 27px!important;
+    padding-left: 30px!important;
 }
 .pane {
     padding-right: 0px!important;
@@ -17,5 +17,5 @@
     padding-right: 0px!important;
 }
 .mosaic-window-body .document--narrow {
-    padding-left: 42px!important;
+    padding-left: 40px!important;
 }
