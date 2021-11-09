@@ -3,16 +3,18 @@
 }
 .css-fyMhsa {
     filter: var(--accent-color-filter) brightness(1.3) grayscale(.6) saturate(1.7) opacity(.8);
+
 }
 
-.rem-container--todo-finished > div {
+/* .rem-container--todo-finished > div {
     filter: opacity(.5) !important;
     color: var(--accent-color) !important;
     text-decoration: line-through;
-}
+} */
 
 .css-bYWPqz {
     filter: var(--accent-color-filter) brightness(1.3) grayscale(.8)  saturate(1.7)  opacity(.6);
+
 }
 
 .rem-container--todo-finished .rem-bullet,
@@ -20,16 +22,22 @@
 .rem-container--todo-finished .toggle-collapse-button,
 .rem-container--todo-finished .zoom-button {
     filter: var(--accent-color-filter) brightness(1.3) grayscale(.6) saturate(1.7) opacity(.8);
+
 }
 
-.rem-container--todo-finished > div .highlight-color--red,
+.rem-container--todo-finished .rem-text {
+    color: var(--accent-color) !important;
+
+}
+
+/* .rem-container--todo-finished > div .highlight-color--red,
 .rem-container--todo-finished > div .highlight-color--orange,
 .rem-container--todo-finished > div .highlight-color--yellow,
 .rem-container--todo-finished > div .highlight-color--green,
 .rem-container--todo-finished > div .highlight-color--blue,
 .rem-container--todo-finished > div .highlight-color--purple {
     color: var(--body-background-color) !important;
-}
+} */
 
 #code-node #code-node__change-language-dropdown .menu {
     background-color: var(--popup-background-color);
