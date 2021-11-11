@@ -296,3 +296,8 @@ body, button {
    --tw-border-opacity: .3;
     border-color: rgba(236,236,248,var(--tw-border-opacity));
 }
+
+/* Type / for commands text */
+.rich-text-editor-placeholder {
+	color: rgb(65, 68, 68);
+}
