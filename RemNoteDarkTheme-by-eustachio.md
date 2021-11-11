@@ -279,9 +279,13 @@
       ```css
       @import url("https://eustachi0.github.io/RemNoteThemes/CSS/02_Scrollbars.css");
       ```
-    - [ ] **3 Portals**
+    - [ ] **3 Theme Portals style**
       ```css
       @import url("https://eustachi0.github.io/RemNoteThemes/CSS/03_Portals.css");
+      ```
+    - [x] **3 RemNote Portals style**
+      ```css
+      @import url("https://eustachi0.github.io/RemNoteThemes/CSS/03_Portals_Original.css");
       ```
     - [ ] **4 Side, Bottom, Nav Bars**
       ```css
