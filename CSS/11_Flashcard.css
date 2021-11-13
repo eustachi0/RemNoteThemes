@@ -94,19 +94,38 @@
 
 /* answer form */
 .type-answer__form .border-gray-15 {
-    border-color: var(--accent-color);
+    background-color: var(--popup-border-color);
+    border-color: var(--queue-fill-in-the-blank-color);
+    border-radius: 10px;
+    color: var(--queue-fill-in-the-blank-color);
+    font-weight: 600;
+    font-size: 16px;
 }
+
+
 /* show answer */
 .css-pRXkI {
     background-color: var(--button-color);
     color: var(--popup-text-color);
     border-color: var(--button-color);
+    border-radius: 10px;
 }
 .css-pRXkI:hover {
     background-color: var(--button-color);
     color: var(--popup-text-color);
     border-color: var(--button-color);
     filter: brightness(1.3);
+}
+.css-jAnOmY {
+  border-radius: 6px;
+  color: var(--popup-text-color);
+  background-color: var(--queue-fill-in-the-blank-color);
+}
+.css-jAnOmY:hover {
+  border-radius: 6px;
+  color: var(--popup-text-color);
+  background-color: var(--queue-fill-in-the-blank-color);
+  filter: brightness(1.3);
 }
 
 /* too soon, forgotten... buttons */
@@ -153,6 +172,7 @@
 .spacedRepetition .fill-in-the-blank {
     color: var(--queue-fill-in-the-blank-color);
     border-width: thin;
+    background-color: var(--popup-border-color);
 }
 /* modified 05 Jun 2021 */
 #QueueTypeAnswerBoxContainer #QueueTypeAnswerBox {
@@ -205,12 +225,9 @@
     background-color: transparent;
 }
 .spacedRepetition .spacedRepetitionAnswer {
-    border-top: solid;
-    border-width: var(--popup-border-width);
-    border-color: var(--popup-text-color);
     padding-top: 10px;
-    margin: 10px;
 }
+
 .spacedRepetitionAnswer .rem-container--default:hover .rem-text {
     color: var(--focused-text-color) !important;
 }
@@ -290,4 +307,62 @@
     color: var(--focused-accent-color);
     font-size: 15px;
     font-weight: 600;
+}
+
+/* queue edit later*/
+
+
+.queue__edit-later .queue__edit-later__title__container .queue__edit-later__title, .spacedRepetitionDocument .spacedRepetitionDocumentTitleContainer .spacedRepetitionDocumentTitle {
+  color: var(--queue-fill-in-the-blank-color);
+}
+
+/* text comment area */
+.queue__edit-later__bottom .edit-options__input {
+  color: var(--popup-text-color);
+  border-color: var(--popup-border-color);
+  border-radius: 10px;
+}
+
+
+/* .queue__edit-later__bottom .queue__buttons {
+    background-color: red;
+} */
+
+/* buttoms */
+.css-jWWeXl {
+    background-color: var(--popup-border-color);
+    color: var(--popup-text-color);
+    border-color: var(--button-color);
+    border-radius: 10px;
+    border-width: 2px;
+}
+.css-jWWeXl:hover {
+    background-color: var(--button-color);
+    color: var(--popup-text-color);
+    border-color: var(--button-color);
+    filter: brightness(1.3);
+}
+
+.css-hBMxXg {
+    background-color: var(--button-color);
+    color: var(--popup-text-color);
+    border-color: var(--button-color);
+    border-radius: 10px;
+    border-width: 2px;
+}
+.css-hBMxXg:hover {
+    background-color: var(--button-color);
+    color: var(--popup-text-color);
+    border-color: var(--button-color);
+    filter: brightness(1.3);
+}
+
+/* bullets and icons */
+/* icons */
+.spaced-repetition__prompt .icon {
+    color: var(--icons-color);
+}
+
+.spacedRepetition .rem-bullet__queue {
+    background-color: var(--icons-color);
 }

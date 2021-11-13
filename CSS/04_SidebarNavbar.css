@@ -51,6 +51,10 @@
     font-weight: 600;
 }
 
+#document-sidebar .bg-gray-10-transparent svg {
+    color: var(--focused-accent-color);
+}
+
 .document-sidebar--collapsed--vertical {
     background-color: transparent/* var(--sidebar-background-color) */;
     border-right-style: solid;
