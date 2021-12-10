@@ -307,8 +307,8 @@ body, button {
 }
 
 .rem-bullet__icon.rem-bullet--hidden-children {
-    background-color: rgb(121, 126, 127, 0.3) !important;
-    border: 1px solid rgb(121, 126, 127, 0.01);
+    background-color: rgb(121, 126, 127, 0.2) !important;
+    border: 2px solid rgb(121, 126, 127, 0.01);
 }
 .rem-bullet__icon.rem-bullet--hidden-children:hover {
     border: 2px solid rgb(121, 126, 127, 0.3);
