@@ -11,7 +11,7 @@
 }
 body, button {
     font-family: var(--font-name), "Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-   color: var(--body-text-color);
+    color: var(--body-text-color);
 }
 #multiple-windows .multiple-windows__document {
     background-color: var(--body-background-color);
@@ -296,6 +296,29 @@ body, button {
    --tw-border-opacity: .3;
     border-color: rgba(236,236,248,var(--tw-border-opacity));
 }
+
+.rem-bullet__icon {
+    background-color: transparent !important;
+}
+/* bullet icon color */
+.css-jxYBFL {
+    fill: var(--icons-color);
+    color: var(--icons-color);
+}
+
+.rem-bullet__icon.rem-bullet--hidden-children {
+    background-color: rgb(121, 126, 127, 0.3) !important;
+    border: 1px solid rgb(121, 126, 127, 0.01);
+}
+.rem-bullet__icon.rem-bullet--hidden-children:hover {
+    border: 2px solid rgb(121, 126, 127, 0.3);
+}
+
+.rem-bullet, .rem-bullet--in-list {
+  background-color: var(--icons-color);
+}
+
+
 
 /* Type / for commands text */
 .rich-text-editor-placeholder {

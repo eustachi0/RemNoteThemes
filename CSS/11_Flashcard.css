@@ -5,21 +5,24 @@
 
 /* multi-line/list card tree lines*/
 .node-card-item:before {
-    margin-left: -15px;
+    margin-left: -16px;
     content: "";
     height: 100%;
     width: 2px;
     position: absolute;
     background-color: var(--cloze-cards-lines) !important;
 }
+#hierarchy-editor .rem-bullet__number {
+    padding-left: 8px;
+}
 
 
-#hierarchy-editor .TreeNode--list--in-card-content {
+/* #hierarchy-editor .TreeNode--list--in-card-content {
     border-color: var(--cloze-cards-lines);
     border-width: 2px;
     margin-bottom: 6px;
     padding-left: var(padding-left);
-}
+} */
 
 .cloze {
     background-color: transparent;
@@ -167,7 +170,7 @@
     background-color: var(--popup-background-color);
 }
 .rem-bullet__queue {
-    background-color: var(--bullet-color);
+    background-color: var(--icons-color);
 }
 .spacedRepetition .fill-in-the-blank {
     color: var(--queue-fill-in-the-blank-color);

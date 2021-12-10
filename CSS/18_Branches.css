@@ -225,27 +225,33 @@
 
 /*---------- bullets icons in focus and hover ----------*/
 /*----general rems bullet icons hover ----*/
-#hierarchy-editor .rem-container--default:hover .rem-bullet__icon {
+#hierarchy-editor .rem-container--default:hover /* .rem-bullet__icon */ .css-jxYBFL {
+    fill: var(--hover-bullet-color);
     color: var(--hover-bullet-color);
 }
-#hierarchy-editor .rem-container--focused .rem-bullet__icon {
+#hierarchy-editor .rem-container--focused /* .rem-bullet__icon */ .css-jxYBFL {
+    fill: var(--focused-bullet-color);
     color: var(--focused-bullet-color);
 }
-#hierarchy-editor .rem-container--focused:hover .rem-bullet__icon {
+#hierarchy-editor .rem-container--focused:hover /* .rem-bullet__icon */ .css-jxYBFL{
+    fill: var(--focused-bullet-color);
     color: var(--focused-bullet-color);
 }
 
 /*------- 1st Tree node symbols when in focus and hover ------*/
 #hierarchy-editor .TreeNode > div:focus-within 
-    > div:first-child .rem-bullet__icon {
+    > div:first-child /* .rem-bullet__icon */ .css-jxYBF {
+    fill: var(--tree-focused-bullet-color);
     color: var(--tree-focused-bullet-color);
 }
 #hierarchy-editor .TreeNode > div
-    > div:first-child:hover .rem-bullet__icon {
+    > div:first-child:hover /* .rem-bullet__icon */ .css-jxYBFL{
+    fill: var(--tree-hover-focused-bullet-color);
     color: var(--tree-hover-focused-bullet-color);
 }
 #hierarchy-editor .TreeNode > div 
-    > div:focus-within:first-child:hover .rem-bullet__icon {
+    > div:focus-within:first-child:hover /* .rem-bullet__icon */ .css-jxYBFL {
+    fill: var(--tree-focused-bullet-color);
     color: var(--tree-focused-bullet-color);
 }
 

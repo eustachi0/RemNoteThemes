@@ -544,11 +544,11 @@
 }
 
 /* All notes title */
-.css-crJvPT {
+.css-gnNRVe {
     color: var(--body-text-color);
 }
 /* all notes number */
-.css-QtSry {
+.css-cewrUZ {
     color: var(--accent-color);
 }
 /* sort button */
@@ -560,7 +560,6 @@
 /* hover */
 .css-kgZxQP:hover {
     background-color: var(--button-color);
-
     filter: brightness(1.2);
 }
 
@@ -582,7 +581,7 @@
 }
 
 /* tab title text */
-.css-eZPJVR .css-exQOrH {
+.css-fLTnVi {
     color: var(--icons-color);
 }
 
@@ -608,7 +607,7 @@
     border-top-right-radius: 10px;
 }
 /* active tab text color */
-.css-iwfiTu .css-exQOrH {
+.css-iwfiTu .css-fLTnVi {
     color: var(--accent-color);
 }
 
@@ -628,11 +627,11 @@
 }
 
 /* document name color */
-.css-jlRuPl {
+/* .css-jlRuPl */ .css-kMEfqE {
     color: var(--body-text-color);
 }
 /* document rute color */
-.css-dcfFHl {
+/* .css-dcfFHl */ .css-eqifkM {
     color: var(--icons-color);
 }
 /* background color when hover on documents */
