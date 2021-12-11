@@ -377,3 +377,13 @@
 .spacedRepetitionAnswer .node-card-item .text-gray-20 {
     color: rgb(65, 68, 68);
 }
+
+/* when finish studying - Queue Checkpoint text color */
+.css-dLXVVj {
+    color: var(--popup-text-color);
+}
+
+/* when finish studying - take a break text color */
+.css-eDPktT {
+    color: rgb(65, 68, 68)
+}
