@@ -372,3 +372,8 @@
 .spacedRepetition .rem-bullet__queue {
     background-color: var(--icons-color);
 }
+
+/* back of card text color */
+.spacedRepetitionAnswer .node-card-item .text-gray-20 {
+    color: rgb(65, 68, 68);
+}
