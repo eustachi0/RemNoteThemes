@@ -374,6 +374,11 @@
     filter: brightness(.7);
 }
 
+/* search word highlight results*/
+#search-results__list .bg-blue-20 {
+  background-color: rgba(174, 158, 38, 0.4);
+}
+
 /* end slash menu - insert */
 
 
@@ -477,20 +482,27 @@
 }
 
 /* recent pages */
-.css-khYwOj {
-	background-color: var(-popup-background-color);
+.css-xWPam, .css-hpReVO {
+    color: var(--accent-color);
 }
 
 /* highlighted result */
 .bg-warning-10 {
-	background-color: rgb(174, 158, 38, 0.4);
+	background-color: rgba(174, 158, 38, 0.4);
 
 }
 /* top area search a rem */
-.css-dwIDzn {
+/* .css-dwIDzn {
     background-color: var(--sidebar-background-color);
     border: 1px solid var(--accent-color);
     border-radius: 15px;
+} */
+.css-leTpQX {
+    background-color: var(--popup-background-color);
+    color: var(--popup-text-color);
+}
+.css-hFxFnS {
+    border-color: var(--popup-border-color);
 }
 /* search a rem text background */
 .css-jQQQnw {
@@ -539,5 +551,17 @@
 .css-kodynN {
     background-color: var(--button-color);
     color: var(--popup-text-color);
+}
+
+/* create a rem buttom */
+.css-buQCTw {
+  background-color: var(--button-color);
+  color: var(--popup-text-color);
+}
+
+/* shortcut keys border and color */
+.css-bPqSBq, .css-eBdUcu {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 /* end of main search popup *
