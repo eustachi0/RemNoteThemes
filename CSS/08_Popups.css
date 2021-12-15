@@ -24,14 +24,14 @@
     border-width: var(--popup-border-width) !important;
     border-radius: var(--popup-border-radius) !important;
 }
-.search-results #search-results__list {
+#search-results__list {
     background-color: var(--popup-background-color) !important;
     color: var(--popup-text-color);
 }
-.search-results #search-results__list .selectedResult {
+#search-results__list .bg-gray-5 {
     background-color: var(--popup-hover-background-color) !important;
 }
-.search-results #search-results__list #search-results__result:hover {
+#search-results__list #search-results__result:hover {
     background-color: var(--popup-hover-background-color)
     !important;
 }
@@ -40,6 +40,9 @@
 }
 .gray {
     color: var(--popup-text-color) !important;
+}
+#search-results__list .mix-blend-multiply {
+  mix-blend-mode: unset !important;
 }
 #search-results__list #quote {
     background-color: var(--popup-background-color) !important;
@@ -245,6 +248,13 @@
 .popup-menu .css-buXlLg {
     background-color: var(--popup-background-color);
 }
+.css-hbHBTE {
+    color: var(--icons-color) !important;
+}
+.css-hbHBTE:hover {
+  color: var(--focused-accent-color) !important;
+}
+
 .popup-menu .css-hbHBTE path,
 .popup-menu .css-buXlLg path {
     fill: var(--icons-color);
