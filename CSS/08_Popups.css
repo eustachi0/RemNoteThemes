@@ -48,6 +48,10 @@
     background-color: var(--popup-background-color) !important;
     border-color: var(--popup-border-color);
 }
+#search-results__list #code-node {
+    margin-top: 0px;
+    margin-left: 0px;
+}
 #quote {
     background-color: transparent;
     border-color: var(--accent-color);
