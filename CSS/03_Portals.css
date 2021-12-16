@@ -139,7 +139,7 @@
 
 
 /* power-up symbol */
-#hierarchy-editor .node-top-level-in-portal-container .node-top-level-in-portal .rem-is-custom-rem-type--in-body {
+/* #hierarchy-editor .node-top-level-in-portal-container .node-top-level-in-portal .rem-is-custom-rem-type--in-body {
     padding-right: 5px;
     padding-left: 5px;
     margin-top: -2px;
@@ -147,8 +147,12 @@
     padding-top: 6px;
     color: var(--portal-breadcrumb-text-color);
     font-size: 13px;
+} */
+#hierarchy-editor .node-top-level-in-portal-container .css-jmbCkn,
+#hierarchy-editor .node-top-level-in-portal-container .css-fqRAnH {
+  fill: var(--portal-breadcrumb-text-color);
+  color: var(--portal-breadcrumb-text-color);
 }
-
 
 /* hidden elements block left margin and background*/
 #hierarchy-editor .node-top-level-in-portal-container .node-top-level-in-portal .text-gray-40 {
