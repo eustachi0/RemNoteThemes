@@ -122,12 +122,12 @@
     border-color: var(--button-color);
     filter: brightness(1.3);
 }
-.css-jAnOmY {
+.type-answer__form .css-jAnOmY {
   border-radius: 6px;
   color: var(--popup-text-color);
   background-color: var(--queue-fill-in-the-blank-color);
 }
-.css-jAnOmY:hover {
+.type-answer__form .css-jAnOmY:hover {
   border-radius: 6px;
   color: var(--popup-text-color);
   background-color: var(--queue-fill-in-the-blank-color);

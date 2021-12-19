@@ -324,3 +324,33 @@ body, button {
 .rich-text-editor-placeholder {
 	color: rgb(65, 68, 68);
 }
+
+
+.bg-mint-10 {
+  background-color: var(--popup-background-color);
+}
+.css-dkfuNh {
+  color: rgb(130, 133, 133);
+}
+.css-pUlLN {
+  fill: rgb(130, 133, 133);
+  color: rgb(130, 133, 133);
+}
+.css-jAnOmY {
+color: var(--popup-text-color);
+  background-color: var(--button-color);
+}
+.css-jAnOmY:hover {
+color: var(--popup-text-color);
+  background-color: var(--button-color);
+  filter: brightness(1.3);
+}
+
+/* new 1.5version external links */
+.text-blue-60 {
+  color: var(--accent-color);
+}
+.text-blue-60:hover {
+  color: var(--accent-color);
+  filter: brightness(1.2);
+}
