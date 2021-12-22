@@ -277,6 +277,10 @@ body, button {
 ::selection {
     background-color: var(--selected-background-color);
 }
+.hidden-selection {
+    background-color: var(--selected-background-color);
+}
+
 
 #hierarchy-editor .rem-container .bg-gray-10 {
     background-color: rgb(35, 38, 38, .6);
