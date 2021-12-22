@@ -36,3 +36,9 @@
 .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__power-up-tag {
     color: var(--icons-color);
 }
+
+.work-in-progress-tag {
+    padding: 4px;
+    border-radius: 5px;
+    background-color: var(--popup-background-color);
+}

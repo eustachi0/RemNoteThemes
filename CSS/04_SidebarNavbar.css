@@ -77,9 +77,13 @@
 
 
 /* all popup menus background */
- .bg-white {
-    background-color: var(--popup-background-color)!important;
-    border-radius: 4px;
+.rich-text-editor__search-results {
+    background-color: transparent !important;
+}
+
+.bg-white {
+    background-color: var(--popup-background-color) !important;
+    border-radius: 7px;
 }
 
 /* all popup menu item container background */

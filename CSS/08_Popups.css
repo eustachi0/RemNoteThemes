@@ -24,10 +24,10 @@
     border-width: var(--popup-border-width) !important;
     border-radius: var(--popup-border-radius) !important;
 }
-#search-results__list {
-    background-color: var(--popup-background-color) !important;
-    color: var(--popup-text-color);
-}
+/* #search-results__list {
+  background-color: var(--popup-background-color) !important;
+  color: var(--popup-text-color);
+} */
 #search-results__list .bg-gray-5 {
     background-color: var(--popup-hover-background-color) !important;
 }
