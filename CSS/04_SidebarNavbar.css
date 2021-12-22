@@ -82,8 +82,7 @@
 }
 
 .bg-white {
-    background-color: var(--popup-background-color) !important;
-    border-radius: 7px;
+    background-color: var(--popup-background-color);
 }
 
 /* all popup menu item container background */

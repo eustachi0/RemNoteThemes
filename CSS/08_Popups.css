@@ -24,6 +24,14 @@
     border-width: var(--popup-border-width) !important;
     border-radius: var(--popup-border-radius) !important;
 }
+
+/* when searching for tags */
+.rich-text-editor__search-results .bg-white {
+  background-color: var(--popup-background-color) !important;
+  border-radius: 7px;
+  border: 1px solid var(--popup-border-color);
+}
+
 /* #search-results__list {
   background-color: var(--popup-background-color) !important;
   color: var(--popup-text-color);

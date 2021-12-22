@@ -38,7 +38,16 @@
 }
 
 .work-in-progress-tag {
-    padding: 4px;
-    border-radius: 5px;
+    padding: 2px;
+    padding-right: 8px !important;
+    border-radius: 16px;
     background-color: var(--popup-background-color);
+    border: 2px solid var(--popup-background-color);
+}
+#hierarchy-editor .rem-container--focused .work-in-progress-tag {
+    padding: 2px;
+    padding-right: 8px !important;
+    border-radius: 16px;
+    background-color: rgb(21, 24, 24);
+    border: 2px solid rgb(23, 26, 26);
 }
